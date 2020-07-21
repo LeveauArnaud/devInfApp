@@ -1,42 +1,53 @@
 package controller;
 
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+ 
 import javax.swing.JOptionPane;
-import model.Model;
-import view.MainView;
+import javax.swing.JTextField;
+import javax.swing.table.DefaultTableModel;
 
+import model.Constants;
+
+ 
 /**
-*
-* @author Arnaud Leveau
-*/
-
-public class Controller {
-	 private Model model;
-	 private MainView mainView;
-	 public Controller(Model m, MainView v) {
-	  model = m;
-	  mainView = v;
-	  initView();
-	 }
-	 
-	 public void initView() {
-	 }
-	 
-	 public void initController() {
-	 }
-	 
-	 private void saveNom() {
-	  JOptionPane.showMessageDialog(null, "Nom sauvegardé : " + model.getNom(), "Info", JOptionPane.INFORMATION_MESSAGE);
-	 }
-	 
-	 private void savePrenom() {
-	  JOptionPane.showMessageDialog(null, "Prénom sauvegardé : " + model.getPrenom(), "Info", JOptionPane.INFORMATION_MESSAGE);
-	 }
-	 
-	 private void sayBonjour() {
-	  JOptionPane.showMessageDialog(null, "Bonjour " + model.getNom() + " " + model.getPrenom(), "Info", JOptionPane.INFORMATION_MESSAGE);
-	 }
-	 
-	 private void sayAurevoir() {
-	  System.exit(0);
-	 }
+ * @author arnaud_leveau
+ *
+ */
+public class Controller implements ActionListener {
+     
+    private JTextField searchTermTextField = new JTextField(26);
+    private DefaultTableModel model;
+ 
+    public Controller(JTextField searchTermTextField, DefaultTableModel model) {
+        super();
+        this.searchTermTextField = searchTermTextField;
+        this.model = model;
+    }
+ 
+    @Override
+    public void actionPerformed(ActionEvent e) {
+ 
+        String searchTerm = searchTermTextField.getText();
+        if (searchTerm != null && !"".equals(searchTerm)) {
+            Object[][] newData = new Object[Constants.DATA.length][];
+            int idx = 0;
+            for (Object[] o: Constants.DATA) {
+                if ("*".equals(searchTerm.trim())) {
+                    newData[idx++] = o;
+                } else {
+                    if(String.valueOf(o[0]).startsWith(searchTerm.toUpperCase().trim())){
+                        newData[idx++] = o;
+                    }   
+                }   
+            }
+            model.setDataVector(newData, Constants.TABLE_HEADER);
+        } else {
+            JOptionPane.showMessageDialog(null,
+                    "Barre de recherche vide !", "Erreur",
+                    JOptionPane.ERROR_MESSAGE);
+        }
+    }
+ 
 }
