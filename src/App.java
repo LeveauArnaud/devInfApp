@@ -2,6 +2,12 @@ import controller.Controller;
 import model.Model;
 import view.MainView;
 
+
+/**
+*
+* @author Arnaud Leveau
+*/
+
 public class App {
 	
  public static void main(String[] args) {

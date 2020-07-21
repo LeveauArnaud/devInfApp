@@ -2,36 +2,42 @@ package controller;
 
 import javax.swing.JOptionPane;
 import model.Model;
+import view.MainView;
 import view.View;
+
+/**
+*
+* @author Arnaud Leveau
+*/
 
 public class Controller {
 	 private Model model;
-	 private View view;
-	 public Controller(Model m, View v) {
+	 private MainView mainView;
+	 public Controller(Model m, MainView v) {
 	  model = m;
-	  view = v;
+	  mainView = v;
 	  initView();
 	 }
 	 
 	 public void initView() {
-	  view.getNomTextfield().setText(model.getNom());
-	  view.getPrenomTextfield().setText(model.getPrenom());
+	  mainView.getNomTextfield().setText(model.getNom());
+	  mainView.getPrenomTextfield().setText(model.getPrenom());
 	 }
 	 
 	 public void initController() {
-	  view.getNomSaveButton().addActionListener(e -> saveNom());
-	  view.getPrenomSaveButton().addActionListener(e -> savePrenom());
-	  view.getBonjour().addActionListener(e -> sayBonjour());
-	  view.getAurevoir().addActionListener(e -> sayAurevoir());
+	  mainView.getNomSaveButton().addActionListener(e -> saveNom());
+	  mainView.getPrenomSaveButton().addActionListener(e -> savePrenom());
+	  mainView.getBonjour().addActionListener(e -> sayBonjour());
+	  mainView.getAurevoir().addActionListener(e -> sayAurevoir());
 	 }
 	 
 	 private void saveNom() {
-	  model.setNom(view.getNomTextfield().getText());
+	  model.setNom(mainView.getNomTextfield().getText());
 	  JOptionPane.showMessageDialog(null, "Nom sauvegardé : " + model.getNom(), "Info", JOptionPane.INFORMATION_MESSAGE);
 	 }
 	 
 	 private void savePrenom() {
-	  model.setPrenom(view.getPrenomTextfield().getText());
+	  model.setPrenom(mainView.getPrenomTextfield().getText());
 	  JOptionPane.showMessageDialog(null, "Prénom sauvegardé : " + model.getPrenom(), "Info", JOptionPane.INFORMATION_MESSAGE);
 	 }
 	 

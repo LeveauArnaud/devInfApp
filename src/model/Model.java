@@ -1,5 +1,10 @@
 package model;
 
+/**
+*
+* @author Arnaud Leveau
+*/
+
 public class Model {
 	
 	 private String nom;
