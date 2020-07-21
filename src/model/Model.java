@@ -1,34 +1,16 @@
 package model;
 
-/**
-*
-* @author Arnaud Leveau
-*/
+import javax.swing.table.DefaultTableModel;
 
-public class Model {
-	
-	 private String nom;
-	 private String prenom;
-	 
-	 public Model(String nom, String prenom) {
-	  this.nom = nom;
-	  this.prenom = prenom;
-	 }
-	 
-	 public String getNom() {
-	  return nom;
-	 }
-	 
-	 public void setNom(String nom) {
-	  this.nom = nom;
-	 }
-	 
-	 public String getPrenom() {
-	  return prenom;
-	 }
-	 
-	 public void setPrenom(String prenom) {
-	  this.prenom = prenom;
-	 
-	 }
-	}
+/**
+ * @author arnaud_leveau
+ *
+ */
+@SuppressWarnings("serial")
+public class Model extends DefaultTableModel {
+ 
+    public Model() {
+        super(Constants.DATA, Constants.TABLE_HEADER);
+    }
+ 
+}
