@@ -15,6 +15,7 @@ import model.Constants;
  * @author arnaud_leveau
  *
  */
+
 public class Controller implements ActionListener {
      
     private JTextField searchTermTextField = new JTextField(26);
@@ -26,27 +27,39 @@ public class Controller implements ActionListener {
         this.model = model;
     }
  
+    
+    /**
+     * @param searchTerm string
+     *
+     */
+    public void chercher(String searchTerm) {
+    	Object[][] newData = new Object[Constants.DATA.length][];
+        int idx = 0;
+        for (Object[] o: Constants.DATA) {
+            if ("*".equals(searchTerm.trim())) {
+                newData[idx++] = o;
+            } else {
+                if(String.valueOf(o[0]).startsWith(searchTerm.toUpperCase().trim())){
+                    newData[idx++] = o;
+                }   
+            }   
+        }
+        model.setDataVector(newData, Constants.TABLE_HEADER);
+    }
+    
     @Override
     public void actionPerformed(ActionEvent e) {
  
         String searchTerm = searchTermTextField.getText();
         if (searchTerm != null && !"".equals(searchTerm)) {
-            Object[][] newData = new Object[Constants.DATA.length][];
-            int idx = 0;
-            for (Object[] o: Constants.DATA) {
-                if ("*".equals(searchTerm.trim())) {
-                    newData[idx++] = o;
-                } else {
-                    if(String.valueOf(o[0]).startsWith(searchTerm.toUpperCase().trim())){
-                        newData[idx++] = o;
-                    }   
-                }   
-            }
-            model.setDataVector(newData, Constants.TABLE_HEADER);
+            
+            chercher(searchTerm);
         } else {
             JOptionPane.showMessageDialog(null,
                     "Barre de recherche vide !", "Erreur",
                     JOptionPane.ERROR_MESSAGE);
+         
+            chercher(" ");
         }
     }
  
