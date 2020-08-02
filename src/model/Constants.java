@@ -6,8 +6,7 @@ package model;
  */
 public class Constants {
  
-    public static final Object[] TABLE_HEADER = { "Nom", "Prénom",
-            "Totem", "Section", "Fonction", "Age", "Adresse" , "Cotisation"};
+    public static final Object[] TABLE_HEADER = { "Nom", "Prénom","Totem", "Section", "Fonction", "Age", "Adresse" , "Cotisation"};
  
     public static final Object[][] DATA = {
             { "Leveau", "ARNAUD", "JAGUARUNDI", "Pionniers", "Animateur", "19/03/1998", "RUE DE L'EGALITE 11 7080 EUGIES", true },
