@@ -1,138 +1,61 @@
 package view;
 
-import java.awt.BorderLayout;
-import javax.swing.GroupLayout;
+import java.awt.Dimension;
+
+import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JSplitPane;
+import javax.swing.JTable;
 import javax.swing.JTextField;
-import javax.swing.SwingConstants;
+import javax.swing.border.TitledBorder;
 
+import controller.Controller;
+import model.Model;
+ 
+/**
+ * @author arnaud_leveau
+ *
+ */
 public class View {
-	
-	// View uses Swing framework to display UI to user
-	private JFrame frame;
-	private JLabel nomLabel;
-	private JLabel prenomLabel;
-	private JTextField nomTextfield;
-	private JTextField prenomTextfield;
-	private JButton prenomSaveButton;
-	private JButton nomSaveButton;
-	private JButton bonjour;
-	private JButton aurevoir;
  
- 	public View(String title) {
- 		
-	  frame = new JFrame(title);
-	  frame.getContentPane().setLayout(new BorderLayout());
-	  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	  frame.setSize(500, 120);
-	  frame.setLocationRelativeTo(null);
-	  frame.setVisible(true);
-	  
-	  // Create UI elements
-	  nomLabel = new JLabel("Nom :");
-	  prenomLabel = new JLabel("Prenom :");
-	  nomTextfield = new JTextField();
-	  prenomTextfield = new JTextField();
-	  nomSaveButton = new JButton("Sauvegarder le nom");
-	  prenomSaveButton = new JButton("Sauvegarder le prenom");
-	  bonjour = new JButton("Bonjour!");
-	  aurevoir = new JButton("Au revoir!");
-	  
-	  // Add UI element to frame
-	  GroupLayout layout = new GroupLayout(frame.getContentPane());
-	  layout.setAutoCreateGaps(true);
-	  layout.setAutoCreateContainerGaps(true);
-	  layout.setHorizontalGroup(layout.createSequentialGroup()
-	    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(nomLabel)
-	    .addComponent(prenomLabel))
-	    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(nomTextfield)
-	    .addComponent(prenomTextfield))
-	    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(nomSaveButton)
-	    .addComponent(prenomSaveButton))
-	    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(bonjour)
-	    .addComponent(aurevoir)));
-	  layout.setVerticalGroup(layout.createSequentialGroup()
-	    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE).addComponent(nomLabel)
-	    .addComponent(nomTextfield).addComponent(nomSaveButton).addComponent(bonjour))
-	    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE).addComponent(prenomLabel)
-	    .addComponent(prenomTextfield).addComponent(prenomSaveButton).addComponent(aurevoir)));
-	  layout.linkSize(SwingConstants.HORIZONTAL, nomSaveButton, prenomSaveButton);
-	  layout.linkSize(SwingConstants.HORIZONTAL, bonjour, aurevoir);
-	  frame.getContentPane().setLayout(layout);
-	 }
+    public View() {
+        // Create views swing UI components 
+        JTextField searchTermTextField = new JTextField(26);
+        JButton filterButton = new JButton("Chercher");
+        JTable table = new JTable();
  
- 	public JFrame getFrame() {
-	  return frame;
-	 }
+        // Create table model
+        Model model = new Model();
+        table.setModel(model);
  
- 	public void setFrame(JFrame frame) {
-	  this.frame = frame;
-	 }
+        // Create controller
+        Controller controller = new Controller(searchTermTextField, model);
+        filterButton.addActionListener(controller);
  
- 	public JLabel getNomLabel() {
-	  return nomLabel;
-	 }
+        // Set the view layout
+        JPanel ctrlPane = new JPanel();
+        ctrlPane.add(searchTermTextField);
+        ctrlPane.add(filterButton);
  
- 	public void setNomLabel(JLabel nomLabel) {
-	  this.nomLabel = nomLabel;
-	 }
+        JScrollPane tableScrollPane = new JScrollPane(table);
+        tableScrollPane.setPreferredSize(new Dimension(1400, 500));
+        tableScrollPane.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(), "Liste des scouts",
+                TitledBorder.CENTER, TitledBorder.TOP));
  
- 	public JLabel getPrenomLabel() {
-	  return prenomLabel;
-	 }
+        JSplitPane splitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT, ctrlPane, tableScrollPane);
+        splitPane.setDividerLocation(35);
+        splitPane.setEnabled(false);
  
- 	public void setPrenomLabel(JLabel prenomLabel) {
-	  this.prenomLabel = prenomLabel;
-	 }
- 
- 	public JTextField getNomTextfield() {
-	  return nomTextfield;
-	 }
- 
- 	public void setNomTextfield(JTextField nomTextfield) {
-	  this.nomTextfield = nomTextfield;
-	 }
- 
- 	public JTextField getPrenomTextfield() {
-	  return prenomTextfield;
-	 }
- 
- 	public void setPrenomTextfield(JTextField prenomTextfield) {
-	  this.prenomTextfield = prenomTextfield;
-	 }
- 
- 	public JButton getNomSaveButton() {
-	  return nomSaveButton;
-	 }
- 
- 	public void setNomSaveButton(JButton nomSaveButton) {
-	  this.nomSaveButton = nomSaveButton;
-	 }
- 
- 	public JButton getPrenomSaveButton() {
-	  return prenomSaveButton;
-	 }
- 
- 	public void setPrenomSaveButton(JButton prenomSaveButton) {
-	  this.prenomSaveButton = prenomSaveButton;
-	 }
- 
- 	public JButton getBonjour() {
-	  return bonjour;
-	 }
- 
- 	public void setBonjour(JButton bonjour) {
-	  this.bonjour = bonjour;
-	 }
- 
- 	public JButton getAurevoir() {
-	  return aurevoir;
-	 }
- 
- 	public void setAurevoir(JButton aurevoir) {
-	  this.aurevoir = aurevoir;
-	 }
+        // Display it all in a scrolling window and make the window appear
+        JFrame frame = new JFrame("Scout app");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.add(splitPane);
+        frame.pack();
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
+    }
  
 }
