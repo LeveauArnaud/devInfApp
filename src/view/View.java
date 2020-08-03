@@ -27,6 +27,8 @@ public class View {
         JTextField searchTermTextField = new JTextField(26);
         JButton filterButton = new JButton("Chercher");
         JTable table = new JTable();
+        table.setEnabled(false);
+        table.setForeground(UIManager.getColor("Button.darkShadow"));
  
         // Create table model
         Model model = new Model();
