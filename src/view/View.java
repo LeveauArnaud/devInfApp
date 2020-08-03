@@ -14,6 +14,7 @@ import javax.swing.border.TitledBorder;
 
 import controller.Controller;
 import model.Model;
+import javax.swing.UIManager;
  
 /**
  * @author arnaud_leveau
@@ -37,6 +38,7 @@ public class View {
  
         // Set the view layout
         JPanel ctrlPane = new JPanel();
+        ctrlPane.setBackground(UIManager.getColor("Button.select"));
         ctrlPane.add(searchTermTextField);
         ctrlPane.add(filterButton);
  
@@ -52,7 +54,7 @@ public class View {
         // Display it all in a scrolling window and make the window appear
         JFrame frame = new JFrame("Scout app");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.add(splitPane);
+        frame.getContentPane().add(splitPane);
         frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
