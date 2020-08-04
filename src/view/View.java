@@ -1,5 +1,6 @@
 package view;
 
+import java.awt.Color;
 import java.awt.Dimension;
 
 import javax.swing.BorderFactory;
@@ -23,6 +24,8 @@ import javax.swing.UIManager;
 public class View {
  
     public View() {
+    	
+    	
         // Create views swing UI components 
         JTextField searchTermTextField = new JTextField(26);
         JButton filterButton = new JButton("Chercher");

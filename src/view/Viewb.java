@@ -26,6 +26,9 @@ import controller.Controller;
 import model.Model;
 
 public class Viewb extends JFrame {
+	
+	
+	
 	private JTextField textField_1;
 	private JTextField textField_2;
 	private JTextField textField_3;
@@ -43,8 +46,14 @@ public class Viewb extends JFrame {
 	
 
 	public Viewb() {
+		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setPreferredSize(new Dimension(1600, 800));
 		getContentPane().setBackground(new Color(255, 204, 51));
 		getContentPane().setLayout(null);
+		pack();
+        setLocationRelativeTo(null);
+        setVisible(true);
 		
 		JLabel lblId = new JLabel("Id :");
 		lblId.setBounds(1183, 20, 27, 22);
@@ -191,6 +200,8 @@ public class Viewb extends JFrame {
         Model model = new Model();
         table.setModel(model);
         
+     // Create controller
+        Controller controller = new Controller(textFieldChercherUnScout, model);
 		
 		JButton addButton = new JButton();//init du JButton
 		addButton.setBounds(1104, 526, 50, 50);//taille 50X50
@@ -201,8 +212,7 @@ public class Viewb extends JFrame {
 		ImageIcon image = new ImageIcon( newImg );//Ajout de l'image au JButton
 		addButton.setIcon(image);
 		
-		// Create controller
-        Controller controller = new Controller(textFieldChercherUnScout, model);
+		
         
         JButton addButton_1 = new JButton();
         addButton_1.setBounds(1251, 526, 50, 50);
@@ -212,6 +222,11 @@ public class Viewb extends JFrame {
         addButton_2.setBounds(1398, 526, 50, 50);
         getContentPane().add(addButton_2);
         btnChercherUnScout.addActionListener(controller);
+        
+        
+        
+        
+    
         
     }
 }
