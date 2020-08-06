@@ -17,7 +17,7 @@ public class Scout {
 	private int cotisation;
 	
 	
-	public Scout(int ID, String Section, String Fonction, String Totem, String Nom, String Prenom, Date DateNaissance, String Adresse, String Mail, int Camp, int Cotisation) {
+	public Scout(int ID, String Nom, String Prenom,  String Totem, String Section, String Fonction, Date DateNaissance, String Adresse, String Mail, int Camp, int Cotisation) {
 		this.id = ID;
 		this.section = Section;
 		this.fonction = Fonction;
