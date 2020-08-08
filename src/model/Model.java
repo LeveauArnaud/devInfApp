@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 
@@ -62,6 +63,7 @@ public class Model extends DefaultTableModel {
 		return scoutsList;
 	}
 	
+	public static Object[][] DATA;
 	
 	public static  Object[][] show_Scouts() {
 		
@@ -101,5 +103,29 @@ public class Model extends DefaultTableModel {
     	
         super(show_Scouts(), Constants.TABLE_HEADER);
     }
+    
+    
+    public void executeSQLQuery(String query, String message) {
+    	Connection connection = DB.getConnection();
+    	
+    	Statement st;
+		
+		try {
+			
+			st = connection.createStatement();
+			if(st.executeUpdate(query) == 1) {
+				JOptionPane.showMessageDialog(null, "Data "+message+" succesfully");
+			}else {
+				JOptionPane.showMessageDialog(null, "Data not "+message);
+			}
+			
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+			
+		}
+    	
+    }
+    
  
 }
