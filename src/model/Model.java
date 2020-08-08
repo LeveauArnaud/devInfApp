@@ -32,9 +32,23 @@ public class Model extends DefaultTableModel {
 		try {
 			st = connection.createStatement();
 			rs = st.executeQuery(query);
+			
 			Scout scout;
+			
 			while(rs.next()) {
-				scout = new Scout(rs.getInt("id"),rs.getString("nom"),rs.getString("prenom"),rs.getString("totem"),rs.getString("section"),rs.getString("fonction"),rs.getDate("dateNaissance"),rs.getString("adresse"),rs.getString("mail"),rs.getInt("camp"),rs.getInt("cotisation"));
+				scout = new Scout(
+						rs.getInt("id"),
+						rs.getString("nom"),
+						rs.getString("prenom"),
+						rs.getString("totem"),
+						rs.getString("section"),
+						rs.getString("fonction"),
+						rs.getDate("dateNaissance"),
+						rs.getString("adresse"),
+						rs.getString("mail"),
+						rs.getInt("camp"),
+						rs.getInt("cotisation")
+				);
 				scoutsList.add(scout);
 			}
 			
@@ -53,10 +67,13 @@ public class Model extends DefaultTableModel {
 		
 		ArrayList<Scout> list = getScoutsList();
 		
-		Object[][] DATA = {}  ;
+		Object[][] DATA = new Object [list.size()][] ;
 		
-		Object[] row = new Object[11];
+		Object[] row = new Object [11];
+		
 		for(int i = 0; i< list.size(); i++) {
+			
+			System.out.println(list.get(i).getNom());
 			
 			row[0] = list.get(i).getNom();
 			row[1] = list.get(i).getPrenom();
@@ -69,7 +86,7 @@ public class Model extends DefaultTableModel {
 			row[8] = list.get(i).getCamp();
 			row[9] = list.get(i).getCotisation();
 			
-			DATA[DATA.length+1] = row;
+			DATA[i] = row;
 			
 			
 		}
@@ -81,7 +98,6 @@ public class Model extends DefaultTableModel {
 	
 	
     public Model() {
-    	
     	
         super(show_Scouts(), Constants.TABLE_HEADER);
     }
