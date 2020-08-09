@@ -3,6 +3,9 @@ package model;
 import java.sql.*;
 
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+
+import view.View;
 
 
 public class DB_Con {
@@ -22,10 +25,10 @@ public class DB_Con {
                     "root"
             );
 			System.out.println("Connexion effective !");
-			JOptionPane.showMessageDialog(null,
+			/**JOptionPane.showMessageDialog(null,
                     "Connexion effective !",
                     null, JOptionPane.ERROR_MESSAGE
-                    );
+                    );**/
 			return con;
 			
 		} catch (Exception e) {
@@ -50,6 +53,11 @@ public class DB_Con {
 			
 			st = connection.createStatement();
 			if(st.executeUpdate(query) == 1) {
+				
+				DefaultTableModel model = (DefaultTableModel) View.table.getModel();
+				model.setRowCount(0);
+				View.table.setModel(new Model());
+				
 				JOptionPane.showMessageDialog(null, "Data "+message+" succesfully");
 			}else {
 				JOptionPane.showMessageDialog(null, "Data not "+message);

@@ -1,19 +1,16 @@
 package controller;
 
-
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JOptionPane;
-import javax.swing.JTable;
 import javax.swing.JTextField;
-import javax.swing.table.DefaultTableModel;
+
 import model.DB_Con;
 
-public  class ButtonAddClicked implements ActionListener{
-	
-	
-	
+public class ButtonUpdateClicked implements ActionListener{
+
+	private JTextField textField_id;
 	private JTextField textField_section;
 	private JTextField textField_fonction;
 	private JTextField textField_totem;
@@ -25,7 +22,8 @@ public  class ButtonAddClicked implements ActionListener{
 	private JTextField textField_camp;
 	private JTextField textField_cotisation;
 	
-	public ButtonAddClicked(
+	public ButtonUpdateClicked(
+						JTextField textField_id, 
 						JTextField textField_section, 
 						JTextField textField_fonction,
 						JTextField textField_totem,
@@ -39,6 +37,7 @@ public  class ButtonAddClicked implements ActionListener{
 	{
 		
 		super();
+		this.textField_id = textField_id;
         this.textField_section = textField_section;
         this.textField_fonction = textField_fonction;
         this.textField_totem = textField_totem;
@@ -58,9 +57,9 @@ public  class ButtonAddClicked implements ActionListener{
                 "clicked button" ,
                 null, JOptionPane.ERROR_MESSAGE);
 		
-		String query = "INSERT INTO `scouts`(`totem`, `nom`, `prenom`, `dateNaissance`, `adresse`, `mail`, `section`, `fonction`, `camp`, `cotisation`) "
-							+ "VALUES ('"+textField_totem.getText()+"','"+textField_nom.getText()+"','"+textField_prenom.getText()+"','"+textField_dateNaissance.getText()+"','"+textField_adresse.getText()+"','"+textField_mail.getText()+"','"+textField_section.getText()+"','"+textField_fonction.getText()+"','"+textField_camp.getText()+"','"+textField_cotisation.getText()+"')";
-		DB_Con.executeSQLQuery(query, "Inserted");
+	
+		String query = "UPDATE `scouts` SET `totem`='"+textField_totem.getText()+"',`nom`='"+textField_nom.getText()+"',`prenom`='"+textField_prenom.getText()+"',`dateNaissance`='"+textField_dateNaissance.getText()+"',`adresse`='"+textField_adresse.getText()+"',`mail`='"+textField_mail.getText()+"',`section`='"+textField_section.getText()+"',`fonction`='"+textField_fonction.getText()+"',`camp`='"+textField_camp.getText()+"',`cotisation`='"+textField_cotisation.getText()+"' WHERE `id`='"+textField_id.getText()+"'";
+		DB_Con.executeSQLQuery(query, "Updated");
 	}
-
+	
 }

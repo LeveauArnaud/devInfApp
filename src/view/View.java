@@ -19,6 +19,8 @@ import javax.swing.JButton;
 import java.awt.SystemColor;
 
 import controller.ButtonAddClicked;
+import controller.ButtonDeleteClicked;
+import controller.ButtonUpdateClicked;
 import controller.Controller;
 import controller.MouseClicked;
 import model.Model;
@@ -43,7 +45,7 @@ public class View extends JFrame {
 	private JTextField textField_camp;
 	private JTextField textField_cotisation;
 	private JTextField textFieldChercherUnScout;
-	private JTable table;
+	public static JTable table;
 	
 	
 
@@ -280,11 +282,28 @@ public class View extends JFrame {
 														textField_mail,
 														textField_camp,
 														textField_cotisation);
+        ButtonUpdateClicked buttonUpdateClicked = new ButtonUpdateClicked(
+        		textField_id,
+        		textField_section,
+				textField_fonction, 
+				textField_totem,
+				textField_nom,
+				textField_prenom,
+				textField_dateNaissance,
+				textField_adresse,
+				textField_mail,
+				textField_camp,
+				textField_cotisation);
+        
+        ButtonDeleteClicked buttonDeleteClicked = new ButtonDeleteClicked(
+        												textField_id);
         
         
         btnChercherUnScout.addActionListener(controller);
         table.addMouseListener(mouseClicked);
         addButton.addActionListener(buttonAddClicked);
+        updateButton.addActionListener(buttonUpdateClicked);
+        deleteButton.addActionListener(buttonDeleteClicked);
         
         
         

@@ -58,9 +58,9 @@ public  class MouseClicked implements MouseListener{
 
 	
 	public void mouseClicked(MouseEvent e) {
-		JOptionPane.showMessageDialog(null,
+		/**JOptionPane.showMessageDialog(null,
                 "clicked",
-                null, JOptionPane.ERROR_MESSAGE);
+                null, JOptionPane.ERROR_MESSAGE);**/
 		
 		int i = table.getSelectedRow();
 		TableModel model = table.getModel();
