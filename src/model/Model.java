@@ -75,17 +75,17 @@ public class Model extends DefaultTableModel {
 		
 		for(int i = 0; i< list.size(); i++) {
 			
-			
-			row[0] = list.get(i).getNom();
-			row[1] = list.get(i).getPrenom();
-			row[2] = list.get(i).getTotem();
-			row[3] = list.get(i).getSection();
-			row[4] = list.get(i).getFonction();
-			row[5] = list.get(i).getDateNaissance();
-			row[6] = list.get(i).getAdresse();
-			row[7] = list.get(i).getMail();
-			row[8] = list.get(i).getCamp();
-			row[9] = list.get(i).getCotisation();
+			row[0] = list.get(i).getId();
+			row[1] = list.get(i).getNom();
+			row[2] = list.get(i).getPrenom();
+			row[3] = list.get(i).getTotem();
+			row[4] = list.get(i).getSection();
+			row[5] = list.get(i).getFonction();
+			row[6] = list.get(i).getDateNaissance();
+			row[7] = list.get(i).getAdresse();
+			row[8] = list.get(i).getMail();
+			row[9] = list.get(i).getCamp();
+			row[10] = list.get(i).getCotisation();
 			
 			DATA[i] = row;
 			

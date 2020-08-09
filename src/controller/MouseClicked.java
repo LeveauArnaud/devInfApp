@@ -64,17 +64,17 @@ public  class MouseClicked implements MouseListener{
 		
 		int i = table.getSelectedRow();
 		TableModel model = table.getModel();
-		textField_id.setText(model.getValueAt(i, 3).toString());
-		textField_section.setText(model.getValueAt(i, 3).toString());
-		textField_fonction.setText(model.getValueAt(i, 4).toString());
-		textField_totem.setText(model.getValueAt(i, 2).toString());
-		textField_nom.setText(model.getValueAt(i, 0).toString());
-		textField_prenom.setText(model.getValueAt(i, 1).toString());
-		textField_dateNaissance.setText(model.getValueAt(i, 5).toString());
-		textField_adresse.setText(model.getValueAt(i, 6).toString());
-		textField_mail.setText(model.getValueAt(i, 7).toString());
-		textField_camp.setText(model.getValueAt(i, 8).toString());
-		textField_cotisation.setText(model.getValueAt(i, 9).toString());
+		textField_id.setText(model.getValueAt(i, 0).toString());
+		textField_section.setText(model.getValueAt(i, 4).toString());
+		textField_fonction.setText(model.getValueAt(i, 5).toString());
+		textField_totem.setText(model.getValueAt(i, 3).toString());
+		textField_nom.setText(model.getValueAt(i, 1).toString());
+		textField_prenom.setText(model.getValueAt(i, 2).toString());
+		textField_dateNaissance.setText(model.getValueAt(i, 6).toString());
+		textField_adresse.setText(model.getValueAt(i, 7).toString());
+		textField_mail.setText(model.getValueAt(i, 8).toString());
+		textField_camp.setText(model.getValueAt(i, 9).toString());
+		textField_cotisation.setText(model.getValueAt(i, 10).toString());
 	}
 
 
