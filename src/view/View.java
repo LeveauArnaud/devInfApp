@@ -177,11 +177,11 @@ public class View extends JFrame {
 		textField_mail.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
 		textField_mail.setColumns(10);
 		
-		textField_mail = new JTextField();
-		textField_mail.setBounds(1224, 482, 148, 25);
-		getContentPane().add(textField_mail);
-		textField_mail.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
-		textField_mail.setColumns(10);
+		textField_camp = new JTextField();
+		textField_camp.setBounds(1224, 482, 148, 25);
+		getContentPane().add(textField_camp);
+		textField_camp.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
+		textField_camp.setColumns(10);
 		
 		textField_cotisation = new JTextField();
 		textField_cotisation.setBounds(1409, 482, 148, 25);
@@ -253,7 +253,7 @@ public class View extends JFrame {
         
         // Create controller
         Controller controller = new Controller(textFieldChercherUnScout, model);
-        MouseClicked mouseClicked =  new MouseClicked(table, model);
+        MouseClicked mouseClicked =  new MouseClicked(table, textField_section);
         
         
         btnChercherUnScout.addActionListener(controller);
