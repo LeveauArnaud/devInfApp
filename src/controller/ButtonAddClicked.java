@@ -8,8 +8,9 @@ import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
+import model.DB_Con;
 
-public  class ButtonClicked implements ActionListener{
+public  class ButtonAddClicked implements ActionListener{
 	
 	
 	private JTextField textField_id;
@@ -24,8 +25,7 @@ public  class ButtonClicked implements ActionListener{
 	private JTextField textField_camp;
 	private JTextField textField_cotisation;
 	
-	public ButtonClicked(
-						JTextField textField_id,
+	public ButtonAddClicked(
 						JTextField textField_section, 
 						JTextField textField_fonction,
 						JTextField textField_totem,
@@ -39,7 +39,6 @@ public  class ButtonClicked implements ActionListener{
 	{
 		
 		super();
-        this.textField_id = textField_id;
         this.textField_section = textField_section;
         this.textField_fonction = textField_fonction;
         this.textField_totem = textField_totem;
@@ -59,6 +58,9 @@ public  class ButtonClicked implements ActionListener{
                 "clicked button" ,
                 null, JOptionPane.ERROR_MESSAGE);
 		
+		String query = "INSERT INTO `scouts`(`totem`, `nom`, `prenom`, `dateNaissance`, `adresse`, `mail`, `section`, `fonction`, `camp`, `cotisation`) "
+							+ "VALUES ('"+textField_totem.getText()+"','"+textField_nom.getText()+"','"+textField_prenom.getText()+"','"+textField_dateNaissance.getText()+"','"+textField_adresse.getText()+"','"+textField_mail.getText()+"','"+textField_section.getText()+"','"+textField_fonction.getText()+"','"+textField_camp.getText()+"','"+textField_cotisation.getText()+"')";
+		DB_Con.executeSQLQuery(query, "Inserted");
 	}
 
 }

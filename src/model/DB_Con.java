@@ -41,7 +41,7 @@ public class DB_Con {
 		
 	}
 	
-	public void executeSQLQuery(String query, String message) {
+	public static void executeSQLQuery(String query, String message) {
     	Connection connection = DB_Con.getConnection();
     	
     	Statement st;
