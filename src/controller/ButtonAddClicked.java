@@ -26,17 +26,17 @@ public  class ButtonAddClicked implements ActionListener{
 	private JTextField textField_cotisation;
 	
 	public ButtonAddClicked(
-						JTextField textField_section, 
-						JTextField textField_fonction,
-						JTextField textField_totem,
-						JTextField textField_nom,
-						JTextField textField_prenom,
-						JTextField textField_dateNaissance,
-						JTextField textField_adresse,
-						JTextField textField_mail,
-						JTextField textField_camp,
-						JTextField textField_cotisation) 
-	{
+		JTextField textField_section, 
+		JTextField textField_fonction,
+		JTextField textField_totem,
+		JTextField textField_nom,
+		JTextField textField_prenom,
+		JTextField textField_dateNaissance,
+		JTextField textField_adresse,
+		JTextField textField_mail,
+		JTextField textField_camp,
+		JTextField textField_cotisation)				 
+	{				
 		
 		super();
         this.textField_section = textField_section;

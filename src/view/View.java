@@ -258,42 +258,42 @@ public class View extends JFrame {
         // Create controller
         Controller controller = new Controller(textFieldChercherUnScout, model);
         MouseClicked mouseClicked =  new MouseClicked(
-        												table,
-        												textField_id,
-        												textField_section,
-        												textField_fonction, 
-        												textField_totem,
-        												textField_nom,
-        												textField_prenom,
-        												textField_dateNaissance,
-        												textField_adresse,
-        												textField_mail,
-        												textField_camp,
-        												textField_cotisation
+        	table,
+        	textField_id,
+        	textField_section,
+        	textField_fonction, 
+        	textField_totem,
+        	textField_nom,
+        	textField_prenom,
+        	textField_dateNaissance,
+        	textField_adresse,
+        	textField_mail,
+        	textField_camp,
+        	textField_cotisation
         												);
         ButtonAddClicked buttonAddClicked = new ButtonAddClicked(
-														textField_section,
-														textField_fonction, 
-														textField_totem,
-														textField_nom,
-														textField_prenom,
-														textField_dateNaissance,
-														textField_adresse,
-														textField_mail,
-														textField_camp,
-														textField_cotisation);
+			textField_section,
+			textField_fonction, 
+			textField_totem,
+			textField_nom,
+			textField_prenom,
+			textField_dateNaissance,
+			textField_adresse,
+			textField_mail,
+			textField_camp,
+			textField_cotisation);
         ButtonUpdateClicked buttonUpdateClicked = new ButtonUpdateClicked(
-        		textField_id,
-        		textField_section,
-				textField_fonction, 
-				textField_totem,
-				textField_nom,
-				textField_prenom,
-				textField_dateNaissance,
-				textField_adresse,
-				textField_mail,
-				textField_camp,
-				textField_cotisation);
+        	textField_id,
+        	textField_section,
+			textField_fonction, 
+			textField_totem,
+			textField_nom,
+			textField_prenom,
+			textField_dateNaissance,
+			textField_adresse,
+			textField_mail,
+			textField_camp,
+			textField_cotisation);
         
         ButtonDeleteClicked buttonDeleteClicked = new ButtonDeleteClicked(
         												textField_id);
