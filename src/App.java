@@ -1,3 +1,4 @@
+
 import javax.swing.SwingUtilities;
 
 import view.Viewb;
@@ -9,7 +10,8 @@ import view.Viewb;
 public class App {
  
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
+     
+		SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 try {
                     createAndShowGUI();
@@ -23,4 +25,6 @@ public class App {
     public static void createAndShowGUI() throws Exception {
         new Viewb();
     }
+	
+	
 }

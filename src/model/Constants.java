@@ -1,12 +1,15 @@
 package model;
 
+
+
 /**
  * @author arnaud_leveau
  * 
  */
 public class Constants {
  
-    public static final Object[] TABLE_HEADER = { "Nom", "Prénom","Totem", "Section", "Fonction", "Age", "Adresse" , "Cotisation"};
+    public static final Object[] TABLE_HEADER = { "Nom", "Prénom","Totem", "Section", "Fonction", "Age", "Adresse" ,"Mail" ,"Camp", "Cotisation"};
+    
  
     public static final Object[][] DATA = {
             { "Leveau", "ARNAUD", "JAGUARUNDI", "Pionniers", "Animateur", "19/03/1998", "RUE DE L'EGALITE 11 7080 EUGIES", true },
@@ -63,5 +66,7 @@ public class Constants {
             { "BEKAERT", "THEO", "CARACAL", "Pionniers", "Scout", "22/02/2002", "RUE FERLIBRAY 2 7387 ERQUENNES", true },
             { "DUFRASNE", "TOM", "GOUNDI", "Pionniers", "Scout", "14/02/2002", "RUE CAUDERLOO 126 7370 DOUR", true },
             { "Urbain", "ELINE", "DORCAS", "Pionniers", "Scout", "01/08/2002", "RUE DE BOUSIES (G.) 7 7011 GHLIN", true }};
+    
+ 
      
 }

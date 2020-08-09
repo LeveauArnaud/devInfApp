@@ -5,8 +5,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
  
 import javax.swing.JOptionPane;
+import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableModel;
 
 import model.Constants;
 
@@ -20,6 +22,7 @@ public class Controller implements ActionListener {
      
     private JTextField searchTermTextField = new JTextField(26);
     private DefaultTableModel model;
+	private JTable table;
  
     public Controller(JTextField searchTermTextField, DefaultTableModel model) {
         super();
@@ -62,5 +65,7 @@ public class Controller implements ActionListener {
             chercher(" ");
         }
     }
+    
+    
  
 }

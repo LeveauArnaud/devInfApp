@@ -9,21 +9,14 @@ import java.awt.Color;
 import javax.swing.JTextField;
 import javax.swing.JTable;
 import javax.swing.JScrollPane;
-import java.awt.Component;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.border.TitledBorder;
 import javax.swing.table.JTableHeader;
 
 import java.awt.Dimension;
-import javax.swing.JPanel;
-import javax.swing.JSplitPane;
-import javax.swing.UIManager;
 import javax.swing.JButton;
 import java.awt.SystemColor;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-
 import controller.Controller;
 import model.Model;
 
@@ -31,8 +24,8 @@ public class Viewb extends JFrame {
 	
 	
 	
-	private JTextField textField_1;
-	private JTextField textField_2;
+	private JTextField textField_id;
+	private JTextField textField_nom;
 	private JTextField textField_3;
 	private JTextField textField_4;
 	private JTextField textField_5;
@@ -124,18 +117,18 @@ public class Viewb extends JFrame {
 		getContentPane().add(lblCamp);
 		lblCamp.setFont(new Font("HousePaint", Font.PLAIN, 15));
 		
-		textField_1 = new JTextField();
-		textField_1.setBackground(SystemColor.window);
-		textField_1.setBounds(1306, 75, 148, 25);
-		getContentPane().add(textField_1);
-		textField_1.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
-		textField_1.setColumns(10);
+		textField_id = new JTextField();
+		textField_id.setBackground(SystemColor.window);
+		textField_id.setBounds(1306, 75, 148, 25);
+		getContentPane().add(textField_id);
+		textField_id.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
+		textField_id.setColumns(10);
 		
-		textField_2 = new JTextField();
-		textField_2.setBounds(1224, 132, 148, 25);
-		getContentPane().add(textField_2);
-		textField_2.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
-		textField_2.setColumns(10);
+		textField_nom = new JTextField();
+		textField_nom.setBounds(1224, 132, 148, 25);
+		getContentPane().add(textField_nom);
+		textField_nom.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
+		textField_nom.setColumns(10);
 		
 		textField_3 = new JTextField();
 		textField_3.setBounds(1409, 132, 148, 25);
@@ -194,6 +187,7 @@ public class Viewb extends JFrame {
 		
 		textFieldChercherUnScout = new JTextField(26);
 		textFieldChercherUnScout.setBounds(290, 35, 322, 26);
+		textFieldChercherUnScout.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
 		getContentPane().add(textFieldChercherUnScout);
 		
 		JButton btnChercherUnScout = new JButton("Chercher un scout");
