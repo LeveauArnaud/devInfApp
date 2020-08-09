@@ -22,7 +22,6 @@ public class Controller implements ActionListener {
      
     private JTextField searchTermTextField = new JTextField(26);
     private DefaultTableModel model;
-	private JTable table;
  
     public Controller(JTextField searchTermTextField, DefaultTableModel model) {
         super();

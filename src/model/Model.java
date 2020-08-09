@@ -75,7 +75,6 @@ public class Model extends DefaultTableModel {
 		
 		for(int i = 0; i< list.size(); i++) {
 			
-			System.out.println(list.get(i).getNom());
 			
 			row[0] = list.get(i).getNom();
 			row[1] = list.get(i).getPrenom();

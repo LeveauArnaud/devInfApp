@@ -22,10 +22,10 @@ public class DB {
                     "root"
             );
 			System.out.println("Connexion effective !");
-			/**JOptionPane.showMessageDialog(null,
+			JOptionPane.showMessageDialog(null,
                     "Connexion effective !",
                     null, JOptionPane.ERROR_MESSAGE
-                    );**/
+                    );
 			return con;
 			
 		} catch (Exception e) {

@@ -18,7 +18,12 @@ import java.awt.Dimension;
 import javax.swing.JButton;
 import java.awt.SystemColor;
 import controller.Controller;
+import controller.MouseClicked;
 import model.Model;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class View extends JFrame {
 	
@@ -204,6 +209,7 @@ public class View extends JFrame {
 		getContentPane().add(scrollPane);
 		
 		
+		
 		table = new JTable();
 		table.setForeground(new Color(0, 0, 0));
 		table.setSelectionBackground(new Color(255, 204, 51));
@@ -214,6 +220,10 @@ public class View extends JFrame {
 		
 		//bouton ajouter
 		JButton addButton = new JButton();//init du JButton
+		addButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		addButton.setBounds(1217, 561, 50, 50);//taille 50X50
 		addButton.setIcon(scaleImage(addButton,"/img/add.png"));
 		addButton.setFocusPainted(false);
@@ -244,11 +254,11 @@ public class View extends JFrame {
         
         // Create controller
         Controller controller = new Controller(textFieldChercherUnScout, model);
-		
-       
+        MouseClicked mouseClicked =  new MouseClicked(model);
+        
         
         btnChercherUnScout.addActionListener(controller);
-        
+        table.addMouseListener(mouseClicked);
         
         
         
