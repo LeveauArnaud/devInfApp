@@ -30,16 +30,16 @@ public class View extends JFrame {
 	
 	
 	private JTextField textField_id;
+	private JTextField textField_section;
+	private JTextField textField_fonction;
+	private JTextField textField_totem;
 	private JTextField textField_nom;
-	private JTextField textField_3;
-	private JTextField textField_4;
-	private JTextField textField_5;
-	private JTextField textField_6;
-	private JTextField textField_7;
-	private JTextField txtRueDeLglise;
-	private JTextField textField_9;
-	private JTextField textField_10;
-	private JTextField textField_11;
+	private JTextField textField_prenom;
+	private JTextField textField_dateNaissance;
+	private JTextField textField_adresse;
+	private JTextField textField_mail;
+	private JTextField textField_camp;
+	private JTextField textField_cotisation;
 	private JTextField textFieldChercherUnScout;
 	private JTable table;
 	
@@ -129,66 +129,65 @@ public class View extends JFrame {
 		textField_id.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
 		textField_id.setColumns(10);
 		
+		textField_section = new JTextField();
+		textField_section.setBounds(1224, 132, 148, 25);
+		getContentPane().add(textField_section);
+		textField_section.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
+		textField_section.setColumns(10);
+		
+		textField_fonction = new JTextField();
+		textField_fonction.setBounds(1409, 132, 148, 25);
+		getContentPane().add(textField_fonction);
+		textField_fonction.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
+		textField_fonction.setColumns(10);
+		
+		textField_totem = new JTextField();
+		textField_totem.setBounds(1224, 182, 337, 25);
+		getContentPane().add(textField_totem);
+		textField_totem.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
+		textField_totem.setColumns(10);
+		
 		textField_nom = new JTextField();
-		textField_nom.setBounds(1224, 132, 148, 25);
+		textField_nom.setBounds(1224, 232, 335, 25);
 		getContentPane().add(textField_nom);
 		textField_nom.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
 		textField_nom.setColumns(10);
 		
-		textField_3 = new JTextField();
-		textField_3.setBounds(1409, 132, 148, 25);
-		getContentPane().add(textField_3);
-		textField_3.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
-		textField_3.setColumns(10);
+		textField_prenom = new JTextField();
+		textField_prenom.setBounds(1224, 282, 335, 25);
+		getContentPane().add(textField_prenom);
+		textField_prenom.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
+		textField_prenom.setColumns(10);
 		
-		textField_4 = new JTextField();
-		textField_4.setBounds(1224, 182, 337, 25);
-		getContentPane().add(textField_4);
-		textField_4.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
-		textField_4.setColumns(10);
+		textField_dateNaissance = new JTextField();
+		textField_dateNaissance.setBounds(1224, 332, 335, 25);
+		getContentPane().add(textField_dateNaissance);
+		textField_dateNaissance.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
+		textField_dateNaissance.setColumns(10);
 		
-		textField_5 = new JTextField();
-		textField_5.setBounds(1224, 232, 335, 25);
-		getContentPane().add(textField_5);
-		textField_5.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
-		textField_5.setColumns(10);
+		textField_adresse = new JTextField();
+		textField_adresse.setBounds(1224, 382, 333, 25);
+		getContentPane().add(textField_adresse);
+		textField_adresse.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
+		textField_adresse.setColumns(10);
 		
-		textField_6 = new JTextField();
-		textField_6.setBounds(1224, 282, 335, 25);
-		getContentPane().add(textField_6);
-		textField_6.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
-		textField_6.setColumns(10);
+		textField_mail = new JTextField();
+		textField_mail.setBounds(1224, 432, 333, 25);
+		getContentPane().add(textField_mail);
+		textField_mail.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
+		textField_mail.setColumns(10);
 		
-		textField_7 = new JTextField();
-		textField_7.setBounds(1224, 332, 335, 25);
-		getContentPane().add(textField_7);
-		textField_7.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
-		textField_7.setColumns(10);
+		textField_mail = new JTextField();
+		textField_mail.setBounds(1224, 482, 148, 25);
+		getContentPane().add(textField_mail);
+		textField_mail.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
+		textField_mail.setColumns(10);
 		
-		txtRueDeLglise = new JTextField();
-		txtRueDeLglise.setText("rue de l'église 22 7382 Audgrenies");
-		txtRueDeLglise.setBounds(1224, 382, 333, 25);
-		getContentPane().add(txtRueDeLglise);
-		txtRueDeLglise.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
-		txtRueDeLglise.setColumns(10);
-		
-		textField_9 = new JTextField();
-		textField_9.setBounds(1224, 432, 333, 25);
-		getContentPane().add(textField_9);
-		textField_9.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
-		textField_9.setColumns(10);
-		
-		textField_10 = new JTextField();
-		textField_10.setBounds(1224, 482, 148, 25);
-		getContentPane().add(textField_10);
-		textField_10.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
-		textField_10.setColumns(10);
-		
-		textField_11 = new JTextField();
-		textField_11.setBounds(1409, 482, 148, 25);
-		getContentPane().add(textField_11);
-		textField_11.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
-		textField_11.setColumns(10);
+		textField_cotisation = new JTextField();
+		textField_cotisation.setBounds(1409, 482, 148, 25);
+		getContentPane().add(textField_cotisation);
+		textField_cotisation.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
+		textField_cotisation.setColumns(10);
 		
 		textFieldChercherUnScout = new JTextField(26);
 		textFieldChercherUnScout.setBounds(290, 35, 322, 26);
@@ -254,7 +253,7 @@ public class View extends JFrame {
         
         // Create controller
         Controller controller = new Controller(textFieldChercherUnScout, model);
-        MouseClicked mouseClicked =  new MouseClicked(model);
+        MouseClicked mouseClicked =  new MouseClicked(table, model);
         
         
         btnChercherUnScout.addActionListener(controller);

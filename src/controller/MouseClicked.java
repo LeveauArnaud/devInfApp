@@ -6,16 +6,20 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 import javax.swing.JOptionPane;
+import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableModel;
 
 public  class MouseClicked implements MouseListener {
 	
 	private DefaultTableModel model;
+	private JTable table;
 	
-	public MouseClicked(DefaultTableModel model) {
+	public MouseClicked(JTable table ,DefaultTableModel model) {
 		
 		super();
         this.model = model;
+        this.table = table;
 	}
 
 
@@ -24,6 +28,9 @@ public  class MouseClicked implements MouseListener {
 		JOptionPane.showMessageDialog(null,
                 "clicked",
                 null, JOptionPane.ERROR_MESSAGE);
+		
+		int i = table.getSelectedRow();
+		TableModel model = table.getModel();
 		
 	}
 
