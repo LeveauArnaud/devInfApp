@@ -24,7 +24,7 @@ public class Model extends DefaultTableModel {
 
 	public static ArrayList<Scout> getScoutsList(){
 		ArrayList<Scout> scoutsList = new ArrayList<Scout>();
-		Connection connection = DB.getConnection();
+		Connection connection = DB_Con.getConnection();
 		
 		String query = "SELECT * FROM `scouts` ";
 		Statement st;
@@ -103,28 +103,7 @@ public class Model extends DefaultTableModel {
         super(show_Scouts(), Constants.TABLE_HEADER);
     }
     
-    
-    public void executeSQLQuery(String query, String message) {
-    	Connection connection = DB.getConnection();
-    	
-    	Statement st;
-		
-		try {
-			
-			st = connection.createStatement();
-			if(st.executeUpdate(query) == 1) {
-				JOptionPane.showMessageDialog(null, "Data "+message+" succesfully");
-			}else {
-				JOptionPane.showMessageDialog(null, "Data not "+message);
-			}
-			
-		} catch (Exception e) {
-			
-			e.printStackTrace();
-			
-		}
-    	
-    }
+
     
  
 }

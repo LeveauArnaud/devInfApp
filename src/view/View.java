@@ -17,6 +17,8 @@ import javax.swing.table.JTableHeader;
 import java.awt.Dimension;
 import javax.swing.JButton;
 import java.awt.SystemColor;
+
+import controller.ButtonClicked;
 import controller.Controller;
 import controller.MouseClicked;
 import model.Model;
@@ -267,10 +269,23 @@ public class View extends JFrame {
         												textField_camp,
         												textField_cotisation
         												);
+        ButtonClicked buttonClicked = new ButtonClicked(textField_id,
+														textField_section,
+														textField_fonction, 
+														textField_totem,
+														textField_nom,
+														textField_prenom,
+														textField_dateNaissance,
+														textField_adresse,
+														textField_mail,
+														textField_camp,
+														textField_cotisation);
         
         
         btnChercherUnScout.addActionListener(controller);
         table.addMouseListener(mouseClicked);
+        updateButton.addActionListener(buttonClicked);
+        
         
         
         

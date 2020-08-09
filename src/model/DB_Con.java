@@ -5,7 +5,7 @@ import java.sql.*;
 import javax.swing.JOptionPane;
 
 
-public class DB {
+public class DB_Con {
 	
 	public static Connection getConnection() {
 		
@@ -40,5 +40,27 @@ public class DB {
 		
 		
 	}
+	
+	public void executeSQLQuery(String query, String message) {
+    	Connection connection = DB_Con.getConnection();
+    	
+    	Statement st;
+		
+		try {
+			
+			st = connection.createStatement();
+			if(st.executeUpdate(query) == 1) {
+				JOptionPane.showMessageDialog(null, "Data "+message+" succesfully");
+			}else {
+				JOptionPane.showMessageDialog(null, "Data not "+message);
+			}
+			
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+			
+		}
+    	
+    }
 
 }
