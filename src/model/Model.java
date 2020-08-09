@@ -63,29 +63,30 @@ public class Model extends DefaultTableModel {
 		return scoutsList;
 	}
 	
-	public static Object[][] DATA;
 	
 	public static  Object[][] show_Scouts() {
 		
-		ArrayList<Scout> list = getScoutsList();
+		ArrayList<Scout> scoutList = getScoutsList();
 		
-		Object[][] DATA = new Object [list.size()][] ;
+		Object[][] DATA = new Object [scoutList.size()][] ;
 		
-		Object[] row = new Object [11];
 		
-		for(int i = 0; i< list.size(); i++) {
+		for(int i = 0; i< scoutList.size(); i++) {
 			
-			row[0] = list.get(i).getId();
-			row[1] = list.get(i).getNom();
-			row[2] = list.get(i).getPrenom();
-			row[3] = list.get(i).getTotem();
-			row[4] = list.get(i).getSection();
-			row[5] = list.get(i).getFonction();
-			row[6] = list.get(i).getDateNaissance();
-			row[7] = list.get(i).getAdresse();
-			row[8] = list.get(i).getMail();
-			row[9] = list.get(i).getCamp();
-			row[10] = list.get(i).getCotisation();
+			Object[] row = new Object [11];
+			
+			row[0] = scoutList.get(i).getId();
+			row[1] = scoutList.get(i).getNom();
+			row[2] = scoutList.get(i).getPrenom();
+			row[3] = scoutList.get(i).getTotem();
+			row[4] = scoutList.get(i).getSection();
+			row[5] = scoutList.get(i).getFonction();
+			row[6] = scoutList.get(i).getDateNaissance();
+			row[7] = scoutList.get(i).getAdresse();
+			row[8] = scoutList.get(i).getMail();
+			row[9] = scoutList.get(i).getCamp();
+			row[10] = scoutList.get(i).getCotisation();
+			
 			
 			DATA[i] = row;
 			
