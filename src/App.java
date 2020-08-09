@@ -1,7 +1,9 @@
 
 import javax.swing.SwingUtilities;
 
-import view.Viewb;
+import view.View;
+
+
  
 /**
  * @author arnaudLeveau
@@ -23,7 +25,7 @@ public class App {
     }
  
     public static void createAndShowGUI() throws Exception {
-        new Viewb();
+        new View();
     }
 	
 	
