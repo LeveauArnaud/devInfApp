@@ -253,7 +253,20 @@ public class View extends JFrame {
         
         // Create controller
         Controller controller = new Controller(textFieldChercherUnScout, model);
-        MouseClicked mouseClicked =  new MouseClicked(table, textField_section);
+        MouseClicked mouseClicked =  new MouseClicked(
+        												table,
+        												textField_id,
+        												textField_section,
+        												textField_fonction, 
+        												textField_totem,
+        												textField_nom,
+        												textField_prenom,
+        												textField_dateNaissance,
+        												textField_adresse,
+        												textField_mail,
+        												textField_camp,
+        												textField_cotisation
+        												);
         
         
         btnChercherUnScout.addActionListener(controller);
