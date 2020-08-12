@@ -28,7 +28,7 @@ public class ButtonDeleteClicked implements ActionListener{
                 null, JOptionPane.ERROR_MESSAGE);
 		
 		String query = "DELETE FROM `scouts` WHERE `id`='"+textField_id.getText()+"'";
-		DB_Con.executeSQLQuery(query, "Deleted");
+		DB_Con.executeSQLQuery(query, "Supprimées");
 	}
 
 }

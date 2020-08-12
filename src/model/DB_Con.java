@@ -26,18 +26,14 @@ public class DB_Con {
 					Constants.password
             );
 			System.out.println("Connexion effective !");
-			/**JOptionPane.showMessageDialog(null,
-                    "Connexion effective !",
-                    null, JOptionPane.ERROR_MESSAGE
-                    );**/
 			return con;
 			
 		} catch (Exception e) {
 			
 			e.printStackTrace();
 			JOptionPane.showMessageDialog(null,
-                    "Erreur de connexion ! ==> "+ e,
-                    null, JOptionPane.ERROR_MESSAGE);
+                    "Erreur de connexion ! ==> "+e,
+                    "Infos connexion", JOptionPane.ERROR_MESSAGE);
 			return null;
 			
 		}
@@ -59,9 +55,9 @@ public class DB_Con {
 				model.setRowCount(0);
 				MainView.table.setModel(new Model());
 				
-				JOptionPane.showMessageDialog(null, "Data "+message+" succesfully");
+				JOptionPane.showMessageDialog(null, "Les données ont bien été "+message);
 			}else {
-				JOptionPane.showMessageDialog(null, "Data not "+message);
+				JOptionPane.showMessageDialog(null, "Les données n'ont bien été "+message);
 			}
 			
 		} catch (Exception e) {

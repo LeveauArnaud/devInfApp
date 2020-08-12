@@ -60,7 +60,7 @@ public  class ButtonAddClicked implements ActionListener{
 		
 		String query = "INSERT INTO `scouts`(`totem`, `nom`, `prenom`, `dateNaissance`, `adresse`, `mail`, `section`, `fonction`, `camp`, `cotisation`) "
 							+ "VALUES ('"+textField_totem.getText()+"','"+textField_nom.getText()+"','"+textField_prenom.getText()+"','"+textField_dateNaissance.getText()+"','"+textField_adresse.getText()+"','"+textField_mail.getText()+"','"+textField_section.getText()+"','"+textField_fonction.getText()+"','"+textField_camp.getText()+"','"+textField_cotisation.getText()+"')";
-		DB_Con.executeSQLQuery(query, "Inserted");
+		DB_Con.executeSQLQuery(query, "Ajoutées");
 	}
 
 }

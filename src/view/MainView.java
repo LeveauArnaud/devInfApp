@@ -26,12 +26,10 @@ import controller.ButtonAddClicked;
 import controller.ButtonDeleteClicked;
 import controller.ButtonSearchClicked;
 import controller.ButtonUpdateClicked;
+import controller.MenuItemParamClicked;
 import controller.MouseClicked;
 import model.Constants;
 import model.Model;
-import java.awt.event.ActionListener;
-import java.io.IOException;
-import java.awt.event.ActionEvent;
 
 public class MainView extends JFrame {
 	
@@ -85,15 +83,6 @@ public class MainView extends JFrame {
         param = new JMenu("Paramètres");
         param.setFont(new Font("Cocon-Regular", Font.PLAIN, 15));
         updateParam = new JMenuItem("Modifier paramètres");
-        updateParam.addActionListener(new ActionListener() {
-        	public void actionPerformed(ActionEvent e) {
-        		try {
-					HelloView pv = new HelloView();
-				} catch (IOException e1) {
-					e1.printStackTrace();
-				}
-        	}
-        });
         updateParam.setFont(new Font("Cocon-Regular", Font.PLAIN, 15));
         menuBar.add(param);
         param.add(updateParam);
@@ -331,13 +320,14 @@ public class MainView extends JFrame {
         
         
         
+        MenuItemParamClicked menuItemParamClicked = new MenuItemParamClicked();
         
         searchButton.addActionListener(buttonSearchClicked);
         table.addMouseListener(mouseClicked);
         addButton.addActionListener(buttonAddClicked);
         updateButton.addActionListener(buttonUpdateClicked);
         deleteButton.addActionListener(buttonDeleteClicked);
-        
+        updateParam.addActionListener(menuItemParamClicked);
         
         
         

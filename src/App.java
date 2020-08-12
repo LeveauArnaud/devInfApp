@@ -1,7 +1,7 @@
 
 import javax.swing.SwingUtilities;
 
-import view.HelloView;
+import view.ParamView;
 import view.MainView;
 
 

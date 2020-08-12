@@ -8,7 +8,8 @@ package model;
  */
 public class Constants {
 	
-	public static String server = "jdbc:mysql://localhost:3306/scoutApp?serverTimezone=UTC";
+	public static String serverN = "//localhost:3306/scoutApp";
+	public static String server = "jdbc:mysql:"+serverN+"?serverTimezone=UTC";
 	public static String user = "root";
 	public static String password = "root";
 	

@@ -59,7 +59,7 @@ public class ButtonUpdateClicked implements ActionListener{
 		
 	
 		String query = "UPDATE `scouts` SET `totem`='"+textField_totem.getText()+"',`nom`='"+textField_nom.getText()+"',`prenom`='"+textField_prenom.getText()+"',`dateNaissance`='"+textField_dateNaissance.getText()+"',`adresse`='"+textField_adresse.getText()+"',`mail`='"+textField_mail.getText()+"',`section`='"+textField_section.getText()+"',`fonction`='"+textField_fonction.getText()+"',`camp`='"+textField_camp.getText()+"',`cotisation`='"+textField_cotisation.getText()+"' WHERE `id`='"+textField_id.getText()+"'";
-		DB_Con.executeSQLQuery(query, "Updated");
+		DB_Con.executeSQLQuery(query, "Mises à jour");
 	}
 	
 }
