@@ -24,7 +24,7 @@ public class Model extends DefaultTableModel {
 
 	public static ArrayList<Scout> getScoutsList(){
 		ArrayList<Scout> scoutsList = new ArrayList<Scout>();
-		Connection connection = DB.getConnection();
+		Connection connection = DB_Con.getConnection();
 		
 		String query = "SELECT * FROM `scouts` ";
 		Statement st;
@@ -63,30 +63,30 @@ public class Model extends DefaultTableModel {
 		return scoutsList;
 	}
 	
-	public static Object[][] DATA;
 	
 	public static  Object[][] show_Scouts() {
 		
-		ArrayList<Scout> list = getScoutsList();
+		ArrayList<Scout> scoutList = getScoutsList();
 		
-		Object[][] DATA = new Object [list.size()][] ;
+		Object[][] DATA = new Object [scoutList.size()][] ;
 		
-		Object[] row = new Object [11];
 		
-		for(int i = 0; i< list.size(); i++) {
+		for(int i = 0; i< scoutList.size(); i++) {
 			
-			System.out.println(list.get(i).getNom());
+			Object[] row = new Object [11];
 			
-			row[0] = list.get(i).getNom();
-			row[1] = list.get(i).getPrenom();
-			row[2] = list.get(i).getTotem();
-			row[3] = list.get(i).getSection();
-			row[4] = list.get(i).getFonction();
-			row[5] = list.get(i).getDateNaissance();
-			row[6] = list.get(i).getAdresse();
-			row[7] = list.get(i).getMail();
-			row[8] = list.get(i).getCamp();
-			row[9] = list.get(i).getCotisation();
+			row[0] = scoutList.get(i).getId();
+			row[1] = scoutList.get(i).getNom();
+			row[2] = scoutList.get(i).getPrenom();
+			row[3] = scoutList.get(i).getTotem();
+			row[4] = scoutList.get(i).getSection();
+			row[5] = scoutList.get(i).getFonction();
+			row[6] = scoutList.get(i).getDateNaissance();
+			row[7] = scoutList.get(i).getAdresse();
+			row[8] = scoutList.get(i).getMail();
+			row[9] = scoutList.get(i).getCamp();
+			row[10] = scoutList.get(i).getCotisation();
+			
 			
 			DATA[i] = row;
 			
@@ -104,28 +104,7 @@ public class Model extends DefaultTableModel {
         super(show_Scouts(), Constants.TABLE_HEADER);
     }
     
-    
-    public void executeSQLQuery(String query, String message) {
-    	Connection connection = DB.getConnection();
-    	
-    	Statement st;
-		
-		try {
-			
-			st = connection.createStatement();
-			if(st.executeUpdate(query) == 1) {
-				JOptionPane.showMessageDialog(null, "Data "+message+" succesfully");
-			}else {
-				JOptionPane.showMessageDialog(null, "Data not "+message);
-			}
-			
-		} catch (Exception e) {
-			
-			e.printStackTrace();
-			
-		}
-    	
-    }
+
     
  
 }
