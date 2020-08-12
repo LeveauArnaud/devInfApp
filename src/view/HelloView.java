@@ -30,8 +30,9 @@ public class HelloView extends JFrame{
 		
 		//frame param
 		setTitle(Constants.appTitle);
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		setPreferredSize(new Dimension(1600, 800));
+		setVisible(true);
 		getContentPane().setBackground(new Color(255, 204, 51));
 		getContentPane().setLayout(null);
 		
@@ -76,11 +77,6 @@ public class HelloView extends JFrame{
 		textField_password.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
 		textField_password.setColumns(10);
 		textField_password.setText(Constants.password);
-		
-		JButton searchButton = new JButton("Chercher un scout");
-		searchButton.setBounds(693, 35, 148, 29);
-		searchButton.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
-		getContentPane().add(searchButton);
 		
 		//bouton Connexion
 		JButton conButton = new JButton("Connexion");

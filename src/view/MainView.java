@@ -5,6 +5,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 
 import java.awt.Font;
 import java.awt.Image;
@@ -28,6 +29,9 @@ import controller.ButtonUpdateClicked;
 import controller.MouseClicked;
 import model.Constants;
 import model.Model;
+import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.awt.event.ActionEvent;
 
 public class MainView extends JFrame {
 	
@@ -45,8 +49,9 @@ public class MainView extends JFrame {
 	private JTextField textField_camp;
 	private JTextField textField_cotisation;
 	private JTextField textFieldChercherUnScout;
-	private JMenuBar menuBar = new JMenuBar();
-	private JMenu param = new JMenu("Paramètres");
+	private JMenuBar menuBar;
+	private JMenu param;
+	private JMenuItem updateParam;
 	public static JTable table;
 	
 	
@@ -73,11 +78,25 @@ public class MainView extends JFrame {
         setLocationRelativeTo(null);
         setVisible(true);
         
-        JMenuBar menuBar = new JMenuBar();
+        menuBar = new JMenuBar();
         menuBar.setBounds(0, 0, 1600, 22);
         menuBar.setBackground(new Color(255, 230, 153));
         menuBar.setFont(new Font("HousePaint", Font.PLAIN, 15));
+        param = new JMenu("Paramètres");
+        param.setFont(new Font("Cocon-Regular", Font.PLAIN, 15));
+        updateParam = new JMenuItem("Modifier paramètres");
+        updateParam.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        		try {
+					HelloView pv = new HelloView();
+				} catch (IOException e1) {
+					e1.printStackTrace();
+				}
+        	}
+        });
+        updateParam.setFont(new Font("Cocon-Regular", Font.PLAIN, 15));
         menuBar.add(param);
+        param.add(updateParam);
         getContentPane().add(menuBar);
 		
 		JLabel lblId = new JLabel("Id :");
@@ -309,6 +328,7 @@ public class MainView extends JFrame {
         
         ButtonDeleteClicked buttonDeleteClicked = new ButtonDeleteClicked(
         												textField_id);
+        
         
         
         

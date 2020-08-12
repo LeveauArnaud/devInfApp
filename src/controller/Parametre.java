@@ -8,13 +8,13 @@ import javax.swing.SwingUtilities;
 
 import view.MainView;
 
-public class Connexion implements ActionListener{
+public class Parametre implements ActionListener{
 	
 	private JTextField textField_server;
 	private JTextField textField_user;
 	private JTextField textField_password;
 	
-	public Connexion(
+	public Parametre(
 		JTextField textField_server, 
 		JTextField textField_user,
 		JTextField textField_password)				 
