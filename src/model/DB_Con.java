@@ -5,7 +5,7 @@ import java.sql.*;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
-import view.View;
+import view.MainView;
 
 
 public class DB_Con {
@@ -14,15 +14,16 @@ public class DB_Con {
 		
 		
 		 Connection con ;
+		 
 		
 		try {
 			
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
 			con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/scoutApp?serverTimezone=UTC",
-                    "root",
-                    "root"
+					Constants.server,
+					Constants.user,
+					Constants.password
             );
 			System.out.println("Connexion effective !");
 			/**JOptionPane.showMessageDialog(null,
@@ -54,9 +55,9 @@ public class DB_Con {
 			st = connection.createStatement();
 			if(st.executeUpdate(query) == 1) {
 				
-				DefaultTableModel model = (DefaultTableModel) View.table.getModel();
+				DefaultTableModel model = (DefaultTableModel) MainView.table.getModel();
 				model.setRowCount(0);
-				View.table.setModel(new Model());
+				MainView.table.setModel(new Model());
 				
 				JOptionPane.showMessageDialog(null, "Data "+message+" succesfully");
 			}else {

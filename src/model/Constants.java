@@ -7,6 +7,12 @@ package model;
  * 
  */
 public class Constants {
+	
+	public static String server = "jdbc:mysql://localhost:3306/scoutApp?serverTimezone=UTC";
+	public static String user = "root";
+	public static String password = "root";
+	
+	public static String appTitle = "23HD app manager";
  
     public static final Object[] TABLE_HEADER = { "Id", "Nom", "Prénom","Totem", "Section", "Fonction", "Age", "Adresse" ,"Mail" ,"Camp", "Cotisation"};
     

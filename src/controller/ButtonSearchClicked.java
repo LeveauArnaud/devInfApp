@@ -11,6 +11,7 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 
 import model.Constants;
+import model.Model;
 
  
 /**
@@ -18,12 +19,12 @@ import model.Constants;
  *
  */
 
-public class Controller implements ActionListener {
+public class ButtonSearchClicked implements ActionListener {
      
     private JTextField searchTermTextField = new JTextField(26);
     private DefaultTableModel model;
  
-    public Controller(JTextField searchTermTextField, DefaultTableModel model) {
+    public ButtonSearchClicked(JTextField searchTermTextField, DefaultTableModel model) {
         super();
         this.searchTermTextField = searchTermTextField;
         this.model = model;
@@ -35,13 +36,14 @@ public class Controller implements ActionListener {
      *
      */
     public void chercher(String searchTerm) {
-    	Object[][] newData = new Object[Constants.DATA.length][];
+    	Object[][] newData = new Object[Model.show_Scouts().length][];
         int idx = 0;
-        for (Object[] o: Constants.DATA) {
+        Object[][] scoutsList = Model.show_Scouts();
+        for (Object[] o: scoutsList) {
             if ("*".equals(searchTerm.trim())) {
                 newData[idx++] = o;
             } else {
-                if(String.valueOf(o[0]).startsWith(searchTerm.toUpperCase().trim())){
+                if(String.valueOf(o[1]).startsWith(searchTerm.toUpperCase().trim())){
                     newData[idx++] = o;
                 }   
             }   

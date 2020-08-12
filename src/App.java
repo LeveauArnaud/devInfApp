@@ -1,7 +1,8 @@
 
 import javax.swing.SwingUtilities;
 
-import view.View;
+import view.HelloView;
+import view.MainView;
 
 
  
@@ -25,7 +26,7 @@ public class App {
     }
  
     public static void createAndShowGUI() throws Exception {
-        new View();
+        new MainView();
     }
 	
 	
