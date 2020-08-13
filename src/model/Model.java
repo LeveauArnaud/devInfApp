@@ -5,8 +5,6 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
-
-import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 
@@ -15,13 +13,23 @@ import javax.swing.table.DefaultTableModel;
 
 
 /**
+ * <b>Model contenant la liste des scouts récupérée de la DB</b>
+ * 
  * @author arnaud_leveau
+ * @version 1.0
  *
  */
 @SuppressWarnings("serial")
+
 public class Model extends DefaultTableModel {
 	
 
+	/**
+	 * Effectue le query et pour chaque scout trouvé dans la DB, l'ajoute dans l'arrayList
+	 * 
+	 * @return la l'arraylist avec les scouts
+	 * 
+	 */
 	public static ArrayList<Scout> getScoutsList(){
 		ArrayList<Scout> scoutsList = new ArrayList<Scout>();
 		Connection connection = DB_Con.getConnection();
@@ -64,6 +72,12 @@ public class Model extends DefaultTableModel {
 	}
 	
 	
+	/**
+	 * Utilise la liste des scouts, parcourt cette liste et pour chaque scout l'ajoute à l'objet DATA
+	 * 
+	 * @return DATA, objet contenant les scouts, utilisé dans le tableau
+	 * 
+	 */
 	public static  Object[][] show_Scouts() {
 		
 		ArrayList<Scout> scoutList = getScoutsList();
@@ -98,6 +112,10 @@ public class Model extends DefaultTableModel {
 		
 	}
 	
+	/**
+	 * Renvoie le tableau données + nom des colonnes
+	 * 
+	 */
 	
     public Model() {
     	

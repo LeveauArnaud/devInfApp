@@ -6,33 +6,56 @@ import java.awt.Font;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
-
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
-
 import model.Constants;
 import javax.swing.JTextField;
-
 import controller.ButtonParametreClicked;
-import controller.MenuItemParamClicked;
-
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 
+
+/**
+ * <b>ParamView est la classe représentant la vue des paramètres de l'application.</b>
+ * <p>
+ * On peut ici modifier les idantifiants de la DB
+ * </p>
+ * 
+ * @author arnaud_leveau
+ * @version 1.0
+ */
 public class ParamView extends JFrame{
 	/**
-	 * 
+	 * Permet de connaitre la version de classe pour la serialisation
+	 */
+	private static final long serialVersionUID = 8216349149345277979L;
+	/**
+	 * Le champ pour l'adresse du server de la DB
 	 */
 	private JTextField textField_serverN;
+	/**
+	 * Le champ pour le user de la DB
+	 */
 	private JTextField textField_user;
+	/**
+	 * Le champ pour le password de la DB
+	 */
 	private JTextField textField_password;
 	
 	
-public ImageIcon scaleImage(JLabel label, String link) {
+	
+	/**
+	 * <b>Permet d'ajuster l'image à la taille du JLabel</b>
+     * @param label
+     * 				Le label qui va contenir l'image
+     * @param link
+     * 				Le lien de l'image
+     * 
+     * @return retourne l'image à la bonne échelle
+     */
+	public ImageIcon scaleImage(JLabel label, String link) {
 		
 		ImageIcon Myimage = new ImageIcon(MainView.class.getResource(link));//ajout image à myImage via le link
 		Image img = Myimage.getImage() ;  // convertion ImageIcon en Image
@@ -42,10 +65,20 @@ public ImageIcon scaleImage(JLabel label, String link) {
 		return image;
 	}
 	
+	
+	/**
+	 * <b>Vue des paramètres de l'application</b>
+     * 
+     * @return Une fenètre composée d'un formulaire pour les modifier les infos de la DB
+     * 
+     * @see ButtonParametreClicked
+     * 
+     */
+	
 	public ParamView() throws IOException  {
 		
 		
-		//frame param
+		
 		setTitle(Constants.appTitle);
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		setPreferredSize(new Dimension(800, 500));
@@ -94,6 +127,7 @@ public ImageIcon scaleImage(JLabel label, String link) {
 		textField_user.setColumns(10);
 		textField_user.setText(Constants.user);
 		
+	
 		textField_password = new JTextField();
 		textField_password.setBounds(25, 140, 555, 25);
 		panel.add(textField_password);

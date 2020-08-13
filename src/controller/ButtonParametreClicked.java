@@ -1,29 +1,53 @@
 package controller;
 
-import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.DriverManager;
-
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
-import javax.swing.SwingUtilities;
 import javax.swing.table.DefaultTableModel;
-
 import model.Constants;
 import model.DB_Con;
 import model.Model;
 import view.MainView;
-import view.ParamView;
 
+/**
+ * <b>Class permetant de modifier les infos de connexion de la DB</b>
+ * 
+ * @author arnaud_leveau
+ * @version 1.0
+ *
+ */
 public class ButtonParametreClicked implements ActionListener{
-	
+	/**
+	 * Adresse du server
+	 */
 	private JTextField textField_serverN;
+	/**
+	 * User
+	 */
 	private JTextField textField_user;
+	/**
+	 * Password
+	 */
 	private JTextField textField_password;
+	/**
+	 * La fentetre des paramètres
+	 */
 	private JFrame frame;
 	
+	/**
+	 * <b>Permet de récupérer les données de la DB dans les différents champs</b>
+	 * 
+	 * @param frame
+	 * 		La fentetre des paramètre
+	 * @param textField_serverN
+	 * 		L'adresse du server
+	 * @param textField_user
+	 * 		Le User de la DB
+	 * @param textField_password
+	 * 		Le Password du user
+	 */
 	public ButtonParametreClicked(
 			JFrame frame,
 		JTextField textField_serverN, 
@@ -38,7 +62,12 @@ public class ButtonParametreClicked implements ActionListener{
         this.textField_password = textField_password;
 	}
 
-	
+	/**
+	 * <b>Action effectuée lors du click sur le bouton "Connexion"</b>
+	 * <p>Ajoute le scout dans la DB</p>
+	 * 
+	 * @see DB_Con#executeSQLQuery(String, String)
+	 */
 	public void actionPerformed(ActionEvent e) {
 		
 		Constants.serverN = textField_serverN.getText();

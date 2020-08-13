@@ -15,7 +15,10 @@ import model.Model;
 
  
 /**
+ * <b>Rechercher un/plusieurs scouts en fonction de leur nom lors du click sur le bouton cherhcerScout</b>
+ * 
  * @author arnaud_leveau
+ * @version 1.0
  *
  */
 
@@ -32,8 +35,12 @@ public class ButtonSearchClicked implements ActionListener {
  
     
     /**
+     * Recherche les scouts dont le nom commence par le searchTerme
+     * 
      * @param searchTerm string
      *
+     * @see ButtonSearchClicked#actionPerformed
+     * @return un model avec la liste des scouts trouvé dans la liste
      */
     public void chercher(String searchTerm) {
     	Object[][] newData = new Object[Model.show_Scouts().length][];
@@ -51,7 +58,15 @@ public class ButtonSearchClicked implements ActionListener {
         model.setDataVector(newData, Constants.TABLE_HEADER);
     }
     
-    @Override
+    
+    /**
+    * <b>Appelé lors du click sur le boutton rechercherScout</b>
+    * <p>
+    * Si le chaamp searchTerm est vide affiche message d'erreur sinon effectue "chercher"
+    * </p>
+    *
+    * @see ButtonSearchClicked#chercher
+    */
     public void actionPerformed(ActionEvent e) {
  
         String searchTerm = searchTermTextField.getText();

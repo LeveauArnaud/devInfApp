@@ -31,42 +31,153 @@ import controller.MouseClicked;
 import model.Constants;
 import model.Model;
 
+/**
+ * <b>MainView est la classe représentant la vue principale de l'application.</b>
+ * <p>
+ * Cette vue est composée :
+ * <ul>
+ * <li>D'un tableau contenat la liste des scouts</li>
+ * <li>D'une barre de recherche </li>
+ * <li>D'un formulaire pour ajouter/editer un scout</li>
+ * </ul>
+ * </p>
+ * 
+ * 
+ * 
+ * @author arnaud_leveau
+ * @version 1.0
+ */
 public class MainView extends JFrame {
 	
 	
-	
+	/**
+	 * Permet de connaitre la version de classe pour la serialisation
+	 */
+	private static final long serialVersionUID = 3028964288792807010L;
+	/**
+     * Le champ du formulaire pour l'id
+     * 
+     */
 	private JTextField textField_id;
+	/**
+     * Le champ du formulaire pour la section
+     * 
+     */
 	private JTextField textField_section;
+	/**
+     * Le champ du formulaire pour la fonction
+     * 
+     */
 	private JTextField textField_fonction;
+	/**
+     * Le champ du formulaire pour le totem
+     * 
+     */
 	private JTextField textField_totem;
+	/**
+     * Le champ du formulaire pour le nom
+     * 
+     */
 	private JTextField textField_nom;
+	/**
+     * Le champ du formulaire pour le prenom
+     * 
+     */
 	private JTextField textField_prenom;
+	/**
+     * Le champ du formulaire pour la date de naissance
+     * 
+     */
 	private JTextField textField_dateNaissance;
+	/**
+     * Le champ du formulaire pour l'adresse
+     * 
+     */
 	private JTextField textField_adresse;
+	/**
+     * Le champ du formulaire pour le mail
+     * 
+     */
 	private JTextField textField_mail;
+	/**
+     * Le champ du formulaire pour le nombre de camp
+     * 
+     */
 	private JTextField textField_camp;
+	/**
+     * Le champ du formulaire pour la cotisation
+     * 
+     */
 	private JTextField textField_cotisation;
+	/**
+     * Le champ pour entre le nom a rechercher
+     * 
+     */
 	private JTextField textFieldChercherUnScout;
+	/**
+     * Le Menu 
+     * 
+     */
 	private JMenuBar menuBar;
+	/**
+     * L'onglet paramètre du menu
+     * 
+     */
 	private JMenu param;
+	/**
+     * Le sous onglet de l'onglet paramètre
+     * <p>
+     * il permet de faire le lien avec la vue des paramètres
+     * </p>
+     * 
+     */
 	private JMenuItem updateParam;
+	/**
+     * La table contenant les scouts
+     * 
+     */
 	public static JTable table;
 	
 	
-
+	
+	/**
+	 * Permet d'ajuster l'image à la taille du bouton
+     * @param button
+     * 				Le bouton qui va contenir l'image
+     * @param link
+     * 				Le lien de l'image
+     * 
+     * 
+     * @return retourne l'image à la bonne échelle
+     * 
+     */
 	public ImageIcon scaleImage(JButton button, String link) {
 		
 		ImageIcon Myimage = new ImageIcon(MainView.class.getResource(link));//ajout image à myImage via le link
 		Image img = Myimage.getImage() ;  // convertion ImageIcon en Image
 		Image newImg = img.getScaledInstance( button.getWidth(), button.getHeight(),  java.awt.Image.SCALE_SMOOTH ) ;  //Mise à l'échelle du JButton
-		ImageIcon image = new ImageIcon( newImg );//Ajout de l'image au JButton
+		ImageIcon image = new ImageIcon( newImg );
 		
 		return image;
 	}
 	
+	
+	/**
+	 * Vue principale de l'application
+     * 
+     * @return Une fenètre composée d'un tableau, barre de recherche, formulaire
+     * 
+     * @see ButtonAddClicked
+     * @see ButtonDeleteClicked
+     * @see ButtonUpdateClicked
+     * @see ButtonSearchClicked
+     * @see MenuItemParamClicked
+     * @see MouseClickedClicked
+     * 
+     */
 	public MainView() {
 		
-		//frame param
+		
 		setTitle(Constants.appTitle);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setPreferredSize(new Dimension(1600, 800));
@@ -230,7 +341,7 @@ public class MainView extends JFrame {
 		getContentPane().add(scrollPane);
 		
 		
-		
+		//tableau avec la liste des scouts
 		table = new JTable();
 		table.setForeground(new Color(0, 0, 0));
 		table.setSelectionBackground(new Color(255, 204, 51));
@@ -272,8 +383,9 @@ public class MainView extends JFrame {
         Model model = new Model();
         table.setModel(model);
         
-        // Create controller
+        // Create controllers
         ButtonSearchClicked buttonSearchClicked = new ButtonSearchClicked(textFieldChercherUnScout, model);
+        
         MouseClicked mouseClicked =  new MouseClicked(
         	table,
         	textField_id,
