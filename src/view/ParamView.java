@@ -69,8 +69,11 @@ public class ParamView extends JFrame{
 	/**
 	 * <b>Vue des paramètres de l'application</b>
      * 
-     * @return Une fenètre composée d'un formulaire pour les modifier les infos de la DB
+     * <p>
+     * Une fenètre composée d'un formulaire pour les modifier les infos de la DB
+     * </p>
      * 
+     * @throws IOException
      * @see ButtonParametreClicked
      * 
      */

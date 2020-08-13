@@ -3,12 +3,9 @@ package controller;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
- 
 import javax.swing.JOptionPane;
-import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableModel;
 
 import model.Constants;
 import model.Model;
@@ -40,7 +37,7 @@ public class ButtonSearchClicked implements ActionListener {
      * @param searchTerm string
      *
      * @see ButtonSearchClicked#actionPerformed
-     * @return un model avec la liste des scouts trouvé dans la liste
+     * 
      */
     public void chercher(String searchTerm) {
     	Object[][] newData = new Object[Model.show_Scouts().length][];

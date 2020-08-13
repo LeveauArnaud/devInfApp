@@ -35,12 +35,12 @@ import model.Model;
  * <b>MainView est la classe représentant la vue principale de l'application.</b>
  * <p>
  * Cette vue est composée :
+ * </p>
  * <ul>
  * <li>D'un tableau contenat la liste des scouts</li>
  * <li>D'une barre de recherche </li>
  * <li>D'un formulaire pour ajouter/editer un scout</li>
  * </ul>
- * </p>
  * 
  * 
  * 
@@ -165,14 +165,16 @@ public class MainView extends JFrame {
 	/**
 	 * Vue principale de l'application
      * 
-     * @return Une fenètre composée d'un tableau, barre de recherche, formulaire
+     * <p>
+     * Une fenètre composée d'un tableau, barre de recherche, formulaire
+     * </p>
      * 
      * @see ButtonAddClicked
      * @see ButtonDeleteClicked
      * @see ButtonUpdateClicked
      * @see ButtonSearchClicked
      * @see MenuItemParamClicked
-     * @see MouseClickedClicked
+     * @see MouseClicked
      * 
      */
 	public MainView() {

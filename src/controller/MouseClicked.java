@@ -127,9 +127,8 @@ public  class MouseClicked implements MouseListener{
 	 * <p>
 	 *  Pour la ligne clickée, récuprère les infos du scout et les affiches dans le formulaire
 	 *  pour par la suite pouvoir effectuer des opérations (add,delete,update)
-	 * <p>
+	 * </p>
 	 * 
-	 * @return les informations du scouts dans les champs appropriés du formulaire
 	 */
 	public void mouseClicked(MouseEvent e) {
 		

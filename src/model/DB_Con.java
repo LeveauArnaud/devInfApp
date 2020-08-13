@@ -20,6 +20,8 @@ public class DB_Con {
 	
 	/**
 	 * Effectue la connection avec la DB via le driver JBDC
+	 * 
+	 * @return connexion avec la DB
 	 *
 	 */
 	public static Connection getConnection() {
@@ -58,7 +60,7 @@ public class DB_Con {
 	 * 
 	 * @param query
 	 * 			Le query a effectuer
-	 * @param query
+	 * @param message
 	 * 			Le message à afficher
 	 */
 	public static void executeSQLQuery(String query, String message) {
