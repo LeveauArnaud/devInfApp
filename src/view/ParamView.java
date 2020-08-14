@@ -15,6 +15,7 @@ import javax.swing.JTextField;
 import controller.ButtonParametreClicked;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
 
 
 /**
@@ -34,15 +35,15 @@ public class ParamView extends JFrame{
 	/**
 	 * Le champ pour l'adresse du server de la DB
 	 */
-	private JTextField textField_serverN;
+	private JTextField textFieldServerN;
 	/**
 	 * Le champ pour le user de la DB
 	 */
-	private JTextField textField_user;
+	private JTextField textFieldUser;
 	/**
 	 * Le champ pour le password de la DB
 	 */
-	private JTextField textField_password;
+	private JPasswordField passwordField;
 	/**
 	 * Le panel derrière les champs
 	 */
@@ -75,6 +76,7 @@ public class ParamView extends JFrame{
 	 * Objet de type ButtonParametreClicked
 	 */
 	private ButtonParametreClicked buttonParametreClicked;
+	
 	
 	/**
 	 * <b>Permet d'ajuster l'image à la taille du JLabel</b>
@@ -142,28 +144,28 @@ public class ParamView extends JFrame{
 		backrounPanel.add(lblPassword);
 		lblPassword.setFont(new Font("HousePaint", Font.PLAIN, 15));
 		
-		textField_serverN = new JTextField();
-		textField_serverN.setBounds(25, 36, 553, 25);
-		backrounPanel.add(textField_serverN);
-		textField_serverN.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
-		textField_serverN.setColumns(10);
-		textField_serverN.setText(Constants.serverN);
+		textFieldServerN = new JTextField();
+		textFieldServerN.setBounds(25, 36, 553, 25);
+		backrounPanel.add(textFieldServerN);
+		textFieldServerN.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
+		textFieldServerN.setColumns(10);
+		textFieldServerN.setText(Constants.serverN);
 		
 		
-		textField_user = new JTextField();
-		textField_user.setBounds(25, 86, 553, 25);
-		backrounPanel.add(textField_user);
-		textField_user.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
-		textField_user.setColumns(10);
-		textField_user.setText(Constants.user);
+		textFieldUser = new JTextField();
+		textFieldUser.setBounds(25, 86, 553, 25);
+		backrounPanel.add(textFieldUser);
+		textFieldUser.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
+		textFieldUser.setColumns(10);
+		textFieldUser.setText(Constants.user);
 		
 	
-		textField_password = new JTextField();
-		textField_password.setBounds(25, 140, 555, 25);
-		backrounPanel.add(textField_password);
-		textField_password.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
-		textField_password.setColumns(10);
-		textField_password.setText(Constants.password);
+		passwordField = new JPasswordField();
+		passwordField.setBounds(25, 140, 555, 25);
+		backrounPanel.add(passwordField);
+		passwordField.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
+		passwordField.setColumns(10);
+		passwordField.setText(Constants.password);
 		
 		
 		conButton = new JButton("Connexion");
@@ -184,9 +186,13 @@ public class ParamView extends JFrame{
 		//nouvelle instance du controller
 		buttonParametreClicked = new ButtonParametreClicked(
 				this,
-				textField_serverN,
-				textField_user,
-				textField_password);
+				textFieldServerN,
+				textFieldUser,
+				passwordField);
+		
+		passwordField = new JPasswordField();
+		passwordField.setBounds(188, 274, 11, 26);
+		getContentPane().add(passwordField);
 		
 		conButton.addActionListener(buttonParametreClicked);
 	}

@@ -13,25 +13,20 @@ import java.awt.Color;
 import java.awt.Component;
 
 import javax.swing.JTextField;
-import javax.swing.RowFilter;
 import javax.swing.JTable;
 import javax.swing.JScrollPane;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.border.TitledBorder;
 import javax.swing.table.DefaultTableCellRenderer;
-import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableCellRenderer;
-import javax.swing.table.TableRowSorter;
 import javax.swing.text.DateFormatter;
 import java.util.Date;
 
 import java.awt.Dimension;
 import javax.swing.JButton;
 import java.awt.SystemColor;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
@@ -42,14 +37,9 @@ import controller.ButtonSearchClicked;
 import controller.ButtonUpdateClicked;
 import controller.MenuItemParamClicked;
 import controller.MouseClicked;
-import controller.Search;
 import model.Constants;
 import model.Model;
 import javax.swing.JFormattedTextField;
-import javax.swing.JComboBox;
-import javax.swing.JCheckBox;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 
 /**
  * <b>MainView est la classe représentant la vue principale de l'application.</b>
@@ -185,11 +175,6 @@ public class MainView extends JFrame {
      */
 	private JLabel lblCotisation;
 	/**
-     * Le champ pour entre le nom a rechercher
-     * 
-     */
-	private  JTextField textFieldChercherUnScout;
-	/**
      * Le Menu 
      * 
      */
@@ -252,10 +237,6 @@ public class MainView extends JFrame {
      * 
      */
 	private DateFormatter df;
-	/**
-	 * Objet de type ButtonSearchClicked
-	 */
-	private ButtonSearchClicked buttonSearchClicked;
 	/**
 	 * Objet de type MouseClicked
 	 */
@@ -414,7 +395,7 @@ public class MainView extends JFrame {
 		getContentPane().add(lblCotisation);
 		lblCotisation.setFont(new Font("HousePaint", Font.PLAIN, 15));
 		
-		lblCamp = new JLabel("Camp :");
+		lblCamp = new JLabel("Camp(s) :");
 		lblCamp.setBounds(1214, 487, 49, 22);
 		getContentPane().add(lblCamp);
 		lblCamp.setFont(new Font("HousePaint", Font.PLAIN, 15));
@@ -490,7 +471,7 @@ public class MainView extends JFrame {
 		textFieldCotisation.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
 		textFieldCotisation.setColumns(10);
 		
-		textFieldChercherUnScout = new JTextField(26);
+		/*textFieldChercherUnScout = new JTextField(26);
 		textFieldChercherUnScout.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -500,10 +481,10 @@ public class MainView extends JFrame {
 		textFieldChercherUnScout.setText("Chercher un scouts...");
 		textFieldChercherUnScout.setBounds(308, 44, 502, 26);
 		textFieldChercherUnScout.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
-		getContentPane().add(textFieldChercherUnScout);
+		getContentPane().add(textFieldChercherUnScout);*/
 		
 		scrollPane = new JScrollPane();
-		scrollPane.setBounds(0, 97, 1168, 683);
+		scrollPane.setBounds(0, 26, 1168, 754);
 		scrollPane.setBackground(new Color(255, 211, 75));
 		scrollPane.setFont(new Font("HousePaint", Font.PLAIN, 15));
 		scrollPane.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(), "Liste des scouts",
@@ -514,6 +495,11 @@ public class MainView extends JFrame {
 		
 		//tableau avec la liste des scouts
 		table = new JTable() {
+
+			/**
+			 * 
+			 */
+			private static final long serialVersionUID = -5601754828233000551L;
 
 			@Override
 			    public Component prepareRenderer(TableCellRenderer renderer, int row, int col) {
@@ -615,9 +601,6 @@ public class MainView extends JFrame {
         
         
         // Create controllers
-        buttonSearchClicked = new ButtonSearchClicked(
-        		textFieldChercherUnScout, 
-        		model);
         
         mouseClicked =  new MouseClicked(
         	table,
@@ -679,19 +662,20 @@ public class MainView extends JFrame {
         
         menuItemParamClicked = new MenuItemParamClicked();
         
-        Search search = new Search(
+        /*Search search = new Search(
         		textFieldChercherUnScout,
     			table,
     			model
         		
-        		);
+        		);*/
+        
         table.addMouseListener(mouseClicked);
         addButton.addActionListener(buttonAddClicked);
         updateButton.addActionListener(buttonUpdateClicked);
         deleteButton.addActionListener(buttonDeleteClicked);
         clearButton.addActionListener(buttonClearClicked);
         updateParam.addActionListener(menuItemParamClicked);
-        textFieldChercherUnScout.addKeyListener(search);
+        //textFieldChercherUnScout.addKeyListener(search);
         
         
         

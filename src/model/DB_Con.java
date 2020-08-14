@@ -5,11 +5,9 @@ import java.sql.*;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
-import javax.swing.JTextField;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 
-import controller.Search;
 import view.MainView;
 
 
@@ -69,13 +67,15 @@ public class DB_Con {
 	 * 			Le message à afficher
 	 */
 	public static void executeSQLQuery(String query, String message) {
-    	Connection connection = DB_Con.getConnection();
+    	//on récupère la connexion
+		Connection connection = DB_Con.getConnection();
     	
-    	Statement st;
+    	Statement st = null;
 		
 		try {
 			
 			st = connection.createStatement();
+			//On execute le la requête
 			if(st.executeUpdate(query) == 1) {
 				
 			
@@ -83,7 +83,6 @@ public class DB_Con {
 				model.setRowCount(0);
 				JTable table = MainView.table;
 				table.setModel(new Model());
-				DefaultTableModel NewModel = (DefaultTableModel) MainView.table.getModel();
 				table.getColumnModel().getColumn(0).setPreferredWidth(3);
 		        table.getColumnModel().getColumn(3).setPreferredWidth(50);
 		        table.getColumnModel().getColumn(4).setPreferredWidth(50);
@@ -106,10 +105,18 @@ public class DB_Con {
 				JOptionPane.showMessageDialog(null, "Les données n'ont bien été "+message);
 			}
 			
-		} catch (Exception e) {
+		} catch (SQLException e) {
 			
 			e.printStackTrace();
 			
+		} finally {
+			try {
+				//on libière les ressources de la mémoire
+				connection.close();
+				st.close();
+			}catch (SQLException e){
+				e.printStackTrace();
+			}
 		}
     	
     }
