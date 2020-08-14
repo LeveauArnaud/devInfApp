@@ -2,6 +2,8 @@ package controller;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import model.DB_Action;
 /**
@@ -37,7 +39,11 @@ public class ButtonDeleteClicked implements ActionListener{
 	 */
 	public void actionPerformed(ActionEvent e) {
 		
+		int input = JOptionPane.showConfirmDialog(null, "Êtes vous certain de vouloir supprimer le scout ?");
+		
+		if(input == 0){
 		DB_Action.delete(textField_id );
+		}
 	}
 
 }
