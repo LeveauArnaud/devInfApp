@@ -6,8 +6,10 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-import javax.swing.JOptionPane;
+import javax.swing.JTable;
+import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableModel;
 
 
 
@@ -15,13 +17,23 @@ import javax.swing.table.DefaultTableModel;
 
 
 /**
+ * <b>Model contenant la liste des scouts récupérée de la DB</b>
+ * 
  * @author arnaud_leveau
+ * @version 1.0
  *
  */
 @SuppressWarnings("serial")
+
 public class Model extends DefaultTableModel {
 	
 
+	/**
+	 * Effectue le query et pour chaque scout trouvé dans la DB, l'ajoute dans l'arrayList
+	 * 
+	 * @return la l'arraylist avec les scouts
+	 * 
+	 */
 	public static ArrayList<Scout> getScoutsList(){
 		ArrayList<Scout> scoutsList = new ArrayList<Scout>();
 		Connection connection = DB_Con.getConnection();
@@ -64,7 +76,13 @@ public class Model extends DefaultTableModel {
 	}
 	
 	
-	public static  Object[][] show_Scouts() {
+	/**
+	 * Utilise la liste des scouts, parcourt cette liste et pour chaque scout l'ajoute à l'objet DATA
+	 * 
+	 * @return DATA, objet contenant les scouts, utilisé dans le tableau
+	 * 
+	 */
+	public static  Object[][] showScouts() {
 		
 		ArrayList<Scout> scoutList = getScoutsList();
 		
@@ -98,10 +116,44 @@ public class Model extends DefaultTableModel {
 		
 	}
 	
+	public static void showScoutFields(
+			JTable table ,
+			JTextField textField_id,
+			JTextField textField_section, 
+			JTextField textField_fonction,
+			JTextField textField_totem,
+			JTextField textField_nom,
+			JTextField textField_prenom,
+			JTextField textField_dateNaissance,
+			JTextField textField_adresse,
+			JTextField textField_mail,
+			JTextField textField_camp,
+			JTextField textField_cotisation) {
+		
+		int i = table.getSelectedRow();
+		TableModel model = table.getModel();
+		textField_id.setText(model.getValueAt(i, 0).toString());
+		textField_section.setText(model.getValueAt(i, 4).toString());
+		textField_fonction.setText(model.getValueAt(i, 5).toString());
+		textField_totem.setText(model.getValueAt(i, 3).toString());
+		textField_nom.setText(model.getValueAt(i, 1).toString());
+		textField_prenom.setText(model.getValueAt(i, 2).toString());
+		textField_dateNaissance.setText(model.getValueAt(i, 6).toString());
+		textField_adresse.setText(model.getValueAt(i, 7).toString());
+		textField_mail.setText(model.getValueAt(i, 8).toString());
+		textField_camp.setText(model.getValueAt(i, 9).toString());
+		textField_cotisation.setText(model.getValueAt(i, 10).toString());
+		
+	}
+	
+	/**
+	 * Renvoie le tableau données + nom des colonnes
+	 * 
+	 */
 	
     public Model() {
     	
-        super(show_Scouts(), Constants.TABLE_HEADER);
+        super(showScouts(), Constants.TABLE_HEADER);
     }
     
 

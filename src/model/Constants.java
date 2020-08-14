@@ -3,18 +3,37 @@ package model;
 
 
 /**
- * @author arnaud_leveau
+ * <b>Classe contenat les consantes de l'app</b>
  * 
+ * @author arnaud_leveau
+ * @version 1.0
+ *
  */
 public class Constants {
 	
+	/**
+	 *  adrese du server DB
+	 */
 	public static String serverN = "//localhost:3306/scoutApp";
+	/**
+	 *  adrese complète server DB,JDBC,...
+	 */
 	public static String server = "jdbc:mysql:"+serverN+"?serverTimezone=UTC";
+	/**
+	 *  user de la DB
+	 */
 	public static String user = "root";
+	/**
+	 *  user de la DB
+	 */
 	public static String password = "root";
-	
+	/**
+	 *  password de la DB
+	 */
 	public static String appTitle = "23HD app manager";
- 
+	/**
+	 *  Objet conetnat la liste des noms des colonnes pour le tableau
+	 */
     public static final Object[] TABLE_HEADER = { "Id", "Nom", "Prénom","Totem", "Section", "Fonction", "Age", "Adresse" ,"Mail" ,"Camp", "Cotisation"};
     
  

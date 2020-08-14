@@ -8,8 +8,22 @@ import javax.swing.table.DefaultTableModel;
 import view.MainView;
 
 
+/**
+ * <b>Classe permmeant de faire le lien avec la DB</b>
+ * 
+ * @author arnaud_leveau
+ * @version 1.0
+ *
+ */
+
 public class DB_Con {
 	
+	/**
+	 * Effectue la connection avec la DB via le driver JBDC
+	 * 
+	 * @return connexion avec la DB
+	 *
+	 */
 	public static Connection getConnection() {
 		
 		
@@ -41,6 +55,14 @@ public class DB_Con {
 		
 	}
 	
+	/**
+	 * Execute les query et recharge la liste des scout aprés chaque query
+	 * 
+	 * @param query
+	 * 			Le query a effectuer
+	 * @param message
+	 * 			Le message à afficher
+	 */
 	public static void executeSQLQuery(String query, String message) {
     	Connection connection = DB_Con.getConnection();
     	
