@@ -21,12 +21,17 @@ import javax.swing.border.TitledBorder;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableCellRenderer;
+import javax.swing.text.DateFormatter;
+import java.util.Date;
 
 import java.awt.Dimension;
 import javax.swing.JButton;
 import java.awt.SystemColor;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 
 import controller.ButtonAddClicked;
+import controller.ButtonClearClicked;
 import controller.ButtonDeleteClicked;
 import controller.ButtonSearchClicked;
 import controller.ButtonUpdateClicked;
@@ -34,6 +39,7 @@ import controller.MenuItemParamClicked;
 import controller.MouseClicked;
 import model.Constants;
 import model.Model;
+import javax.swing.JFormattedTextField;
 
 /**
  * <b>MainView est la classe représentant la vue principale de l'application.</b>
@@ -92,7 +98,7 @@ public class MainView extends JFrame {
      * Le champ du formulaire pour la date de naissance
      * 
      */
-	private JTextField textField_dateNaissance;
+	private JFormattedTextField textField_dateNaissance;
 	/**
      * Le champ du formulaire pour l'adresse
      * 
@@ -146,6 +152,36 @@ public class MainView extends JFrame {
      * 
      */
 	private DefaultTableCellRenderer cellRenderer;
+	/**
+     * Le bouton rechercher
+     * 
+     */
+	private JButton searchButton;
+	/**
+     * Le bouton add
+     * 
+     */
+	private JButton addButton;
+	/**
+     * Le bouton update
+     * 
+     */
+	private JButton updateButton;
+	/**
+     * Le bouton delete
+     * 
+     */
+	private JButton deleteButton;
+	/**
+     * Le bouton clear
+     * 
+     */
+	private JButton clearButton;
+	/**
+     * La zone scrollable
+     * 
+     */
+	JScrollPane scrollPane;
 	
 	
 	/**
@@ -159,11 +195,31 @@ public class MainView extends JFrame {
      * @return retourne l'image à la bonne échelle
      * 
      */
-	public ImageIcon scaleImage(JButton button, String link) {
+	public ImageIcon scaleImageButton(JButton button, String link) {
 		
 		ImageIcon Myimage = new ImageIcon(MainView.class.getResource(link));//ajout image à myImage via le link
 		Image img = Myimage.getImage() ;  // convertion ImageIcon en Image
 		Image newImg = img.getScaledInstance( button.getWidth(), button.getHeight(),  java.awt.Image.SCALE_SMOOTH ) ;  //Mise à l'échelle du JButton
+		ImageIcon image = new ImageIcon( newImg );
+		
+		return image;
+	}
+	/**
+	 * Permet d'ajuster l'image à la taille du menu
+     * @param menu
+     * 				Le menu qui va contenir l'image
+     * @param link
+     * 				Le lien de l'image
+     * 
+     * 
+     * @return retourne l'image à la bonne échelle
+     * 
+     */
+	public ImageIcon scaleImageMenu(JMenu menu, String link) {
+		
+		ImageIcon Myimage = new ImageIcon(MainView.class.getResource(link));//ajout image à myImage via le link
+		Image img = Myimage.getImage() ;  // convertion ImageIcon en Image
+		Image newImg = img.getScaledInstance( 22, 22,  java.awt.Image.SCALE_SMOOTH ) ;  //Mise à l'échelle du JButton
 		ImageIcon image = new ImageIcon( newImg );
 		
 		return image;
@@ -201,7 +257,8 @@ public class MainView extends JFrame {
         menuBar.setBounds(0, 0, 1600, 22);
         menuBar.setBackground(new Color(255, 230, 153));
         menuBar.setFont(new Font("HousePaint", Font.PLAIN, 15));
-        param = new JMenu("Paramètres");
+        param = new JMenu();
+        param.setIcon(scaleImageMenu(param,"/img/settings.png"));
         param.setFont(new Font("Cocon-Regular", Font.PLAIN, 15));
         updateParam = new JMenuItem("Modifier paramètres");
         updateParam.setFont(new Font("Cocon-Regular", Font.PLAIN, 15));
@@ -210,123 +267,126 @@ public class MainView extends JFrame {
         getContentPane().add(menuBar);
 		
 		JLabel lblId = new JLabel("Id :");
-		lblId.setBounds(1293, 118, 27, 22);
+		lblId.setBounds(1293, 80, 27, 22);
 		getContentPane().add(lblId);
 		lblId.setFont(new Font("HousePaint", Font.PLAIN, 15));
 		
 		JLabel lblSection = new JLabel("Section :");
-		lblSection.setBounds(1214, 175, 69, 22);
+		lblSection.setBounds(1214, 137, 69, 22);
 		getContentPane().add(lblSection);
 		lblSection.setFont(new Font("HousePaint", Font.PLAIN, 15));
 		
 		JLabel lblFonction = new JLabel("Fonction :");
-		lblFonction.setBounds(1399, 175, 83, 22);
+		lblFonction.setBounds(1399, 137, 83, 22);
 		getContentPane().add(lblFonction);
 		lblFonction.setFont(new Font("HousePaint", Font.PLAIN, 15));
 		
 		JLabel lblTotem = new JLabel("Totem :");
-		lblTotem.setBounds(1214, 225, 59, 22);
+		lblTotem.setBounds(1214, 187, 59, 22);
 		getContentPane().add(lblTotem);
 		lblTotem.setFont(new Font("HousePaint", Font.PLAIN, 15));
 		
 		JLabel lblPrenom = new JLabel("Nom :");
-		lblPrenom.setBounds(1214, 275, 44, 22);
+		lblPrenom.setBounds(1214, 237, 44, 22);
 		getContentPane().add(lblPrenom);
 		lblPrenom.setFont(new Font("HousePaint", Font.PLAIN, 15));
 		
 		JLabel lblNom = new JLabel("Prenom :");
-		lblNom.setBounds(1214, 325, 69, 22);
+		lblNom.setBounds(1214, 287, 69, 22);
 		getContentPane().add(lblNom);
 		lblNom.setFont(new Font("HousePaint", Font.PLAIN, 15));
 		
 		JLabel lblDateNaissance = new JLabel("Date Naissance :");
-		lblDateNaissance.setBounds(1214, 375, 120, 22);
+		lblDateNaissance.setBounds(1214, 337, 120, 22);
 		getContentPane().add(lblDateNaissance);
 		lblDateNaissance.setFont(new Font("HousePaint", Font.PLAIN, 15));
 		
 		JLabel lblAdresse = new JLabel("Adresse :");
-		lblAdresse.setBounds(1214, 425, 60, 22);
+		lblAdresse.setBounds(1214, 387, 60, 22);
 		getContentPane().add(lblAdresse);
 		lblAdresse.setFont(new Font("HousePaint", Font.PLAIN, 15));
 		
 		JLabel lblMail = new JLabel("Mail :");
-		lblMail.setBounds(1214, 475, 48, 22);
+		lblMail.setBounds(1214, 437, 48, 22);
 		getContentPane().add(lblMail);
 		lblMail.setFont(new Font("HousePaint", Font.PLAIN, 15));
 		
 		JLabel lblCotisation = new JLabel("Cotisation :");
-		lblCotisation.setBounds(1399, 525, 98, 22);
+		lblCotisation.setBounds(1399, 487, 98, 22);
 		getContentPane().add(lblCotisation);
 		lblCotisation.setFont(new Font("HousePaint", Font.PLAIN, 15));
 		
 		JLabel lblCamp = new JLabel("Camp :");
-		lblCamp.setBounds(1214, 525, 49, 22);
+		lblCamp.setBounds(1214, 487, 49, 22);
 		getContentPane().add(lblCamp);
 		lblCamp.setFont(new Font("HousePaint", Font.PLAIN, 15));
 		
 		textField_id = new JTextField();
 		textField_id.setBackground(SystemColor.window);
-		textField_id.setBounds(1303, 138, 148, 25);
+		textField_id.setBounds(1303, 100, 148, 25);
 		getContentPane().add(textField_id);
 		textField_id.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
 		textField_id.setColumns(10);
 		
 		textField_section = new JTextField();
-		textField_section.setBounds(1221, 195, 148, 25);
+		textField_section.setBounds(1221, 157, 148, 25);
 		getContentPane().add(textField_section);
 		textField_section.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
 		textField_section.setColumns(10);
 		
 		textField_fonction = new JTextField();
-		textField_fonction.setBounds(1406, 195, 148, 25);
+		textField_fonction.setBounds(1406, 157, 148, 25);
 		getContentPane().add(textField_fonction);
 		textField_fonction.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
 		textField_fonction.setColumns(10);
 		
 		textField_totem = new JTextField();
-		textField_totem.setBounds(1221, 245, 337, 25);
+		textField_totem.setBounds(1221, 207, 337, 25);
 		getContentPane().add(textField_totem);
 		textField_totem.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
 		textField_totem.setColumns(10);
 		
 		textField_nom = new JTextField();
-		textField_nom.setBounds(1221, 295, 335, 25);
+		textField_nom.setBounds(1221, 257, 335, 25);
 		getContentPane().add(textField_nom);
 		textField_nom.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
 		textField_nom.setColumns(10);
 		
 		textField_prenom = new JTextField();
-		textField_prenom.setBounds(1221, 345, 335, 25);
+		textField_prenom.setBounds(1221, 307, 335, 25);
 		getContentPane().add(textField_prenom);
 		textField_prenom.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
 		textField_prenom.setColumns(10);
 		
-		textField_dateNaissance = new JTextField();
-		textField_dateNaissance.setBounds(1221, 395, 335, 25);
-		getContentPane().add(textField_dateNaissance);
-		textField_dateNaissance.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
-		textField_dateNaissance.setColumns(10);
+		DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        DateFormatter df = new DateFormatter(format);
+        textField_dateNaissance = new JFormattedTextField(df);
+        textField_dateNaissance.setBounds(1221, 357, 335, 25);
+        textField_dateNaissance.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
+        textField_dateNaissance.setColumns(10);
+        textField_dateNaissance.setValue(new Date());
+        getContentPane().add(textField_dateNaissance);
 		
 		textField_adresse = new JTextField();
-		textField_adresse.setBounds(1221, 445, 333, 25);
+		textField_adresse.setBounds(1221, 407, 333, 25);
 		getContentPane().add(textField_adresse);
 		textField_adresse.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
 		textField_adresse.setColumns(10);
 		
 		textField_mail = new JTextField();
-		textField_mail.setBounds(1221, 495, 333, 25);
+		textField_mail.setBounds(1221, 457, 333, 25);
 		getContentPane().add(textField_mail);
 		textField_mail.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
 		textField_mail.setColumns(10);
 		
 		textField_camp = new JTextField();
-		textField_camp.setBounds(1221, 545, 148, 25);
+		textField_camp.setBounds(1221, 507, 148, 25);
 		getContentPane().add(textField_camp);
 		textField_camp.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
 		textField_camp.setColumns(10);
 		
 		textField_cotisation = new JTextField();
-		textField_cotisation.setBounds(1406, 545, 148, 25);
+		textField_cotisation.setBounds(1406, 507, 148, 25);
 		getContentPane().add(textField_cotisation);
 		textField_cotisation.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
 		textField_cotisation.setColumns(10);
@@ -336,12 +396,12 @@ public class MainView extends JFrame {
 		textFieldChercherUnScout.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
 		getContentPane().add(textFieldChercherUnScout);
 		
-		JButton searchButton = new JButton("Chercher un scout");
+		searchButton = new JButton("Chercher un scout");
 		searchButton.setBounds(693, 35, 148, 29);
 		searchButton.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
 		getContentPane().add(searchButton);
 		
-		JScrollPane scrollPane = new JScrollPane();
+		scrollPane = new JScrollPane();
 		scrollPane.setBounds(0, 97, 1168, 683);
 		scrollPane.setBackground(new Color(255, 211, 75));
 		scrollPane.setFont(new Font("HousePaint", Font.PLAIN, 15));
@@ -391,31 +451,49 @@ public class MainView extends JFrame {
 		scrollPane.setViewportView(table);
 		
 		//bouton ajouter
-		JButton addButton = new JButton();//init du JButton
-		addButton.setBounds(1214, 624, 50, 50);//taille 50X50
-		addButton.setBackground(new Color(255, 204, 51));
-		addButton.setIcon(scaleImage(addButton,"/img/add.png"));
+		addButton = new JButton();//init du JButton
+		addButton.setBounds(1270, 594, 50, 50);//taille 50X50
+		addButton.setOpaque(false);
+		addButton.setContentAreaFilled(false);
+		addButton.setBorderPainted(false);
+		addButton.setIcon(scaleImageButton(addButton,"/img/add.png"));
 		addButton.setFocusPainted(false);
 		addButton.setContentAreaFilled(false);
 		addButton.setOpaque(false);
 		getContentPane().add(addButton);//ajout du JButton au content pane
 				
 		//bouton update
-		 JButton updateButton = new JButton();
-		 updateButton.setBounds(1361, 624, 50, 50);
-		 updateButton.setBackground(new Color(0,0,0,0));
-		 updateButton.setIcon(scaleImage(updateButton,"/img/update.png"));
+		 updateButton = new JButton();
+		 updateButton.setBounds(1447, 594, 50, 50);
+		 updateButton.setOpaque(false);
+		 updateButton.setContentAreaFilled(false);
+		 updateButton.setBorderPainted(false);
+		 updateButton.setIcon(scaleImageButton(updateButton,"/img/update.png"));
 		 updateButton.setFocusPainted(false);
 		 updateButton.setContentAreaFilled(false);
 		 getContentPane().add(updateButton);
 		        
 		//bouton delete
-		 JButton deleteButton = new JButton();
-		 deleteButton.setBounds(1508, 624, 50, 50);
-		 deleteButton.setIcon(scaleImage(deleteButton,"/img/delete.png"));
+		 deleteButton = new JButton();
+		 deleteButton.setBounds(1270, 679, 50, 50);
+		 deleteButton.setOpaque(false);
+		 deleteButton.setContentAreaFilled(false);
+		 deleteButton.setBorderPainted(false);
+		 deleteButton.setIcon(scaleImageButton(deleteButton,"/img/delete.png"));
 		 deleteButton.setFocusPainted(false);
 		 deleteButton.setContentAreaFilled(false);
 		 getContentPane().add(deleteButton);
+		 
+		//bouton clear
+		 clearButton = new JButton();
+		 clearButton.setBounds(1447, 679, 50, 50);
+		 clearButton.setOpaque(false);
+		 clearButton.setContentAreaFilled(false);
+		 clearButton.setBorderPainted(false);
+		 clearButton.setIcon(scaleImageButton(deleteButton,"/img/clear.png"));
+		 clearButton.setFocusPainted(false);
+		 clearButton.setContentAreaFilled(false);
+		 getContentPane().add(clearButton);
 		 
 		
 		// Create table model
@@ -482,7 +560,18 @@ public class MainView extends JFrame {
         ButtonDeleteClicked buttonDeleteClicked = new ButtonDeleteClicked(
         												textField_id);
         
-        
+        ButtonClearClicked buttonClearClicked = new ButtonClearClicked(
+        		textField_id,
+            	textField_section,
+    			textField_fonction, 
+    			textField_totem,
+    			textField_nom,
+    			textField_prenom,
+    			textField_dateNaissance,
+    			textField_adresse,
+    			textField_mail,
+    			textField_camp,
+    			textField_cotisation);
         
         MenuItemParamClicked menuItemParamClicked = new MenuItemParamClicked();
         
@@ -491,6 +580,7 @@ public class MainView extends JFrame {
         addButton.addActionListener(buttonAddClicked);
         updateButton.addActionListener(buttonUpdateClicked);
         deleteButton.addActionListener(buttonDeleteClicked);
+        clearButton.addActionListener(buttonClearClicked);
         updateParam.addActionListener(menuItemParamClicked);
         
         
