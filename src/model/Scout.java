@@ -1,6 +1,7 @@
 package model;
 
 import java.sql.Date;
+import java.util.Comparator;
 
 public class Scout {
 	
@@ -17,18 +18,18 @@ public class Scout {
 	private int cotisation;
 	
 	
-	public Scout(int ID, String Nom, String Prenom,  String Totem, String Section, String Fonction, Date DateNaissance, String Adresse, String Mail, int Camp, int Cotisation) {
-		this.id = ID;
-		this.section = Section;
-		this.fonction = Fonction;
-		this.totem = Totem;
-		this.nom = Nom;
-		this.prenom = Prenom;
-		this.dateNaissance = DateNaissance;
-		this.adresse = Adresse;
-		this.mail = Mail;
-		this.camp = Camp;
-		this.cotisation = Cotisation;
+	public Scout(int iD, String nom, String prenom,  String totem, String section, String fonction, Date dateNaissance, String adresse, String mail, int camp, int cotisation) {
+		this.id = iD;
+		this.section = section;
+		this.fonction = fonction;
+		this.totem = totem;
+		this.nom = nom;
+		this.prenom = prenom;
+		this.dateNaissance = dateNaissance;
+		this.adresse = adresse;
+		this.mail = mail;
+		this.camp = camp;
+		this.cotisation = cotisation;
 		
 	}
 	
@@ -99,4 +100,19 @@ public class Scout {
 		this.cotisation = cotisation;
 	}
 
+	 /**
+	  * Trie les scouts par ordre croissant sur le nom
+	  */
+    public static Comparator<Scout> scoutNomC = new Comparator<Scout>() {
+
+    	public int compare(Scout s1, Scout s2) {
+    		String studentName1 = s1.getNom().toUpperCase();
+    		String studentName2 = s2.getNom().toUpperCase();
+
+    		//ordre croissant
+    		return studentName1.compareTo(studentName2);
+
+	 
+    	}
+    };
 }

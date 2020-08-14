@@ -23,102 +23,102 @@ public  class MouseClicked implements MouseListener{
 	/**
 	 * ID du scout
 	 */
-	private JTextField textField_id;
+	private JTextField textFieldId;
 	/**
 	 * Section du scout
 	 */
-	private JTextField textField_section;
+	private JTextField textFieldSection;
 	/**
 	 * Fonction du scout
 	 */
-	private JTextField textField_fonction;
+	private JTextField textFieldFonction;
 	/**
 	 * Totem du scout
 	 */
-	private JTextField textField_totem;
+	private JTextField textFieldTotem;
 	/**
 	 * Nom du scout
 	 */
-	private JTextField textField_nom;
+	private JTextField textFieldNom;
 	/**
 	 * Prenom du scout
 	 */
-	private JTextField textField_prenom;
+	private JTextField textFieldPrenom;
 	/**
 	 * Date de Naissance du scout
 	 */
-	private JTextField textField_dateNaissance;
+	private JTextField textFieldDateNaissance;
 	/**
 	 * Adresse du scout
 	 */
-	private JTextField textField_adresse;
+	private JTextField textFieldAdresse;
 	/**
 	 * mail  du scout
 	 */
-	private JTextField textField_mail;
+	private JTextField textFieldMail;
 	/**
 	 * Nbr de camp du scout
 	 */
-	private JTextField textField_camp;
+	private JTextField textFieldCamp;
 	/**
 	 * Cotisation du scout
 	 */
-	private JTextField textField_cotisation;
+	private JTextField textFieldCotisation;
 	
 	/**
 	 * <b>Permet de récupérer les données du scout dans la ligne de la table</b>
 	 * 
 	 * @param table
 	 * 		La table avec la liste des scouts
-	 * @param textField_id
+	 * @param textFieldId
 	 * 		L'ID du scout
-	 * @param textField_section
+	 * @param textFieldSection
 	 * 		La section du scout
-	 * @param textField_fonction
+	 * @param textFieldFonction
 	 * 		La fonction du scout
-	 * @param textField_totem
+	 * @param textFieldTotem
 	 * 		Le totem du scout
-	 * @param textField_nom
+	 * @param textFieldNom
 	 * 		Le nom du scout
-	 * @param textField_prenom
+	 * @param textFieldPrenom
 	 * 		Le prenom du scout
-	 * @param textField_dateNaissance
+	 * @param textFieldDateNaissance
 	 * 		La date de naissance du scout
-	 * @param textField_adresse
+	 * @param textFieldAdresse
 	 * 		L'adresse du scout
-	 * @param textField_mail
+	 * @param textFieldMail
 	 * 		Le mail du scout
-	 * @param textField_camp
+	 * @param textFieldCamp
 	 * 		Le nbr de camp du scout
-	 * @param textField_cotisation
+	 * @param textFieldCotisation
 	 * 		La cotisation du scout
 	 */
 	public MouseClicked(JTable table ,
-						JTextField textField_id,
-						JTextField textField_section, 
-						JTextField textField_fonction,
-						JTextField textField_totem,
-						JTextField textField_nom,
-						JTextField textField_prenom,
-						JTextField textField_dateNaissance,
-						JTextField textField_adresse,
-						JTextField textField_mail,
-						JTextField textField_camp,
-						JTextField textField_cotisation) {
+						JTextField textFieldId,
+						JTextField textFieldSection, 
+						JTextField textFieldFonction,
+						JTextField textFieldTotem,
+						JTextField textFieldNom,
+						JTextField textFieldPrenom,
+						JTextField textFieldDateNaissance,
+						JTextField textFieldAdresse,
+						JTextField textFieldMail,
+						JTextField textFieldCamp,
+						JTextField textFieldCotisation) {
 		
 		super();
         this.table = table;
-        this.textField_id = textField_id;
-        this.textField_section = textField_section;
-        this.textField_fonction = textField_fonction;
-        this.textField_totem = textField_totem;
-        this.textField_nom = textField_nom;
-        this.textField_prenom = textField_prenom;
-        this.textField_dateNaissance = textField_dateNaissance;
-        this.textField_adresse = textField_adresse;
-        this.textField_mail = textField_mail;
-        this.textField_camp = textField_camp;
-        this.textField_cotisation = textField_cotisation;
+        this.textFieldId = textFieldId;
+        this.textFieldSection = textFieldSection;
+        this.textFieldFonction = textFieldFonction;
+        this.textFieldTotem = textFieldTotem;
+        this.textFieldNom = textFieldNom;
+        this.textFieldPrenom = textFieldPrenom;
+        this.textFieldDateNaissance = textFieldDateNaissance;
+        this.textFieldAdresse = textFieldAdresse;
+        this.textFieldMail = textFieldMail;
+        this.textFieldCamp = textFieldCamp;
+        this.textFieldCotisation = textFieldCotisation;
 	}
 
 
@@ -134,17 +134,17 @@ public  class MouseClicked implements MouseListener{
 		
 		Model.showScoutFields(
 				table ,
-				textField_id,
-				textField_section, 
-				textField_fonction,
-				textField_totem,
-				textField_nom,
-				textField_prenom,
-				textField_dateNaissance,
-				textField_adresse,
-				textField_mail,
-				textField_camp,
-				textField_cotisation);
+				textFieldId,
+				textFieldSection, 
+				textFieldFonction,
+				textFieldTotem,
+				textFieldNom,
+				textFieldPrenom,
+				textFieldDateNaissance,
+				textFieldAdresse,
+				textFieldMail,
+				textFieldCamp,
+				textFieldCotisation);
 	}
 
 

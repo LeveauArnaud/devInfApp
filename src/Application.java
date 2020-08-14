@@ -11,7 +11,7 @@ import view.MainView;
  * @author arnaud_leveau
  * @version 1.0
  */
-public class App {
+public abstract class Application {
 	
 	/**
 	 * Méthode main

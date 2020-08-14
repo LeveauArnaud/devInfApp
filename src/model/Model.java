@@ -5,11 +5,14 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Collections;
 
 import javax.swing.JTable;
 import javax.swing.JTextField;
+import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
+import javax.swing.table.TableRowSorter;
 
 
 
@@ -36,7 +39,7 @@ public class Model extends DefaultTableModel {
 	 */
 	public static ArrayList<Scout> getScoutsList(){
 		ArrayList<Scout> scoutsList = new ArrayList<Scout>();
-		Connection connection = DB_Con.getConnection();
+		Connection connection = DbCon.getConnection();
 		
 		String query = "SELECT * FROM `scouts` ";
 		Statement st;
@@ -79,6 +82,8 @@ public class Model extends DefaultTableModel {
 	/**
 	 * Utilise la liste des scouts, parcourt cette liste et pour chaque scout l'ajoute à l'objet DATA
 	 * 
+	 * @see Scout#scoutNomC
+	 * 
 	 * @return DATA, objet contenant les scouts, utilisé dans le tableau
 	 * 
 	 */
@@ -86,7 +91,9 @@ public class Model extends DefaultTableModel {
 		
 		ArrayList<Scout> scoutList = getScoutsList();
 		
-		Object[][] DATA = new Object [scoutList.size()][] ;
+		Collections.sort(scoutList, Scout.scoutNomC);
+		
+		Object[][] data = new Object [scoutList.size()][] ;
 		
 		
 		for(int i = 0; i< scoutList.size(); i++) {
@@ -106,51 +113,88 @@ public class Model extends DefaultTableModel {
 			row[10] = scoutList.get(i).getCotisation();
 			
 			
-			DATA[i] = row;
+			data[i] = row;
 			
 			
 		}
 		
-		return DATA;
+		return data;
 		
 		
 	}
 	
+	/**
+	 * <b>Pour une rangée selectionnée, affiche les infos du scouts dans les différents champs</b>
+	 * 
+	 * @param table
+	 * 		le tableau avec la liste des scouts
+	 * @param textFieldId
+	 * 		La section du scout
+	 * @param textFieldSection
+	 * 		La section du scout
+	 * @param textFieldFonction
+	 * 		La fonction du scout
+	 * @param textFieldTotem
+	 * 		Le totem du scout
+	 * @param textFieldNom
+	 * 		Le nom du scout
+	 * @param textFieldPrenom
+	 * 		Le prenom du scout
+	 * @param textFieldDateNaissance
+	 * 		La date de naissance du scout
+	 * @param textFieldAdresse
+	 * 		L'adresse du scout
+	 * @param textFieldMail
+	 * 		Le mail du scout
+	 * @param textFieldCamp
+	 * 		Le nbr de camp du scout
+	 * @param textFieldCotisation
+	 * 		La cotisation du scout
+	 * 
+	 */
 	public static void showScoutFields(
 			JTable table ,
-			JTextField textField_id,
-			JTextField textField_section, 
-			JTextField textField_fonction,
-			JTextField textField_totem,
-			JTextField textField_nom,
-			JTextField textField_prenom,
-			JTextField textField_dateNaissance,
-			JTextField textField_adresse,
-			JTextField textField_mail,
-			JTextField textField_camp,
-			JTextField textField_cotisation) {
+			JTextField textFieldId,
+			JTextField textFieldSection, 
+			JTextField textFieldFonction,
+			JTextField textFieldTotem,
+			JTextField textFieldNom,
+			JTextField textFieldPrenom,
+			JTextField textFieldDateNaissance,
+			JTextField textFieldAdresse,
+			JTextField textFieldMail,
+			JTextField textFieldCamp,
+			JTextField textFieldCotisation) {
 		
 		int i = table.getSelectedRow();
 		TableModel model = table.getModel();
-		textField_id.setText(model.getValueAt(i, 0).toString());
-		textField_section.setText(model.getValueAt(i, 4).toString());
-		textField_fonction.setText(model.getValueAt(i, 5).toString());
-		textField_totem.setText(model.getValueAt(i, 3).toString());
-		textField_nom.setText(model.getValueAt(i, 1).toString());
-		textField_prenom.setText(model.getValueAt(i, 2).toString());
-		textField_dateNaissance.setText(model.getValueAt(i, 6).toString());
-		textField_adresse.setText(model.getValueAt(i, 7).toString());
-		textField_mail.setText(model.getValueAt(i, 8).toString());
-		textField_camp.setText(model.getValueAt(i, 9).toString());
-		textField_cotisation.setText(model.getValueAt(i, 10).toString());
+		textFieldId.setText(model.getValueAt(i, 0).toString());
+		textFieldSection.setText(model.getValueAt(i, 4).toString());
+		textFieldFonction.setText(model.getValueAt(i, 5).toString());
+		textFieldTotem.setText(model.getValueAt(i, 3).toString());
+		textFieldNom.setText(model.getValueAt(i, 1).toString());
+		textFieldPrenom.setText(model.getValueAt(i, 2).toString());
+		textFieldDateNaissance.setText(model.getValueAt(i, 6).toString());
+		textFieldAdresse.setText(model.getValueAt(i, 7).toString());
+		textFieldMail.setText(model.getValueAt(i, 8).toString());
+		textFieldCamp.setText(model.getValueAt(i, 9).toString());
+		textFieldCotisation.setText(model.getValueAt(i, 10).toString());
 		
+	}
+	
+	
+	public void filter(String query, DefaultTableModel model, JTable table) {
+		
+		TableRowSorter<DefaultTableModel> tr = new TableRowSorter<DefaultTableModel>(model);
+		table.setRowSorter(tr);
+		
+		tr.setRowFilter(RowFilter.regexFilter(query));
 	}
 	
 	/**
 	 * Renvoie le tableau données + nom des colonnes
 	 * 
 	 */
-	
     public Model() {
     	
         super(showScouts(), Constants.TABLE_HEADER);
