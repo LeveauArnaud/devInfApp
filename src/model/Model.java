@@ -8,8 +8,10 @@ import java.util.ArrayList;
 
 import javax.swing.JTable;
 import javax.swing.JTextField;
+import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
+import javax.swing.table.TableRowSorter;
 
 
 
@@ -146,11 +148,19 @@ public class Model extends DefaultTableModel {
 		
 	}
 	
+	
+	public void filter(String query, DefaultTableModel model, JTable table) {
+		
+		TableRowSorter<DefaultTableModel> tr = new TableRowSorter<DefaultTableModel>(model);
+		table.setRowSorter(tr);
+		
+		tr.setRowFilter(RowFilter.regexFilter(query));
+	}
+	
 	/**
 	 * Renvoie le tableau données + nom des colonnes
 	 * 
 	 */
-	
     public Model() {
     	
         super(showScouts(), Constants.TABLE_HEADER);

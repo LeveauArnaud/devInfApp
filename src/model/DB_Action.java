@@ -119,5 +119,8 @@ public class DB_Action {
 		query = "DELETE FROM `scouts` WHERE `id`='"+textField_id.getText()+"'";
 		DB_Con.executeSQLQuery(query, "Supprimées");
 	}
+	
 
+
+	
 }

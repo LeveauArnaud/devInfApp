@@ -13,20 +13,25 @@ import java.awt.Color;
 import java.awt.Component;
 
 import javax.swing.JTextField;
+import javax.swing.RowFilter;
 import javax.swing.JTable;
 import javax.swing.JScrollPane;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.border.TitledBorder;
 import javax.swing.table.DefaultTableCellRenderer;
+import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableCellRenderer;
+import javax.swing.table.TableRowSorter;
 import javax.swing.text.DateFormatter;
 import java.util.Date;
 
 import java.awt.Dimension;
 import javax.swing.JButton;
 import java.awt.SystemColor;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
@@ -37,9 +42,14 @@ import controller.ButtonSearchClicked;
 import controller.ButtonUpdateClicked;
 import controller.MenuItemParamClicked;
 import controller.MouseClicked;
+import controller.Search;
 import model.Constants;
 import model.Model;
 import javax.swing.JFormattedTextField;
+import javax.swing.JComboBox;
+import javax.swing.JCheckBox;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 /**
  * <b>MainView est la classe représentant la vue principale de l'application.</b>
@@ -178,7 +188,7 @@ public class MainView extends JFrame {
      * Le champ pour entre le nom a rechercher
      * 
      */
-	private JTextField textFieldChercherUnScout;
+	private  JTextField textFieldChercherUnScout;
 	/**
      * Le Menu 
      * 
@@ -207,11 +217,6 @@ public class MainView extends JFrame {
      * 
      */
 	private DefaultTableCellRenderer cellRenderer;
-	/**
-     * Le bouton rechercher
-     * 
-     */
-	private JButton searchButton;
 	/**
      * Le bouton add
      * 
@@ -486,14 +491,16 @@ public class MainView extends JFrame {
 		textFieldCotisation.setColumns(10);
 		
 		textFieldChercherUnScout = new JTextField(26);
-		textFieldChercherUnScout.setBounds(291, 43, 322, 26);
+		textFieldChercherUnScout.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				textFieldChercherUnScout.setText("");
+			}
+		});
+		textFieldChercherUnScout.setText("Chercher un scouts...");
+		textFieldChercherUnScout.setBounds(308, 44, 502, 26);
 		textFieldChercherUnScout.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
 		getContentPane().add(textFieldChercherUnScout);
-		
-		searchButton = new JButton("Chercher un scout");
-		searchButton.setBounds(694, 43, 148, 29);
-		searchButton.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
-		getContentPane().add(searchButton);
 		
 		scrollPane = new JScrollPane();
 		scrollPane.setBounds(0, 97, 1168, 683);
@@ -507,28 +514,27 @@ public class MainView extends JFrame {
 		
 		//tableau avec la liste des scouts
 		table = new JTable() {
-			 /**
-			 * 
-			 */
-			private static final long serialVersionUID = 1L;
 
 			@Override
 			    public Component prepareRenderer(TableCellRenderer renderer, int row, int col) {
 			        Component comp = super.prepareRenderer(renderer, row, col);
 			        if (getSelectedRow() != row) {
-			        if(col==10) {
-			        Object value = getModel().getValueAt(row, col);
-			            if (value.equals(0)) {
-			                comp.setBackground(Color.red);
-			            } else if (value.equals(1)) {
-			                comp.setBackground(Color.green);
-			            } 
-			            }else {
-			            	comp.setBackground(Color.white);
-			            }
-			        }else {
-			        	comp.setBackground(new Color(255, 204, 51));
-			        }
+			        	
+			        		if(col==10) {
+			        			Object value = getModel().getValueAt(row, col);
+			        
+			        			if (value.equals(0)) {
+			        				comp.setBackground(Color.red);
+			        			} else if (value.equals(1)) {
+			        				comp.setBackground(Color.green);
+			        			} 
+			        		}else {
+			        			comp.setBackground(Color.white);
+			        		}
+			        	}else {
+			        		comp.setBackground(new Color(255, 204, 51));
+			        	}
+			        
 			        return comp;
 			        
 			    }
@@ -607,8 +613,11 @@ public class MainView extends JFrame {
         table.getColumnModel().getColumn(9).setCellRenderer(cellRenderer);
         table.getColumnModel().getColumn(10).setCellRenderer(cellRenderer);
         
+        
         // Create controllers
-        buttonSearchClicked = new ButtonSearchClicked(textFieldChercherUnScout, model);
+        buttonSearchClicked = new ButtonSearchClicked(
+        		textFieldChercherUnScout, 
+        		model);
         
         mouseClicked =  new MouseClicked(
         	table,
@@ -667,15 +676,22 @@ public class MainView extends JFrame {
     			textFieldCamp,
     			textFieldCotisation);
         
+        
         menuItemParamClicked = new MenuItemParamClicked();
         
-        searchButton.addActionListener(buttonSearchClicked);
+        Search search = new Search(
+        		textFieldChercherUnScout,
+    			table,
+    			model
+        		
+        		);
         table.addMouseListener(mouseClicked);
         addButton.addActionListener(buttonAddClicked);
         updateButton.addActionListener(buttonUpdateClicked);
         deleteButton.addActionListener(buttonDeleteClicked);
         clearButton.addActionListener(buttonClearClicked);
         updateParam.addActionListener(menuItemParamClicked);
+        textFieldChercherUnScout.addKeyListener(search);
         
         
         

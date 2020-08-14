@@ -2,9 +2,14 @@ package model;
 
 import java.sql.*;
 
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 
+import controller.Search;
 import view.MainView;
 
 
@@ -73,9 +78,28 @@ public class DB_Con {
 			st = connection.createStatement();
 			if(st.executeUpdate(query) == 1) {
 				
+			
 				DefaultTableModel model = (DefaultTableModel) MainView.table.getModel();
 				model.setRowCount(0);
-				MainView.table.setModel(new Model());
+				JTable table = MainView.table;
+				table.setModel(new Model());
+				DefaultTableModel NewModel = (DefaultTableModel) MainView.table.getModel();
+				table.getColumnModel().getColumn(0).setPreferredWidth(3);
+		        table.getColumnModel().getColumn(3).setPreferredWidth(50);
+		        table.getColumnModel().getColumn(4).setPreferredWidth(50);
+		        table.getColumnModel().getColumn(5).setPreferredWidth(50);
+		        table.getColumnModel().getColumn(6).setPreferredWidth(40);
+		        table.getColumnModel().getColumn(8).setPreferredWidth(100);
+		        table.getColumnModel().getColumn(9).setPreferredWidth(25);
+		        table.getColumnModel().getColumn(10).setPreferredWidth(80);
+		        DefaultTableCellRenderer cellRenderer = new DefaultTableCellRenderer();
+		        cellRenderer.setHorizontalAlignment(JLabel.CENTER);
+		        table.getColumnModel().getColumn(0).setCellRenderer(cellRenderer);
+		        table.getColumnModel().getColumn(9).setCellRenderer(cellRenderer);
+		        table.getColumnModel().getColumn(10).setCellRenderer(cellRenderer);
+		        
+		        
+				
 				
 				JOptionPane.showMessageDialog(null, "Les données ont bien été "+message);
 			}else {

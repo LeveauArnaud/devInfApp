@@ -93,6 +93,5 @@ public class Constants {
             { "DUFRASNE", "TOM", "GOUNDI", "Pionniers", "Scout", "14/02/2002", "RUE CAUDERLOO 126 7370 DOUR", true },
             { "Urbain", "ELINE", "DORCAS", "Pionniers", "Scout", "01/08/2002", "RUE DE BOUSIES (G.) 7 7011 GHLIN", true }};
     
- 
      
 }
