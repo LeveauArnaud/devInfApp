@@ -39,7 +39,7 @@ public class Model extends DefaultTableModel {
 	 */
 	public static ArrayList<Scout> getScoutsList(){
 		ArrayList<Scout> scoutsList = new ArrayList<Scout>();
-		Connection connection = DB_Con.getConnection();
+		Connection connection = DbCon.getConnection();
 		
 		String query = "SELECT * FROM `scouts` ";
 		Statement st;
@@ -82,7 +82,7 @@ public class Model extends DefaultTableModel {
 	/**
 	 * Utilise la liste des scouts, parcourt cette liste et pour chaque scout l'ajoute à l'objet DATA
 	 * 
-	 * @see Scout#ScoutNomComparator
+	 * @see Scout#scoutNomC
 	 * 
 	 * @return DATA, objet contenant les scouts, utilisé dans le tableau
 	 * 
@@ -91,9 +91,9 @@ public class Model extends DefaultTableModel {
 		
 		ArrayList<Scout> scoutList = getScoutsList();
 		
-		Collections.sort(scoutList, Scout.ScoutNomComparator);
+		Collections.sort(scoutList, Scout.scoutNomC);
 		
-		Object[][] DATA = new Object [scoutList.size()][] ;
+		Object[][] data = new Object [scoutList.size()][] ;
 		
 		
 		for(int i = 0; i< scoutList.size(); i++) {
@@ -113,12 +113,12 @@ public class Model extends DefaultTableModel {
 			row[10] = scoutList.get(i).getCotisation();
 			
 			
-			DATA[i] = row;
+			data[i] = row;
 			
 			
 		}
 		
-		return DATA;
+		return data;
 		
 		
 	}

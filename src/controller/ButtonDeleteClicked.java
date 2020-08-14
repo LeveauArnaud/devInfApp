@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
-import model.DB_Action;
+import model.DbAction;
 /**
  * <b>Class permetant de Supprimer un scout dans la DB</b>
  * 
@@ -15,34 +15,34 @@ import model.DB_Action;
  */
 public class ButtonDeleteClicked implements ActionListener{
 	
-	private JTextField textField_id;
+	private JTextField textFieldId;
 	
 	/**
 	 * <b>Permet de récupérer l'id du scout</b>
 	 * 
-	 * @param textField_id
+	 * @param textFieldId
 	 * 		L'id du scout à supprimer
 	 */
 	public ButtonDeleteClicked(
-						JTextField textField_id) 
+						JTextField textFieldId) 
 	{
 		
 		super();
-		this.textField_id = textField_id;
+		this.textFieldId = textFieldId;
 	}
 
 	/**
 	 * <b>Action effectuée lors du click sur le bouton delete</b>
 	 * <p>Supprime le scout dans la DB</p>
 	 * 
-	 * @see DB_Action#delete(JTextField)
+	 * @see DbAction#delete(JTextField)
 	 */
 	public void actionPerformed(ActionEvent e) {
 		
 		int input = JOptionPane.showConfirmDialog(null, "Êtes vous certain de vouloir supprimer le scout ?");
 		
 		if(input == 0){
-		DB_Action.delete(textField_id );
+		DbAction.delete(textFieldId );
 		}
 	}
 

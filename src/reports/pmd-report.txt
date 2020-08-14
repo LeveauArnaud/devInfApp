@@ -1,0 +1,1552 @@
+Application.java:14:	AbstractClassWithoutAbstractMethod: This abstract class does not have any abstract methods
+Application.java:14:	AbstractClassWithoutAbstractMethod: This abstract class does not have any abstract methods
+Application.java:14:	AbstractNaming: Abstract classes should be named AbstractXXX
+Application.java:14:	AbstractNaming: Abstract classes should be named AbstractXXX
+Application.java:14:	NoPackage: All classes, interfaces, enums and annotations must belong to a named package
+Application.java:14:	NoPackage: All classes, interfaces, enums and annotations must belong to a named package
+Application.java:22:	MethodArgumentCouldBeFinal: Parameter 'args' is not assigned and could be declared final
+Application.java:22:	MethodArgumentCouldBeFinal: Parameter 'args' is not assigned and could be declared final
+Application.java:25:	CommentRequired: Public method and constructor comments are required
+Application.java:25:	CommentRequired: Public method and constructor comments are required
+Application.java:25:	MissingOverride: The method 'run()' is missing an @Override annotation.
+Application.java:25:	MissingOverride: The method 'run()' is missing an @Override annotation.
+Application.java:28:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+Application.java:28:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+Application.java:29:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+Application.java:29:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+Application.java:41:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+Application.java:41:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+controller/ButtonAddClicked.java:23:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonAddClicked.java:23:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonAddClicked.java:23:	ImmutableField: Private field 'textFieldSection' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonAddClicked.java:23:	ImmutableField: Private field 'textFieldSection' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonAddClicked.java:27:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonAddClicked.java:27:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonAddClicked.java:27:	ImmutableField: Private field 'textFieldFonction' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonAddClicked.java:27:	ImmutableField: Private field 'textFieldFonction' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonAddClicked.java:31:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonAddClicked.java:31:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonAddClicked.java:31:	ImmutableField: Private field 'textFieldTotem' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonAddClicked.java:31:	ImmutableField: Private field 'textFieldTotem' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonAddClicked.java:35:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonAddClicked.java:35:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonAddClicked.java:35:	ImmutableField: Private field 'textFieldNom' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonAddClicked.java:35:	ImmutableField: Private field 'textFieldNom' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonAddClicked.java:39:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonAddClicked.java:39:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonAddClicked.java:39:	ImmutableField: Private field 'textFieldPrenom' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonAddClicked.java:39:	ImmutableField: Private field 'textFieldPrenom' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonAddClicked.java:43:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonAddClicked.java:43:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonAddClicked.java:43:	ImmutableField: Private field 'textFieldDateNaissance' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonAddClicked.java:43:	ImmutableField: Private field 'textFieldDateNaissance' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonAddClicked.java:43:	LongVariable: Avoid excessively long variable names like textFieldDateNaissance
+controller/ButtonAddClicked.java:43:	LongVariable: Avoid excessively long variable names like textFieldDateNaissance
+controller/ButtonAddClicked.java:47:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonAddClicked.java:47:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonAddClicked.java:47:	ImmutableField: Private field 'textFieldAdresse' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonAddClicked.java:47:	ImmutableField: Private field 'textFieldAdresse' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonAddClicked.java:51:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonAddClicked.java:51:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonAddClicked.java:51:	ImmutableField: Private field 'textFieldMail' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonAddClicked.java:51:	ImmutableField: Private field 'textFieldMail' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonAddClicked.java:55:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonAddClicked.java:55:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonAddClicked.java:55:	ImmutableField: Private field 'textFieldCamp' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonAddClicked.java:55:	ImmutableField: Private field 'textFieldCamp' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonAddClicked.java:59:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonAddClicked.java:59:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonAddClicked.java:59:	ImmutableField: Private field 'textFieldCotisation' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonAddClicked.java:59:	ImmutableField: Private field 'textFieldCotisation' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonAddClicked.java:59:	LongVariable: Avoid excessively long variable names like textFieldCotisation
+controller/ButtonAddClicked.java:59:	LongVariable: Avoid excessively long variable names like textFieldCotisation
+controller/ButtonAddClicked.java:62:	CommentSize: Comment is too large: Too many lines
+controller/ButtonAddClicked.java:62:	CommentSize: Comment is too large: Too many lines
+controller/ButtonAddClicked.java:86:	ExcessiveParameterList: Avoid long parameter lists.
+controller/ButtonAddClicked.java:86:	ExcessiveParameterList: Avoid long parameter lists.
+controller/ButtonAddClicked.java:87:	MethodArgumentCouldBeFinal: Parameter 'textFieldSection' is not assigned and could be declared final
+controller/ButtonAddClicked.java:87:	MethodArgumentCouldBeFinal: Parameter 'textFieldSection' is not assigned and could be declared final
+controller/ButtonAddClicked.java:88:	MethodArgumentCouldBeFinal: Parameter 'textFieldFonction' is not assigned and could be declared final
+controller/ButtonAddClicked.java:88:	MethodArgumentCouldBeFinal: Parameter 'textFieldFonction' is not assigned and could be declared final
+controller/ButtonAddClicked.java:89:	MethodArgumentCouldBeFinal: Parameter 'textFieldTotem' is not assigned and could be declared final
+controller/ButtonAddClicked.java:89:	MethodArgumentCouldBeFinal: Parameter 'textFieldTotem' is not assigned and could be declared final
+controller/ButtonAddClicked.java:90:	MethodArgumentCouldBeFinal: Parameter 'textFieldNom' is not assigned and could be declared final
+controller/ButtonAddClicked.java:90:	MethodArgumentCouldBeFinal: Parameter 'textFieldNom' is not assigned and could be declared final
+controller/ButtonAddClicked.java:91:	MethodArgumentCouldBeFinal: Parameter 'textFieldPrenom' is not assigned and could be declared final
+controller/ButtonAddClicked.java:91:	MethodArgumentCouldBeFinal: Parameter 'textFieldPrenom' is not assigned and could be declared final
+controller/ButtonAddClicked.java:92:	LongVariable: Avoid excessively long variable names like textFieldDateNaissance
+controller/ButtonAddClicked.java:92:	LongVariable: Avoid excessively long variable names like textFieldDateNaissance
+controller/ButtonAddClicked.java:92:	MethodArgumentCouldBeFinal: Parameter 'textFieldDateNaissance' is not assigned and could be declared final
+controller/ButtonAddClicked.java:92:	MethodArgumentCouldBeFinal: Parameter 'textFieldDateNaissance' is not assigned and could be declared final
+controller/ButtonAddClicked.java:93:	MethodArgumentCouldBeFinal: Parameter 'textFieldAdresse' is not assigned and could be declared final
+controller/ButtonAddClicked.java:93:	MethodArgumentCouldBeFinal: Parameter 'textFieldAdresse' is not assigned and could be declared final
+controller/ButtonAddClicked.java:94:	MethodArgumentCouldBeFinal: Parameter 'textFieldMail' is not assigned and could be declared final
+controller/ButtonAddClicked.java:94:	MethodArgumentCouldBeFinal: Parameter 'textFieldMail' is not assigned and could be declared final
+controller/ButtonAddClicked.java:95:	MethodArgumentCouldBeFinal: Parameter 'textFieldCamp' is not assigned and could be declared final
+controller/ButtonAddClicked.java:95:	MethodArgumentCouldBeFinal: Parameter 'textFieldCamp' is not assigned and could be declared final
+controller/ButtonAddClicked.java:96:	LongVariable: Avoid excessively long variable names like textFieldCotisation
+controller/ButtonAddClicked.java:96:	LongVariable: Avoid excessively long variable names like textFieldCotisation
+controller/ButtonAddClicked.java:96:	MethodArgumentCouldBeFinal: Parameter 'textFieldCotisation' is not assigned and could be declared final
+controller/ButtonAddClicked.java:96:	MethodArgumentCouldBeFinal: Parameter 'textFieldCotisation' is not assigned and could be declared final
+controller/ButtonAddClicked.java:116:	CommentSize: Comment is too large: Line too long
+controller/ButtonAddClicked.java:116:	CommentSize: Comment is too large: Line too long
+controller/ButtonAddClicked.java:118:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/ButtonAddClicked.java:118:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/ButtonAddClicked.java:118:	MissingOverride: The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+controller/ButtonAddClicked.java:118:	MissingOverride: The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+controller/ButtonAddClicked.java:118:	ShortVariable: Avoid variables with short names like e
+controller/ButtonAddClicked.java:118:	ShortVariable: Avoid variables with short names like e
+controller/ButtonClearClicked.java:12:	CommentRequired: Class comments are required
+controller/ButtonClearClicked.java:12:	CommentRequired: Class comments are required
+controller/ButtonClearClicked.java:17:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonClearClicked.java:17:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonClearClicked.java:17:	ImmutableField: Private field 'textFieldId' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonClearClicked.java:17:	ImmutableField: Private field 'textFieldId' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonClearClicked.java:21:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonClearClicked.java:21:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonClearClicked.java:21:	ImmutableField: Private field 'textFieldSection' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonClearClicked.java:21:	ImmutableField: Private field 'textFieldSection' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonClearClicked.java:25:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonClearClicked.java:25:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonClearClicked.java:25:	ImmutableField: Private field 'textFieldFonction' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonClearClicked.java:25:	ImmutableField: Private field 'textFieldFonction' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonClearClicked.java:29:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonClearClicked.java:29:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonClearClicked.java:29:	ImmutableField: Private field 'textFieldTotem' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonClearClicked.java:29:	ImmutableField: Private field 'textFieldTotem' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonClearClicked.java:33:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonClearClicked.java:33:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonClearClicked.java:33:	ImmutableField: Private field 'textFieldNom' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonClearClicked.java:33:	ImmutableField: Private field 'textFieldNom' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonClearClicked.java:37:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonClearClicked.java:37:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonClearClicked.java:37:	ImmutableField: Private field 'textFieldPrenom' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonClearClicked.java:37:	ImmutableField: Private field 'textFieldPrenom' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonClearClicked.java:41:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonClearClicked.java:41:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonClearClicked.java:41:	ImmutableField: Private field 'textFieldDateNaissance' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonClearClicked.java:41:	ImmutableField: Private field 'textFieldDateNaissance' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonClearClicked.java:41:	LongVariable: Avoid excessively long variable names like textFieldDateNaissance
+controller/ButtonClearClicked.java:41:	LongVariable: Avoid excessively long variable names like textFieldDateNaissance
+controller/ButtonClearClicked.java:45:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonClearClicked.java:45:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonClearClicked.java:45:	ImmutableField: Private field 'textFieldAdresse' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonClearClicked.java:45:	ImmutableField: Private field 'textFieldAdresse' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonClearClicked.java:49:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonClearClicked.java:49:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonClearClicked.java:49:	ImmutableField: Private field 'textFieldMail' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonClearClicked.java:49:	ImmutableField: Private field 'textFieldMail' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonClearClicked.java:53:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonClearClicked.java:53:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonClearClicked.java:53:	ImmutableField: Private field 'textFieldCamp' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonClearClicked.java:53:	ImmutableField: Private field 'textFieldCamp' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonClearClicked.java:57:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonClearClicked.java:57:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonClearClicked.java:57:	ImmutableField: Private field 'textFieldCotisation' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonClearClicked.java:57:	ImmutableField: Private field 'textFieldCotisation' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonClearClicked.java:57:	LongVariable: Avoid excessively long variable names like textFieldCotisation
+controller/ButtonClearClicked.java:57:	LongVariable: Avoid excessively long variable names like textFieldCotisation
+controller/ButtonClearClicked.java:61:	CommentSize: Comment is too large: Too many lines
+controller/ButtonClearClicked.java:61:	CommentSize: Comment is too large: Too many lines
+controller/ButtonClearClicked.java:87:	ExcessiveParameterList: Avoid long parameter lists.
+controller/ButtonClearClicked.java:87:	ExcessiveParameterList: Avoid long parameter lists.
+controller/ButtonClearClicked.java:88:	MethodArgumentCouldBeFinal: Parameter 'textFieldId' is not assigned and could be declared final
+controller/ButtonClearClicked.java:88:	MethodArgumentCouldBeFinal: Parameter 'textFieldId' is not assigned and could be declared final
+controller/ButtonClearClicked.java:89:	MethodArgumentCouldBeFinal: Parameter 'textFieldSection' is not assigned and could be declared final
+controller/ButtonClearClicked.java:89:	MethodArgumentCouldBeFinal: Parameter 'textFieldSection' is not assigned and could be declared final
+controller/ButtonClearClicked.java:90:	MethodArgumentCouldBeFinal: Parameter 'textFieldFonction' is not assigned and could be declared final
+controller/ButtonClearClicked.java:90:	MethodArgumentCouldBeFinal: Parameter 'textFieldFonction' is not assigned and could be declared final
+controller/ButtonClearClicked.java:91:	MethodArgumentCouldBeFinal: Parameter 'textFieldTotem' is not assigned and could be declared final
+controller/ButtonClearClicked.java:91:	MethodArgumentCouldBeFinal: Parameter 'textFieldTotem' is not assigned and could be declared final
+controller/ButtonClearClicked.java:92:	MethodArgumentCouldBeFinal: Parameter 'textFieldNom' is not assigned and could be declared final
+controller/ButtonClearClicked.java:92:	MethodArgumentCouldBeFinal: Parameter 'textFieldNom' is not assigned and could be declared final
+controller/ButtonClearClicked.java:93:	MethodArgumentCouldBeFinal: Parameter 'textFieldPrenom' is not assigned and could be declared final
+controller/ButtonClearClicked.java:93:	MethodArgumentCouldBeFinal: Parameter 'textFieldPrenom' is not assigned and could be declared final
+controller/ButtonClearClicked.java:94:	LongVariable: Avoid excessively long variable names like textFieldDateNaissance
+controller/ButtonClearClicked.java:94:	LongVariable: Avoid excessively long variable names like textFieldDateNaissance
+controller/ButtonClearClicked.java:94:	MethodArgumentCouldBeFinal: Parameter 'textFieldDateNaissance' is not assigned and could be declared final
+controller/ButtonClearClicked.java:94:	MethodArgumentCouldBeFinal: Parameter 'textFieldDateNaissance' is not assigned and could be declared final
+controller/ButtonClearClicked.java:95:	MethodArgumentCouldBeFinal: Parameter 'textFieldAdresse' is not assigned and could be declared final
+controller/ButtonClearClicked.java:95:	MethodArgumentCouldBeFinal: Parameter 'textFieldAdresse' is not assigned and could be declared final
+controller/ButtonClearClicked.java:96:	MethodArgumentCouldBeFinal: Parameter 'textFieldMail' is not assigned and could be declared final
+controller/ButtonClearClicked.java:96:	MethodArgumentCouldBeFinal: Parameter 'textFieldMail' is not assigned and could be declared final
+controller/ButtonClearClicked.java:97:	MethodArgumentCouldBeFinal: Parameter 'textFieldCamp' is not assigned and could be declared final
+controller/ButtonClearClicked.java:97:	MethodArgumentCouldBeFinal: Parameter 'textFieldCamp' is not assigned and could be declared final
+controller/ButtonClearClicked.java:98:	LongVariable: Avoid excessively long variable names like textFieldCotisation
+controller/ButtonClearClicked.java:98:	LongVariable: Avoid excessively long variable names like textFieldCotisation
+controller/ButtonClearClicked.java:98:	MethodArgumentCouldBeFinal: Parameter 'textFieldCotisation' is not assigned and could be declared final
+controller/ButtonClearClicked.java:98:	MethodArgumentCouldBeFinal: Parameter 'textFieldCotisation' is not assigned and could be declared final
+controller/ButtonClearClicked.java:119:	CommentSize: Comment is too large: Line too long
+controller/ButtonClearClicked.java:119:	CommentSize: Comment is too large: Line too long
+controller/ButtonClearClicked.java:121:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/ButtonClearClicked.java:121:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/ButtonClearClicked.java:121:	MissingOverride: The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+controller/ButtonClearClicked.java:121:	MissingOverride: The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+controller/ButtonClearClicked.java:121:	ShortVariable: Avoid variables with short names like e
+controller/ButtonClearClicked.java:121:	ShortVariable: Avoid variables with short names like e
+controller/ButtonClearClicked.java:129:	EmptyStatementNotInLoop: An empty statement (semicolon) not part of a loop
+controller/ButtonClearClicked.java:129:	EmptyStatementNotInLoop: An empty statement (semicolon) not part of a loop
+controller/ButtonDeleteClicked.java:18:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonDeleteClicked.java:18:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonDeleteClicked.java:18:	CommentRequired: Field comments are required
+controller/ButtonDeleteClicked.java:18:	CommentRequired: Field comments are required
+controller/ButtonDeleteClicked.java:18:	ImmutableField: Private field 'textFieldId' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonDeleteClicked.java:18:	ImmutableField: Private field 'textFieldId' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonDeleteClicked.java:27:	MethodArgumentCouldBeFinal: Parameter 'textFieldId' is not assigned and could be declared final
+controller/ButtonDeleteClicked.java:27:	MethodArgumentCouldBeFinal: Parameter 'textFieldId' is not assigned and could be declared final
+controller/ButtonDeleteClicked.java:40:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/ButtonDeleteClicked.java:40:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/ButtonDeleteClicked.java:40:	MissingOverride: The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+controller/ButtonDeleteClicked.java:40:	MissingOverride: The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+controller/ButtonDeleteClicked.java:40:	ShortVariable: Avoid variables with short names like e
+controller/ButtonDeleteClicked.java:40:	ShortVariable: Avoid variables with short names like e
+controller/ButtonDeleteClicked.java:42:	LocalVariableCouldBeFinal: Local variable 'input' could be declared final
+controller/ButtonDeleteClicked.java:42:	LocalVariableCouldBeFinal: Local variable 'input' could be declared final
+controller/ButtonParametreClicked.java:25:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonParametreClicked.java:25:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonParametreClicked.java:25:	ImmutableField: Private field 'textFieldServerN' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonParametreClicked.java:25:	ImmutableField: Private field 'textFieldServerN' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonParametreClicked.java:29:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonParametreClicked.java:29:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonParametreClicked.java:29:	ImmutableField: Private field 'textFieldUser' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonParametreClicked.java:29:	ImmutableField: Private field 'textFieldUser' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonParametreClicked.java:33:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonParametreClicked.java:33:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonParametreClicked.java:33:	ImmutableField: Private field 'textFieldPassword' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonParametreClicked.java:33:	ImmutableField: Private field 'textFieldPassword' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonParametreClicked.java:37:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonParametreClicked.java:37:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonParametreClicked.java:37:	ImmutableField: Private field 'frame' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonParametreClicked.java:37:	ImmutableField: Private field 'frame' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonParametreClicked.java:39:	CommentSize: Comment is too large: Too many lines
+controller/ButtonParametreClicked.java:39:	CommentSize: Comment is too large: Too many lines
+controller/ButtonParametreClicked.java:52:	MethodArgumentCouldBeFinal: Parameter 'frame' is not assigned and could be declared final
+controller/ButtonParametreClicked.java:52:	MethodArgumentCouldBeFinal: Parameter 'frame' is not assigned and could be declared final
+controller/ButtonParametreClicked.java:53:	MethodArgumentCouldBeFinal: Parameter 'textFieldServerN' is not assigned and could be declared final
+controller/ButtonParametreClicked.java:53:	MethodArgumentCouldBeFinal: Parameter 'textFieldServerN' is not assigned and could be declared final
+controller/ButtonParametreClicked.java:54:	MethodArgumentCouldBeFinal: Parameter 'textFieldUser' is not assigned and could be declared final
+controller/ButtonParametreClicked.java:54:	MethodArgumentCouldBeFinal: Parameter 'textFieldUser' is not assigned and could be declared final
+controller/ButtonParametreClicked.java:55:	MethodArgumentCouldBeFinal: Parameter 'textFieldPassword' is not assigned and could be declared final
+controller/ButtonParametreClicked.java:55:	MethodArgumentCouldBeFinal: Parameter 'textFieldPassword' is not assigned and could be declared final
+controller/ButtonParametreClicked.java:71:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/ButtonParametreClicked.java:71:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/ButtonParametreClicked.java:71:	MissingOverride: The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+controller/ButtonParametreClicked.java:71:	MissingOverride: The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+controller/ButtonParametreClicked.java:71:	ShortVariable: Avoid variables with short names like e
+controller/ButtonParametreClicked.java:71:	ShortVariable: Avoid variables with short names like e
+controller/ButtonParametreClicked.java:82:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+controller/ButtonParametreClicked.java:82:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+controller/ButtonParametreClicked.java:82:	LocalVariableCouldBeFinal: Local variable 'model' could be declared final
+controller/ButtonParametreClicked.java:82:	LocalVariableCouldBeFinal: Local variable 'model' could be declared final
+controller/ButtonParametreClicked.java:83:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+controller/ButtonParametreClicked.java:83:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+controller/ButtonSearchClicked.java:15:	CommentSize: Comment is too large: Line too long
+controller/ButtonSearchClicked.java:15:	CommentSize: Comment is too large: Line too long
+controller/ButtonSearchClicked.java:24:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonSearchClicked.java:24:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonSearchClicked.java:24:	CommentRequired: Field comments are required
+controller/ButtonSearchClicked.java:24:	CommentRequired: Field comments are required
+controller/ButtonSearchClicked.java:24:	ImmutableField: Private field 'searchTermTextField' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonSearchClicked.java:24:	ImmutableField: Private field 'searchTermTextField' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonSearchClicked.java:24:	LongVariable: Avoid excessively long variable names like searchTermTextField
+controller/ButtonSearchClicked.java:24:	LongVariable: Avoid excessively long variable names like searchTermTextField
+controller/ButtonSearchClicked.java:24:	UnusedAssignment: The field initializer for 'searchTermTextField' is never used (overwritten on line 29)
+controller/ButtonSearchClicked.java:24:	UnusedAssignment: The field initializer for 'searchTermTextField' is never used (overwritten on line 29)
+controller/ButtonSearchClicked.java:25:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonSearchClicked.java:25:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonSearchClicked.java:25:	CommentRequired: Field comments are required
+controller/ButtonSearchClicked.java:25:	CommentRequired: Field comments are required
+controller/ButtonSearchClicked.java:25:	ImmutableField: Private field 'model' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonSearchClicked.java:25:	ImmutableField: Private field 'model' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonSearchClicked.java:27:	CommentRequired: Public method and constructor comments are required
+controller/ButtonSearchClicked.java:27:	CommentRequired: Public method and constructor comments are required
+controller/ButtonSearchClicked.java:27:	LongVariable: Avoid excessively long variable names like searchTermTextField
+controller/ButtonSearchClicked.java:27:	LongVariable: Avoid excessively long variable names like searchTermTextField
+controller/ButtonSearchClicked.java:27:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+controller/ButtonSearchClicked.java:27:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+controller/ButtonSearchClicked.java:27:	MethodArgumentCouldBeFinal: Parameter 'searchTermTextField' is not assigned and could be declared final
+controller/ButtonSearchClicked.java:27:	MethodArgumentCouldBeFinal: Parameter 'searchTermTextField' is not assigned and could be declared final
+controller/ButtonSearchClicked.java:42:	MethodArgumentCouldBeFinal: Parameter 'searchTerm' is not assigned and could be declared final
+controller/ButtonSearchClicked.java:42:	MethodArgumentCouldBeFinal: Parameter 'searchTerm' is not assigned and could be declared final
+controller/ButtonSearchClicked.java:43:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'newData' (lines '43'-'48').
+controller/ButtonSearchClicked.java:43:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'newData' (lines '43'-'48').
+controller/ButtonSearchClicked.java:43:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'newData' (lines '43'-'51').
+controller/ButtonSearchClicked.java:43:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'newData' (lines '43'-'51').
+controller/ButtonSearchClicked.java:43:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+controller/ButtonSearchClicked.java:43:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+controller/ButtonSearchClicked.java:44:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'idx' (lines '44'-'57').
+controller/ButtonSearchClicked.java:44:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'idx' (lines '44'-'57').
+controller/ButtonSearchClicked.java:45:	LocalVariableCouldBeFinal: Local variable 'scoutsList' could be declared final
+controller/ButtonSearchClicked.java:45:	LocalVariableCouldBeFinal: Local variable 'scoutsList' could be declared final
+controller/ButtonSearchClicked.java:46:	LocalVariableCouldBeFinal: Local variable 'o' could be declared final
+controller/ButtonSearchClicked.java:46:	LocalVariableCouldBeFinal: Local variable 'o' could be declared final
+controller/ButtonSearchClicked.java:48:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'newData' (lines '48'-'48').
+controller/ButtonSearchClicked.java:48:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'newData' (lines '48'-'48').
+controller/ButtonSearchClicked.java:48:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'newData' (lines '48'-'51').
+controller/ButtonSearchClicked.java:48:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'newData' (lines '48'-'51').
+controller/ButtonSearchClicked.java:50:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+controller/ButtonSearchClicked.java:50:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+controller/ButtonSearchClicked.java:50:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+controller/ButtonSearchClicked.java:50:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+controller/ButtonSearchClicked.java:50:	UseLocaleWithCaseConversions: When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+controller/ButtonSearchClicked.java:50:	UseLocaleWithCaseConversions: When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+controller/ButtonSearchClicked.java:51:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'newData' (lines '51'-'48').
+controller/ButtonSearchClicked.java:51:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'newData' (lines '51'-'48').
+controller/ButtonSearchClicked.java:51:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'newData' (lines '51'-'51').
+controller/ButtonSearchClicked.java:51:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'newData' (lines '51'-'51').
+controller/ButtonSearchClicked.java:63:	CommentSize: Comment is too large: Line too long
+controller/ButtonSearchClicked.java:63:	CommentSize: Comment is too large: Line too long
+controller/ButtonSearchClicked.java:68:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/ButtonSearchClicked.java:68:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/ButtonSearchClicked.java:68:	MissingOverride: The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+controller/ButtonSearchClicked.java:68:	MissingOverride: The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+controller/ButtonSearchClicked.java:68:	ShortVariable: Avoid variables with short names like e
+controller/ButtonSearchClicked.java:68:	ShortVariable: Avoid variables with short names like e
+controller/ButtonSearchClicked.java:70:	LocalVariableCouldBeFinal: Local variable 'searchTerm' could be declared final
+controller/ButtonSearchClicked.java:70:	LocalVariableCouldBeFinal: Local variable 'searchTerm' could be declared final
+controller/ButtonSearchClicked.java:71:	ConfusingTernary: Avoid if (x != y) ..; else ..;
+controller/ButtonSearchClicked.java:71:	ConfusingTernary: Avoid if (x != y) ..; else ..;
+controller/ButtonUpdateClicked.java:22:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonUpdateClicked.java:22:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonUpdateClicked.java:22:	ImmutableField: Private field 'textFieldId' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonUpdateClicked.java:22:	ImmutableField: Private field 'textFieldId' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonUpdateClicked.java:26:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonUpdateClicked.java:26:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonUpdateClicked.java:26:	ImmutableField: Private field 'textFieldSection' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonUpdateClicked.java:26:	ImmutableField: Private field 'textFieldSection' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonUpdateClicked.java:30:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonUpdateClicked.java:30:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonUpdateClicked.java:30:	ImmutableField: Private field 'textFieldFonction' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonUpdateClicked.java:30:	ImmutableField: Private field 'textFieldFonction' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonUpdateClicked.java:34:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonUpdateClicked.java:34:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonUpdateClicked.java:34:	ImmutableField: Private field 'textFieldTotem' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonUpdateClicked.java:34:	ImmutableField: Private field 'textFieldTotem' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonUpdateClicked.java:38:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonUpdateClicked.java:38:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonUpdateClicked.java:38:	ImmutableField: Private field 'textFieldNom' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonUpdateClicked.java:38:	ImmutableField: Private field 'textFieldNom' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonUpdateClicked.java:42:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonUpdateClicked.java:42:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonUpdateClicked.java:42:	ImmutableField: Private field 'textFieldPrenom' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonUpdateClicked.java:42:	ImmutableField: Private field 'textFieldPrenom' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonUpdateClicked.java:46:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonUpdateClicked.java:46:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonUpdateClicked.java:46:	ImmutableField: Private field 'textFieldDateNaissance' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonUpdateClicked.java:46:	ImmutableField: Private field 'textFieldDateNaissance' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonUpdateClicked.java:46:	LongVariable: Avoid excessively long variable names like textFieldDateNaissance
+controller/ButtonUpdateClicked.java:46:	LongVariable: Avoid excessively long variable names like textFieldDateNaissance
+controller/ButtonUpdateClicked.java:50:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonUpdateClicked.java:50:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonUpdateClicked.java:50:	ImmutableField: Private field 'textFieldAdresse' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonUpdateClicked.java:50:	ImmutableField: Private field 'textFieldAdresse' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonUpdateClicked.java:54:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonUpdateClicked.java:54:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonUpdateClicked.java:54:	ImmutableField: Private field 'textFieldMail' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonUpdateClicked.java:54:	ImmutableField: Private field 'textFieldMail' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonUpdateClicked.java:58:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonUpdateClicked.java:58:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonUpdateClicked.java:58:	ImmutableField: Private field 'textFieldCamp' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonUpdateClicked.java:58:	ImmutableField: Private field 'textFieldCamp' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonUpdateClicked.java:62:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonUpdateClicked.java:62:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/ButtonUpdateClicked.java:62:	ImmutableField: Private field 'textFieldCotisation' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonUpdateClicked.java:62:	ImmutableField: Private field 'textFieldCotisation' could be made final; it is only initialized in the declaration or constructor.
+controller/ButtonUpdateClicked.java:62:	LongVariable: Avoid excessively long variable names like textFieldCotisation
+controller/ButtonUpdateClicked.java:62:	LongVariable: Avoid excessively long variable names like textFieldCotisation
+controller/ButtonUpdateClicked.java:66:	CommentSize: Comment is too large: Too many lines
+controller/ButtonUpdateClicked.java:66:	CommentSize: Comment is too large: Too many lines
+controller/ButtonUpdateClicked.java:92:	ExcessiveParameterList: Avoid long parameter lists.
+controller/ButtonUpdateClicked.java:92:	ExcessiveParameterList: Avoid long parameter lists.
+controller/ButtonUpdateClicked.java:93:	MethodArgumentCouldBeFinal: Parameter 'textFieldId' is not assigned and could be declared final
+controller/ButtonUpdateClicked.java:93:	MethodArgumentCouldBeFinal: Parameter 'textFieldId' is not assigned and could be declared final
+controller/ButtonUpdateClicked.java:94:	MethodArgumentCouldBeFinal: Parameter 'textFieldSection' is not assigned and could be declared final
+controller/ButtonUpdateClicked.java:94:	MethodArgumentCouldBeFinal: Parameter 'textFieldSection' is not assigned and could be declared final
+controller/ButtonUpdateClicked.java:95:	MethodArgumentCouldBeFinal: Parameter 'textFieldFonction' is not assigned and could be declared final
+controller/ButtonUpdateClicked.java:95:	MethodArgumentCouldBeFinal: Parameter 'textFieldFonction' is not assigned and could be declared final
+controller/ButtonUpdateClicked.java:96:	MethodArgumentCouldBeFinal: Parameter 'textFieldTotem' is not assigned and could be declared final
+controller/ButtonUpdateClicked.java:96:	MethodArgumentCouldBeFinal: Parameter 'textFieldTotem' is not assigned and could be declared final
+controller/ButtonUpdateClicked.java:97:	MethodArgumentCouldBeFinal: Parameter 'textFieldNom' is not assigned and could be declared final
+controller/ButtonUpdateClicked.java:97:	MethodArgumentCouldBeFinal: Parameter 'textFieldNom' is not assigned and could be declared final
+controller/ButtonUpdateClicked.java:98:	MethodArgumentCouldBeFinal: Parameter 'textFieldPrenom' is not assigned and could be declared final
+controller/ButtonUpdateClicked.java:98:	MethodArgumentCouldBeFinal: Parameter 'textFieldPrenom' is not assigned and could be declared final
+controller/ButtonUpdateClicked.java:99:	LongVariable: Avoid excessively long variable names like textFieldDateNaissance
+controller/ButtonUpdateClicked.java:99:	LongVariable: Avoid excessively long variable names like textFieldDateNaissance
+controller/ButtonUpdateClicked.java:99:	MethodArgumentCouldBeFinal: Parameter 'textFieldDateNaissance' is not assigned and could be declared final
+controller/ButtonUpdateClicked.java:99:	MethodArgumentCouldBeFinal: Parameter 'textFieldDateNaissance' is not assigned and could be declared final
+controller/ButtonUpdateClicked.java:100:	MethodArgumentCouldBeFinal: Parameter 'textFieldAdresse' is not assigned and could be declared final
+controller/ButtonUpdateClicked.java:100:	MethodArgumentCouldBeFinal: Parameter 'textFieldAdresse' is not assigned and could be declared final
+controller/ButtonUpdateClicked.java:101:	MethodArgumentCouldBeFinal: Parameter 'textFieldMail' is not assigned and could be declared final
+controller/ButtonUpdateClicked.java:101:	MethodArgumentCouldBeFinal: Parameter 'textFieldMail' is not assigned and could be declared final
+controller/ButtonUpdateClicked.java:102:	MethodArgumentCouldBeFinal: Parameter 'textFieldCamp' is not assigned and could be declared final
+controller/ButtonUpdateClicked.java:102:	MethodArgumentCouldBeFinal: Parameter 'textFieldCamp' is not assigned and could be declared final
+controller/ButtonUpdateClicked.java:103:	LongVariable: Avoid excessively long variable names like textFieldCotisation
+controller/ButtonUpdateClicked.java:103:	LongVariable: Avoid excessively long variable names like textFieldCotisation
+controller/ButtonUpdateClicked.java:103:	MethodArgumentCouldBeFinal: Parameter 'textFieldCotisation' is not assigned and could be declared final
+controller/ButtonUpdateClicked.java:103:	MethodArgumentCouldBeFinal: Parameter 'textFieldCotisation' is not assigned and could be declared final
+controller/ButtonUpdateClicked.java:124:	CommentSize: Comment is too large: Line too long
+controller/ButtonUpdateClicked.java:124:	CommentSize: Comment is too large: Line too long
+controller/ButtonUpdateClicked.java:126:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/ButtonUpdateClicked.java:126:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/ButtonUpdateClicked.java:126:	MissingOverride: The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+controller/ButtonUpdateClicked.java:126:	MissingOverride: The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+controller/ButtonUpdateClicked.java:126:	ShortVariable: Avoid variables with short names like e
+controller/ButtonUpdateClicked.java:126:	ShortVariable: Avoid variables with short names like e
+controller/MenuItemParamClicked.java:8:	CommentSize: Comment is too large: Line too long
+controller/MenuItemParamClicked.java:8:	CommentSize: Comment is too large: Line too long
+controller/MenuItemParamClicked.java:16:	CommentRequired: Public method and constructor comments are required
+controller/MenuItemParamClicked.java:16:	CommentRequired: Public method and constructor comments are required
+controller/MenuItemParamClicked.java:16:	UnnecessaryConstructor: Avoid unnecessary constructors - the compiler will generate these for you
+controller/MenuItemParamClicked.java:16:	UnnecessaryConstructor: Avoid unnecessary constructors - the compiler will generate these for you
+controller/MenuItemParamClicked.java:26:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/MenuItemParamClicked.java:26:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/MenuItemParamClicked.java:26:	MissingOverride: The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+controller/MenuItemParamClicked.java:26:	MissingOverride: The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
+controller/MenuItemParamClicked.java:26:	ShortVariable: Avoid variables with short names like e
+controller/MenuItemParamClicked.java:26:	ShortVariable: Avoid variables with short names like e
+controller/MenuItemParamClicked.java:30:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+controller/MenuItemParamClicked.java:30:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+controller/MouseClicked.java:11:	CommentSize: Comment is too large: Line too long
+controller/MouseClicked.java:11:	CommentSize: Comment is too large: Line too long
+controller/MouseClicked.java:22:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/MouseClicked.java:22:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/MouseClicked.java:22:	ImmutableField: Private field 'table' could be made final; it is only initialized in the declaration or constructor.
+controller/MouseClicked.java:22:	ImmutableField: Private field 'table' could be made final; it is only initialized in the declaration or constructor.
+controller/MouseClicked.java:26:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/MouseClicked.java:26:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/MouseClicked.java:26:	ImmutableField: Private field 'textFieldId' could be made final; it is only initialized in the declaration or constructor.
+controller/MouseClicked.java:26:	ImmutableField: Private field 'textFieldId' could be made final; it is only initialized in the declaration or constructor.
+controller/MouseClicked.java:30:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/MouseClicked.java:30:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/MouseClicked.java:30:	ImmutableField: Private field 'textFieldSection' could be made final; it is only initialized in the declaration or constructor.
+controller/MouseClicked.java:30:	ImmutableField: Private field 'textFieldSection' could be made final; it is only initialized in the declaration or constructor.
+controller/MouseClicked.java:34:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/MouseClicked.java:34:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/MouseClicked.java:34:	ImmutableField: Private field 'textFieldFonction' could be made final; it is only initialized in the declaration or constructor.
+controller/MouseClicked.java:34:	ImmutableField: Private field 'textFieldFonction' could be made final; it is only initialized in the declaration or constructor.
+controller/MouseClicked.java:38:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/MouseClicked.java:38:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/MouseClicked.java:38:	ImmutableField: Private field 'textFieldTotem' could be made final; it is only initialized in the declaration or constructor.
+controller/MouseClicked.java:38:	ImmutableField: Private field 'textFieldTotem' could be made final; it is only initialized in the declaration or constructor.
+controller/MouseClicked.java:42:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/MouseClicked.java:42:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/MouseClicked.java:42:	ImmutableField: Private field 'textFieldNom' could be made final; it is only initialized in the declaration or constructor.
+controller/MouseClicked.java:42:	ImmutableField: Private field 'textFieldNom' could be made final; it is only initialized in the declaration or constructor.
+controller/MouseClicked.java:46:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/MouseClicked.java:46:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/MouseClicked.java:46:	ImmutableField: Private field 'textFieldPrenom' could be made final; it is only initialized in the declaration or constructor.
+controller/MouseClicked.java:46:	ImmutableField: Private field 'textFieldPrenom' could be made final; it is only initialized in the declaration or constructor.
+controller/MouseClicked.java:50:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/MouseClicked.java:50:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/MouseClicked.java:50:	ImmutableField: Private field 'textFieldDateNaissance' could be made final; it is only initialized in the declaration or constructor.
+controller/MouseClicked.java:50:	ImmutableField: Private field 'textFieldDateNaissance' could be made final; it is only initialized in the declaration or constructor.
+controller/MouseClicked.java:50:	LongVariable: Avoid excessively long variable names like textFieldDateNaissance
+controller/MouseClicked.java:50:	LongVariable: Avoid excessively long variable names like textFieldDateNaissance
+controller/MouseClicked.java:54:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/MouseClicked.java:54:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/MouseClicked.java:54:	ImmutableField: Private field 'textFieldAdresse' could be made final; it is only initialized in the declaration or constructor.
+controller/MouseClicked.java:54:	ImmutableField: Private field 'textFieldAdresse' could be made final; it is only initialized in the declaration or constructor.
+controller/MouseClicked.java:58:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/MouseClicked.java:58:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/MouseClicked.java:58:	ImmutableField: Private field 'textFieldMail' could be made final; it is only initialized in the declaration or constructor.
+controller/MouseClicked.java:58:	ImmutableField: Private field 'textFieldMail' could be made final; it is only initialized in the declaration or constructor.
+controller/MouseClicked.java:62:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/MouseClicked.java:62:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/MouseClicked.java:62:	ImmutableField: Private field 'textFieldCamp' could be made final; it is only initialized in the declaration or constructor.
+controller/MouseClicked.java:62:	ImmutableField: Private field 'textFieldCamp' could be made final; it is only initialized in the declaration or constructor.
+controller/MouseClicked.java:66:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/MouseClicked.java:66:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/MouseClicked.java:66:	ImmutableField: Private field 'textFieldCotisation' could be made final; it is only initialized in the declaration or constructor.
+controller/MouseClicked.java:66:	ImmutableField: Private field 'textFieldCotisation' could be made final; it is only initialized in the declaration or constructor.
+controller/MouseClicked.java:66:	LongVariable: Avoid excessively long variable names like textFieldCotisation
+controller/MouseClicked.java:66:	LongVariable: Avoid excessively long variable names like textFieldCotisation
+controller/MouseClicked.java:68:	CommentSize: Comment is too large: Too many lines
+controller/MouseClicked.java:68:	CommentSize: Comment is too large: Too many lines
+controller/MouseClicked.java:96:	ExcessiveParameterList: Avoid long parameter lists.
+controller/MouseClicked.java:96:	ExcessiveParameterList: Avoid long parameter lists.
+controller/MouseClicked.java:96:	MethodArgumentCouldBeFinal: Parameter 'table' is not assigned and could be declared final
+controller/MouseClicked.java:96:	MethodArgumentCouldBeFinal: Parameter 'table' is not assigned and could be declared final
+controller/MouseClicked.java:97:	MethodArgumentCouldBeFinal: Parameter 'textFieldId' is not assigned and could be declared final
+controller/MouseClicked.java:97:	MethodArgumentCouldBeFinal: Parameter 'textFieldId' is not assigned and could be declared final
+controller/MouseClicked.java:98:	MethodArgumentCouldBeFinal: Parameter 'textFieldSection' is not assigned and could be declared final
+controller/MouseClicked.java:98:	MethodArgumentCouldBeFinal: Parameter 'textFieldSection' is not assigned and could be declared final
+controller/MouseClicked.java:99:	MethodArgumentCouldBeFinal: Parameter 'textFieldFonction' is not assigned and could be declared final
+controller/MouseClicked.java:99:	MethodArgumentCouldBeFinal: Parameter 'textFieldFonction' is not assigned and could be declared final
+controller/MouseClicked.java:100:	MethodArgumentCouldBeFinal: Parameter 'textFieldTotem' is not assigned and could be declared final
+controller/MouseClicked.java:100:	MethodArgumentCouldBeFinal: Parameter 'textFieldTotem' is not assigned and could be declared final
+controller/MouseClicked.java:101:	MethodArgumentCouldBeFinal: Parameter 'textFieldNom' is not assigned and could be declared final
+controller/MouseClicked.java:101:	MethodArgumentCouldBeFinal: Parameter 'textFieldNom' is not assigned and could be declared final
+controller/MouseClicked.java:102:	MethodArgumentCouldBeFinal: Parameter 'textFieldPrenom' is not assigned and could be declared final
+controller/MouseClicked.java:102:	MethodArgumentCouldBeFinal: Parameter 'textFieldPrenom' is not assigned and could be declared final
+controller/MouseClicked.java:103:	LongVariable: Avoid excessively long variable names like textFieldDateNaissance
+controller/MouseClicked.java:103:	LongVariable: Avoid excessively long variable names like textFieldDateNaissance
+controller/MouseClicked.java:103:	MethodArgumentCouldBeFinal: Parameter 'textFieldDateNaissance' is not assigned and could be declared final
+controller/MouseClicked.java:103:	MethodArgumentCouldBeFinal: Parameter 'textFieldDateNaissance' is not assigned and could be declared final
+controller/MouseClicked.java:104:	MethodArgumentCouldBeFinal: Parameter 'textFieldAdresse' is not assigned and could be declared final
+controller/MouseClicked.java:104:	MethodArgumentCouldBeFinal: Parameter 'textFieldAdresse' is not assigned and could be declared final
+controller/MouseClicked.java:105:	MethodArgumentCouldBeFinal: Parameter 'textFieldMail' is not assigned and could be declared final
+controller/MouseClicked.java:105:	MethodArgumentCouldBeFinal: Parameter 'textFieldMail' is not assigned and could be declared final
+controller/MouseClicked.java:106:	MethodArgumentCouldBeFinal: Parameter 'textFieldCamp' is not assigned and could be declared final
+controller/MouseClicked.java:106:	MethodArgumentCouldBeFinal: Parameter 'textFieldCamp' is not assigned and could be declared final
+controller/MouseClicked.java:107:	LongVariable: Avoid excessively long variable names like textFieldCotisation
+controller/MouseClicked.java:107:	LongVariable: Avoid excessively long variable names like textFieldCotisation
+controller/MouseClicked.java:107:	MethodArgumentCouldBeFinal: Parameter 'textFieldCotisation' is not assigned and could be declared final
+controller/MouseClicked.java:107:	MethodArgumentCouldBeFinal: Parameter 'textFieldCotisation' is not assigned and could be declared final
+controller/MouseClicked.java:128:	CommentSize: Comment is too large: Line too long
+controller/MouseClicked.java:128:	CommentSize: Comment is too large: Line too long
+controller/MouseClicked.java:133:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/MouseClicked.java:133:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/MouseClicked.java:133:	MissingOverride: The method 'mouseClicked(MouseEvent)' is missing an @Override annotation.
+controller/MouseClicked.java:133:	MissingOverride: The method 'mouseClicked(MouseEvent)' is missing an @Override annotation.
+controller/MouseClicked.java:133:	ShortVariable: Avoid variables with short names like e
+controller/MouseClicked.java:133:	ShortVariable: Avoid variables with short names like e
+controller/MouseClicked.java:153:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/MouseClicked.java:153:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/MouseClicked.java:153:	ShortVariable: Avoid variables with short names like e
+controller/MouseClicked.java:153:	ShortVariable: Avoid variables with short names like e
+controller/MouseClicked.java:161:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/MouseClicked.java:161:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/MouseClicked.java:161:	ShortVariable: Avoid variables with short names like e
+controller/MouseClicked.java:161:	ShortVariable: Avoid variables with short names like e
+controller/MouseClicked.java:169:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/MouseClicked.java:169:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/MouseClicked.java:169:	ShortVariable: Avoid variables with short names like e
+controller/MouseClicked.java:169:	ShortVariable: Avoid variables with short names like e
+controller/MouseClicked.java:177:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/MouseClicked.java:177:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/MouseClicked.java:177:	ShortVariable: Avoid variables with short names like e
+controller/MouseClicked.java:177:	ShortVariable: Avoid variables with short names like e
+controller/Search.java:12:	CommentRequired: Class comments are required
+controller/Search.java:12:	CommentRequired: Class comments are required
+controller/Search.java:14:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/Search.java:14:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/Search.java:14:	CommentRequired: Field comments are required
+controller/Search.java:14:	CommentRequired: Field comments are required
+controller/Search.java:14:	ImmutableField: Private field 'textFieldChercherUnScout' could be made final; it is only initialized in the declaration or constructor.
+controller/Search.java:14:	ImmutableField: Private field 'textFieldChercherUnScout' could be made final; it is only initialized in the declaration or constructor.
+controller/Search.java:14:	LongVariable: Avoid excessively long variable names like textFieldChercherUnScout
+controller/Search.java:14:	LongVariable: Avoid excessively long variable names like textFieldChercherUnScout
+controller/Search.java:15:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/Search.java:15:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/Search.java:15:	CommentRequired: Field comments are required
+controller/Search.java:15:	CommentRequired: Field comments are required
+controller/Search.java:15:	ImmutableField: Private field 'table' could be made final; it is only initialized in the declaration or constructor.
+controller/Search.java:15:	ImmutableField: Private field 'table' could be made final; it is only initialized in the declaration or constructor.
+controller/Search.java:16:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/Search.java:16:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+controller/Search.java:16:	CommentRequired: Field comments are required
+controller/Search.java:16:	CommentRequired: Field comments are required
+controller/Search.java:16:	ImmutableField: Private field 'model' could be made final; it is only initialized in the declaration or constructor.
+controller/Search.java:16:	ImmutableField: Private field 'model' could be made final; it is only initialized in the declaration or constructor.
+controller/Search.java:18:	CommentRequired: Public method and constructor comments are required
+controller/Search.java:18:	CommentRequired: Public method and constructor comments are required
+controller/Search.java:19:	LongVariable: Avoid excessively long variable names like textFieldChercherUnScout
+controller/Search.java:19:	LongVariable: Avoid excessively long variable names like textFieldChercherUnScout
+controller/Search.java:19:	MethodArgumentCouldBeFinal: Parameter 'textFieldChercherUnScout' is not assigned and could be declared final
+controller/Search.java:19:	MethodArgumentCouldBeFinal: Parameter 'textFieldChercherUnScout' is not assigned and could be declared final
+controller/Search.java:20:	MethodArgumentCouldBeFinal: Parameter 'table' is not assigned and could be declared final
+controller/Search.java:20:	MethodArgumentCouldBeFinal: Parameter 'table' is not assigned and could be declared final
+controller/Search.java:21:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+controller/Search.java:21:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+controller/Search.java:29:	CommentRequired: Public method and constructor comments are required
+controller/Search.java:29:	CommentRequired: Public method and constructor comments are required
+controller/Search.java:29:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/Search.java:29:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/Search.java:29:	MissingOverride: The method 'keyReleased(KeyEvent)' is missing an @Override annotation.
+controller/Search.java:29:	MissingOverride: The method 'keyReleased(KeyEvent)' is missing an @Override annotation.
+controller/Search.java:29:	ShortVariable: Avoid variables with short names like e
+controller/Search.java:29:	ShortVariable: Avoid variables with short names like e
+controller/Search.java:31:	LocalVariableCouldBeFinal: Local variable 'query' could be declared final
+controller/Search.java:31:	LocalVariableCouldBeFinal: Local variable 'query' could be declared final
+controller/Search.java:33:	LocalVariableCouldBeFinal: Local variable 'tr' could be declared final
+controller/Search.java:33:	LocalVariableCouldBeFinal: Local variable 'tr' could be declared final
+controller/Search.java:33:	ShortVariable: Avoid variables with short names like tr
+controller/Search.java:33:	ShortVariable: Avoid variables with short names like tr
+controller/Search.java:33:	UseDiamondOperator: Explicit type arguments can be replaced by Diamond Operator
+controller/Search.java:33:	UseDiamondOperator: Explicit type arguments can be replaced by Diamond Operator
+controller/Search.java:41:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/Search.java:41:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/Search.java:41:	ShortVariable: Avoid variables with short names like e
+controller/Search.java:41:	ShortVariable: Avoid variables with short names like e
+controller/Search.java:47:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/Search.java:47:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+controller/Search.java:47:	ShortVariable: Avoid variables with short names like e
+controller/Search.java:47:	ShortVariable: Avoid variables with short names like e
+model/Constants.java:12:	ClassNamingConventions: The utility class name 'Constants' doesn't match '[A-Z][a-zA-Z0-9]+(Utils?|Helper|Constants)'
+model/Constants.java:12:	ClassNamingConventions: The utility class name 'Constants' doesn't match '[A-Z][a-zA-Z0-9]+(Utils?|Helper|Constants)'
+model/Constants.java:40:	CommentRequired: Field comments are required
+model/Constants.java:40:	CommentRequired: Field comments are required
+model/Constants.java:41:	AvoidDuplicateLiterals: The String literal "19/03/1998" appears 9 times in this file; the first occurrence is on line 41
+model/Constants.java:41:	AvoidDuplicateLiterals: The String literal "19/03/1998" appears 9 times in this file; the first occurrence is on line 41
+model/Constants.java:41:	AvoidDuplicateLiterals: The String literal "ARNAUD" appears 9 times in this file; the first occurrence is on line 41
+model/Constants.java:41:	AvoidDuplicateLiterals: The String literal "ARNAUD" appears 9 times in this file; the first occurrence is on line 41
+model/Constants.java:41:	AvoidDuplicateLiterals: The String literal "Animateur" appears 18 times in this file; the first occurrence is on line 41
+model/Constants.java:41:	AvoidDuplicateLiterals: The String literal "Animateur" appears 18 times in this file; the first occurrence is on line 41
+model/Constants.java:41:	AvoidDuplicateLiterals: The String literal "JAGUARUNDI" appears 9 times in this file; the first occurrence is on line 41
+model/Constants.java:41:	AvoidDuplicateLiterals: The String literal "JAGUARUNDI" appears 9 times in this file; the first occurrence is on line 41
+model/Constants.java:41:	AvoidDuplicateLiterals: The String literal "Leveau" appears 9 times in this file; the first occurrence is on line 41
+model/Constants.java:41:	AvoidDuplicateLiterals: The String literal "Leveau" appears 9 times in this file; the first occurrence is on line 41
+model/Constants.java:41:	AvoidDuplicateLiterals: The String literal "Pionniers" appears 54 times in this file; the first occurrence is on line 41
+model/Constants.java:41:	AvoidDuplicateLiterals: The String literal "Pionniers" appears 54 times in this file; the first occurrence is on line 41
+model/Constants.java:41:	AvoidDuplicateLiterals: The String literal "RUE DE L'EGALITE 11 7080 EUGIES" appears 9 times in this file; the first occurrence is on line 41
+model/Constants.java:41:	AvoidDuplicateLiterals: The String literal "RUE DE L'EGALITE 11 7080 EUGIES" appears 9 times in this file; the first occurrence is on line 41
+model/Constants.java:42:	AvoidDuplicateLiterals: The String literal "19/09/1997" appears 9 times in this file; the first occurrence is on line 42
+model/Constants.java:42:	AvoidDuplicateLiterals: The String literal "19/09/1997" appears 9 times in this file; the first occurrence is on line 42
+model/Constants.java:42:	AvoidDuplicateLiterals: The String literal "ANTOINE" appears 9 times in this file; the first occurrence is on line 42
+model/Constants.java:42:	AvoidDuplicateLiterals: The String literal "ANTOINE" appears 9 times in this file; the first occurrence is on line 42
+model/Constants.java:42:	AvoidDuplicateLiterals: The String literal "ARTAMI" appears 9 times in this file; the first occurrence is on line 42
+model/Constants.java:42:	AvoidDuplicateLiterals: The String literal "ARTAMI" appears 9 times in this file; the first occurrence is on line 42
+model/Constants.java:42:	AvoidDuplicateLiterals: The String literal "LANTIER" appears 9 times in this file; the first occurrence is on line 42
+model/Constants.java:42:	AvoidDuplicateLiterals: The String literal "LANTIER" appears 9 times in this file; the first occurrence is on line 42
+model/Constants.java:42:	AvoidDuplicateLiterals: The String literal "RUE DE L'EGLISE 22 7382 AUDREGNIES" appears 9 times in this file; the first occurrence is on line 42
+model/Constants.java:42:	AvoidDuplicateLiterals: The String literal "RUE DE L'EGLISE 22 7382 AUDREGNIES" appears 9 times in this file; the first occurrence is on line 42
+model/Constants.java:43:	AvoidDuplicateLiterals: The String literal "17/07/2002" appears 9 times in this file; the first occurrence is on line 43
+model/Constants.java:43:	AvoidDuplicateLiterals: The String literal "17/07/2002" appears 9 times in this file; the first occurrence is on line 43
+model/Constants.java:43:	AvoidDuplicateLiterals: The String literal "BACHURZ" appears 9 times in this file; the first occurrence is on line 43
+model/Constants.java:43:	AvoidDuplicateLiterals: The String literal "BACHURZ" appears 9 times in this file; the first occurrence is on line 43
+model/Constants.java:43:	AvoidDuplicateLiterals: The String literal "LIZA" appears 9 times in this file; the first occurrence is on line 43
+model/Constants.java:43:	AvoidDuplicateLiterals: The String literal "LIZA" appears 9 times in this file; the first occurrence is on line 43
+model/Constants.java:43:	AvoidDuplicateLiterals: The String literal "REDUNCA" appears 9 times in this file; the first occurrence is on line 43
+model/Constants.java:43:	AvoidDuplicateLiterals: The String literal "REDUNCA" appears 9 times in this file; the first occurrence is on line 43
+model/Constants.java:43:	AvoidDuplicateLiterals: The String literal "RUE D'ELOUGES 1 A 7380 BAISIEUX" appears 9 times in this file; the first occurrence is on line 43
+model/Constants.java:43:	AvoidDuplicateLiterals: The String literal "RUE D'ELOUGES 1 A 7380 BAISIEUX" appears 9 times in this file; the first occurrence is on line 43
+model/Constants.java:43:	AvoidDuplicateLiterals: The String literal "Scout" appears 36 times in this file; the first occurrence is on line 43
+model/Constants.java:43:	AvoidDuplicateLiterals: The String literal "Scout" appears 36 times in this file; the first occurrence is on line 43
+model/Constants.java:44:	AvoidDuplicateLiterals: The String literal "22/02/2002" appears 9 times in this file; the first occurrence is on line 44
+model/Constants.java:44:	AvoidDuplicateLiterals: The String literal "22/02/2002" appears 9 times in this file; the first occurrence is on line 44
+model/Constants.java:44:	AvoidDuplicateLiterals: The String literal "BEKAERT" appears 9 times in this file; the first occurrence is on line 44
+model/Constants.java:44:	AvoidDuplicateLiterals: The String literal "BEKAERT" appears 9 times in this file; the first occurrence is on line 44
+model/Constants.java:44:	AvoidDuplicateLiterals: The String literal "CARACAL" appears 9 times in this file; the first occurrence is on line 44
+model/Constants.java:44:	AvoidDuplicateLiterals: The String literal "CARACAL" appears 9 times in this file; the first occurrence is on line 44
+model/Constants.java:44:	AvoidDuplicateLiterals: The String literal "RUE FERLIBRAY 2 7387 ERQUENNES" appears 9 times in this file; the first occurrence is on line 44
+model/Constants.java:44:	AvoidDuplicateLiterals: The String literal "RUE FERLIBRAY 2 7387 ERQUENNES" appears 9 times in this file; the first occurrence is on line 44
+model/Constants.java:44:	AvoidDuplicateLiterals: The String literal "THEO" appears 9 times in this file; the first occurrence is on line 44
+model/Constants.java:44:	AvoidDuplicateLiterals: The String literal "THEO" appears 9 times in this file; the first occurrence is on line 44
+model/Constants.java:45:	AvoidDuplicateLiterals: The String literal "14/02/2002" appears 9 times in this file; the first occurrence is on line 45
+model/Constants.java:45:	AvoidDuplicateLiterals: The String literal "14/02/2002" appears 9 times in this file; the first occurrence is on line 45
+model/Constants.java:45:	AvoidDuplicateLiterals: The String literal "DUFRASNE" appears 9 times in this file; the first occurrence is on line 45
+model/Constants.java:45:	AvoidDuplicateLiterals: The String literal "DUFRASNE" appears 9 times in this file; the first occurrence is on line 45
+model/Constants.java:45:	AvoidDuplicateLiterals: The String literal "GOUNDI" appears 9 times in this file; the first occurrence is on line 45
+model/Constants.java:45:	AvoidDuplicateLiterals: The String literal "GOUNDI" appears 9 times in this file; the first occurrence is on line 45
+model/Constants.java:45:	AvoidDuplicateLiterals: The String literal "RUE CAUDERLOO 126 7370 DOUR" appears 9 times in this file; the first occurrence is on line 45
+model/Constants.java:45:	AvoidDuplicateLiterals: The String literal "RUE CAUDERLOO 126 7370 DOUR" appears 9 times in this file; the first occurrence is on line 45
+model/Constants.java:45:	AvoidDuplicateLiterals: The String literal "TOM" appears 9 times in this file; the first occurrence is on line 45
+model/Constants.java:45:	AvoidDuplicateLiterals: The String literal "TOM" appears 9 times in this file; the first occurrence is on line 45
+model/Constants.java:46:	AvoidDuplicateLiterals: The String literal "01/08/2002" appears 9 times in this file; the first occurrence is on line 46
+model/Constants.java:46:	AvoidDuplicateLiterals: The String literal "01/08/2002" appears 9 times in this file; the first occurrence is on line 46
+model/Constants.java:46:	AvoidDuplicateLiterals: The String literal "DORCAS" appears 9 times in this file; the first occurrence is on line 46
+model/Constants.java:46:	AvoidDuplicateLiterals: The String literal "DORCAS" appears 9 times in this file; the first occurrence is on line 46
+model/Constants.java:46:	AvoidDuplicateLiterals: The String literal "ELINE" appears 9 times in this file; the first occurrence is on line 46
+model/Constants.java:46:	AvoidDuplicateLiterals: The String literal "ELINE" appears 9 times in this file; the first occurrence is on line 46
+model/Constants.java:46:	AvoidDuplicateLiterals: The String literal "RUE DE BOUSIES (G.) 7 7011 GHLIN" appears 9 times in this file; the first occurrence is on line 46
+model/Constants.java:46:	AvoidDuplicateLiterals: The String literal "RUE DE BOUSIES (G.) 7 7011 GHLIN" appears 9 times in this file; the first occurrence is on line 46
+model/Constants.java:46:	AvoidDuplicateLiterals: The String literal "Urbain" appears 9 times in this file; the first occurrence is on line 46
+model/Constants.java:46:	AvoidDuplicateLiterals: The String literal "Urbain" appears 9 times in this file; the first occurrence is on line 46
+model/DbAction.java:12:	AbstractClassWithoutAbstractMethod: This abstract class does not have any abstract methods
+model/DbAction.java:12:	AbstractClassWithoutAbstractMethod: This abstract class does not have any abstract methods
+model/DbAction.java:12:	AbstractNaming: Abstract classes should be named AbstractXXX
+model/DbAction.java:12:	AbstractNaming: Abstract classes should be named AbstractXXX
+model/DbAction.java:17:	CommentSize: Comment is too large: Line too long
+model/DbAction.java:17:	CommentSize: Comment is too large: Line too long
+model/DbAction.java:18:	CommentSize: Comment is too large: Line too long
+model/DbAction.java:18:	CommentSize: Comment is too large: Line too long
+model/DbAction.java:23:	CommentSize: Comment is too large: Too many lines
+model/DbAction.java:23:	CommentSize: Comment is too large: Too many lines
+model/DbAction.java:48:	ExcessiveParameterList: Avoid long parameter lists.
+model/DbAction.java:48:	ExcessiveParameterList: Avoid long parameter lists.
+model/DbAction.java:49:	MethodArgumentCouldBeFinal: Parameter 'textFieldSection' is not assigned and could be declared final
+model/DbAction.java:49:	MethodArgumentCouldBeFinal: Parameter 'textFieldSection' is not assigned and could be declared final
+model/DbAction.java:50:	MethodArgumentCouldBeFinal: Parameter 'textFieldFonction' is not assigned and could be declared final
+model/DbAction.java:50:	MethodArgumentCouldBeFinal: Parameter 'textFieldFonction' is not assigned and could be declared final
+model/DbAction.java:51:	MethodArgumentCouldBeFinal: Parameter 'textFieldTotem' is not assigned and could be declared final
+model/DbAction.java:51:	MethodArgumentCouldBeFinal: Parameter 'textFieldTotem' is not assigned and could be declared final
+model/DbAction.java:52:	MethodArgumentCouldBeFinal: Parameter 'textFieldNom' is not assigned and could be declared final
+model/DbAction.java:52:	MethodArgumentCouldBeFinal: Parameter 'textFieldNom' is not assigned and could be declared final
+model/DbAction.java:53:	MethodArgumentCouldBeFinal: Parameter 'textFieldPrenom' is not assigned and could be declared final
+model/DbAction.java:53:	MethodArgumentCouldBeFinal: Parameter 'textFieldPrenom' is not assigned and could be declared final
+model/DbAction.java:54:	LongVariable: Avoid excessively long variable names like textFieldDateNaissance
+model/DbAction.java:54:	LongVariable: Avoid excessively long variable names like textFieldDateNaissance
+model/DbAction.java:54:	MethodArgumentCouldBeFinal: Parameter 'textFieldDateNaissance' is not assigned and could be declared final
+model/DbAction.java:54:	MethodArgumentCouldBeFinal: Parameter 'textFieldDateNaissance' is not assigned and could be declared final
+model/DbAction.java:55:	MethodArgumentCouldBeFinal: Parameter 'textFieldAdresse' is not assigned and could be declared final
+model/DbAction.java:55:	MethodArgumentCouldBeFinal: Parameter 'textFieldAdresse' is not assigned and could be declared final
+model/DbAction.java:56:	MethodArgumentCouldBeFinal: Parameter 'textFieldMail' is not assigned and could be declared final
+model/DbAction.java:56:	MethodArgumentCouldBeFinal: Parameter 'textFieldMail' is not assigned and could be declared final
+model/DbAction.java:57:	MethodArgumentCouldBeFinal: Parameter 'textFieldCamp' is not assigned and could be declared final
+model/DbAction.java:57:	MethodArgumentCouldBeFinal: Parameter 'textFieldCamp' is not assigned and could be declared final
+model/DbAction.java:58:	LongVariable: Avoid excessively long variable names like textFieldCotisation
+model/DbAction.java:58:	LongVariable: Avoid excessively long variable names like textFieldCotisation
+model/DbAction.java:58:	MethodArgumentCouldBeFinal: Parameter 'textFieldCotisation' is not assigned and could be declared final
+model/DbAction.java:58:	MethodArgumentCouldBeFinal: Parameter 'textFieldCotisation' is not assigned and could be declared final
+model/DbAction.java:61:	AvoidDuplicateLiterals: The String literal "','" appears 9 times in this file; the first occurrence is on line 61
+model/DbAction.java:61:	AvoidDuplicateLiterals: The String literal "','" appears 9 times in this file; the first occurrence is on line 61
+model/DbAction.java:66:	CommentSize: Comment is too large: Too many lines
+model/DbAction.java:66:	CommentSize: Comment is too large: Too many lines
+model/DbAction.java:93:	ExcessiveParameterList: Avoid long parameter lists.
+model/DbAction.java:93:	ExcessiveParameterList: Avoid long parameter lists.
+model/DbAction.java:94:	MethodArgumentCouldBeFinal: Parameter 'textFieldId' is not assigned and could be declared final
+model/DbAction.java:94:	MethodArgumentCouldBeFinal: Parameter 'textFieldId' is not assigned and could be declared final
+model/DbAction.java:95:	MethodArgumentCouldBeFinal: Parameter 'textFieldSection' is not assigned and could be declared final
+model/DbAction.java:95:	MethodArgumentCouldBeFinal: Parameter 'textFieldSection' is not assigned and could be declared final
+model/DbAction.java:96:	MethodArgumentCouldBeFinal: Parameter 'textFieldFonction' is not assigned and could be declared final
+model/DbAction.java:96:	MethodArgumentCouldBeFinal: Parameter 'textFieldFonction' is not assigned and could be declared final
+model/DbAction.java:97:	MethodArgumentCouldBeFinal: Parameter 'textFieldTotem' is not assigned and could be declared final
+model/DbAction.java:97:	MethodArgumentCouldBeFinal: Parameter 'textFieldTotem' is not assigned and could be declared final
+model/DbAction.java:98:	MethodArgumentCouldBeFinal: Parameter 'textFieldNom' is not assigned and could be declared final
+model/DbAction.java:98:	MethodArgumentCouldBeFinal: Parameter 'textFieldNom' is not assigned and could be declared final
+model/DbAction.java:99:	MethodArgumentCouldBeFinal: Parameter 'textFieldPrenom' is not assigned and could be declared final
+model/DbAction.java:99:	MethodArgumentCouldBeFinal: Parameter 'textFieldPrenom' is not assigned and could be declared final
+model/DbAction.java:100:	LongVariable: Avoid excessively long variable names like textFieldDateNaissance
+model/DbAction.java:100:	LongVariable: Avoid excessively long variable names like textFieldDateNaissance
+model/DbAction.java:100:	MethodArgumentCouldBeFinal: Parameter 'textFieldDateNaissance' is not assigned and could be declared final
+model/DbAction.java:100:	MethodArgumentCouldBeFinal: Parameter 'textFieldDateNaissance' is not assigned and could be declared final
+model/DbAction.java:101:	MethodArgumentCouldBeFinal: Parameter 'textFieldAdresse' is not assigned and could be declared final
+model/DbAction.java:101:	MethodArgumentCouldBeFinal: Parameter 'textFieldAdresse' is not assigned and could be declared final
+model/DbAction.java:102:	MethodArgumentCouldBeFinal: Parameter 'textFieldMail' is not assigned and could be declared final
+model/DbAction.java:102:	MethodArgumentCouldBeFinal: Parameter 'textFieldMail' is not assigned and could be declared final
+model/DbAction.java:103:	MethodArgumentCouldBeFinal: Parameter 'textFieldCamp' is not assigned and could be declared final
+model/DbAction.java:103:	MethodArgumentCouldBeFinal: Parameter 'textFieldCamp' is not assigned and could be declared final
+model/DbAction.java:104:	LongVariable: Avoid excessively long variable names like textFieldCotisation
+model/DbAction.java:104:	LongVariable: Avoid excessively long variable names like textFieldCotisation
+model/DbAction.java:104:	MethodArgumentCouldBeFinal: Parameter 'textFieldCotisation' is not assigned and could be declared final
+model/DbAction.java:104:	MethodArgumentCouldBeFinal: Parameter 'textFieldCotisation' is not assigned and could be declared final
+model/DbAction.java:118:	MethodArgumentCouldBeFinal: Parameter 'textFieldId' is not assigned and could be declared final
+model/DbAction.java:118:	MethodArgumentCouldBeFinal: Parameter 'textFieldId' is not assigned and could be declared final
+model/DbCon.java:22:	AbstractClassWithoutAbstractMethod: This abstract class does not have any abstract methods
+model/DbCon.java:22:	AbstractClassWithoutAbstractMethod: This abstract class does not have any abstract methods
+model/DbCon.java:22:	AbstractNaming: Abstract classes should be named AbstractXXX
+model/DbCon.java:22:	AbstractNaming: Abstract classes should be named AbstractXXX
+model/DbCon.java:45:	SystemPrintln: System.out.println is used
+model/DbCon.java:45:	SystemPrintln: System.out.println is used
+model/DbCon.java:46:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+model/DbCon.java:46:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+model/DbCon.java:48:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+model/DbCon.java:48:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+model/DbCon.java:50:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+model/DbCon.java:50:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+model/DbCon.java:69:	MethodArgumentCouldBeFinal: Parameter 'message' is not assigned and could be declared final
+model/DbCon.java:69:	MethodArgumentCouldBeFinal: Parameter 'message' is not assigned and could be declared final
+model/DbCon.java:69:	MethodArgumentCouldBeFinal: Parameter 'query' is not assigned and could be declared final
+model/DbCon.java:69:	MethodArgumentCouldBeFinal: Parameter 'query' is not assigned and could be declared final
+model/DbCon.java:71:	LocalVariableCouldBeFinal: Local variable 'connection' could be declared final
+model/DbCon.java:71:	LocalVariableCouldBeFinal: Local variable 'connection' could be declared final
+model/DbCon.java:73:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'st' (lines '73'-'77').
+model/DbCon.java:73:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'st' (lines '73'-'77').
+model/DbCon.java:73:	ShortVariable: Avoid variables with short names like st
+model/DbCon.java:73:	ShortVariable: Avoid variables with short names like st
+model/DbCon.java:79:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+model/DbCon.java:79:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+model/DbCon.java:82:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+model/DbCon.java:82:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+model/DbCon.java:82:	LocalVariableCouldBeFinal: Local variable 'model' could be declared final
+model/DbCon.java:82:	LocalVariableCouldBeFinal: Local variable 'model' could be declared final
+model/DbCon.java:83:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/DbCon.java:83:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/DbCon.java:84:	LocalVariableCouldBeFinal: Local variable 'table' could be declared final
+model/DbCon.java:84:	LocalVariableCouldBeFinal: Local variable 'table' could be declared final
+model/DbCon.java:86:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:86:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:86:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:86:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:86:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/DbCon.java:86:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/DbCon.java:87:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:87:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:87:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:87:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:87:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/DbCon.java:87:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/DbCon.java:88:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:88:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:88:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:88:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:88:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/DbCon.java:88:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/DbCon.java:89:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:89:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:89:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:89:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:89:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/DbCon.java:89:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/DbCon.java:90:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:90:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:90:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:90:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:90:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/DbCon.java:90:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/DbCon.java:91:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:91:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:91:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:91:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:91:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/DbCon.java:91:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/DbCon.java:92:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:92:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:92:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:92:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:92:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/DbCon.java:92:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/DbCon.java:93:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:93:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:93:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:93:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:93:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/DbCon.java:93:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/DbCon.java:94:	LocalVariableCouldBeFinal: Local variable 'cellRenderer' could be declared final
+model/DbCon.java:94:	LocalVariableCouldBeFinal: Local variable 'cellRenderer' could be declared final
+model/DbCon.java:96:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:96:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:96:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:96:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:96:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/DbCon.java:96:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/DbCon.java:97:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:97:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:97:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:97:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:97:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/DbCon.java:97:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/DbCon.java:98:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:98:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:98:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:98:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/DbCon.java:98:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/DbCon.java:98:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/DbCon.java:110:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+model/DbCon.java:110:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+model/DbCon.java:118:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+model/DbCon.java:118:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+model/Model.java:35:	CommentSize: Comment is too large: Line too long
+model/Model.java:35:	CommentSize: Comment is too large: Line too long
+model/Model.java:40:	LooseCoupling: Avoid using implementation types like 'ArrayList'; use the interface instead
+model/Model.java:40:	LooseCoupling: Avoid using implementation types like 'ArrayList'; use the interface instead
+model/Model.java:41:	LocalVariableCouldBeFinal: Local variable 'scoutsList' could be declared final
+model/Model.java:41:	LocalVariableCouldBeFinal: Local variable 'scoutsList' could be declared final
+model/Model.java:41:	UseDiamondOperator: Explicit type arguments can be replaced by Diamond Operator
+model/Model.java:41:	UseDiamondOperator: Explicit type arguments can be replaced by Diamond Operator
+model/Model.java:42:	CloseResource: Ensure that resources like this Connection object are closed after use
+model/Model.java:42:	CloseResource: Ensure that resources like this Connection object are closed after use
+model/Model.java:42:	LocalVariableCouldBeFinal: Local variable 'connection' could be declared final
+model/Model.java:42:	LocalVariableCouldBeFinal: Local variable 'connection' could be declared final
+model/Model.java:44:	LocalVariableCouldBeFinal: Local variable 'query' could be declared final
+model/Model.java:44:	LocalVariableCouldBeFinal: Local variable 'query' could be declared final
+model/Model.java:45:	CloseResource: Ensure that resources like this Statement object are closed after use
+model/Model.java:45:	CloseResource: Ensure that resources like this Statement object are closed after use
+model/Model.java:45:	ShortVariable: Avoid variables with short names like st
+model/Model.java:45:	ShortVariable: Avoid variables with short names like st
+model/Model.java:46:	CloseResource: Ensure that resources like this ResultSet object are closed after use
+model/Model.java:46:	CloseResource: Ensure that resources like this ResultSet object are closed after use
+model/Model.java:46:	ShortVariable: Avoid variables with short names like rs
+model/Model.java:46:	ShortVariable: Avoid variables with short names like rs
+model/Model.java:55:	AvoidInstantiatingObjectsInLoops: Avoid instantiating new objects inside loops
+model/Model.java:55:	AvoidInstantiatingObjectsInLoops: Avoid instantiating new objects inside loops
+model/Model.java:72:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+model/Model.java:72:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+model/Model.java:74:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+model/Model.java:74:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+model/Model.java:83:	CommentSize: Comment is too large: Line too long
+model/Model.java:83:	CommentSize: Comment is too large: Line too long
+model/Model.java:92:	LocalVariableCouldBeFinal: Local variable 'scoutList' could be declared final
+model/Model.java:92:	LocalVariableCouldBeFinal: Local variable 'scoutList' could be declared final
+model/Model.java:96:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'data' (lines '96'-'116').
+model/Model.java:96:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'data' (lines '96'-'116').
+model/Model.java:96:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/Model.java:96:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/Model.java:101:	AvoidInstantiatingObjectsInLoops: Avoid instantiating new objects inside loops
+model/Model.java:101:	AvoidInstantiatingObjectsInLoops: Avoid instantiating new objects inside loops
+model/Model.java:101:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'row' (lines '101'-'103').
+model/Model.java:101:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'row' (lines '101'-'103').
+model/Model.java:103:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'row' (lines '103'-'104').
+model/Model.java:103:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'row' (lines '103'-'104').
+model/Model.java:103:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:103:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:104:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'row' (lines '104'-'105').
+model/Model.java:104:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'row' (lines '104'-'105').
+model/Model.java:104:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:104:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:105:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'row' (lines '105'-'106').
+model/Model.java:105:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'row' (lines '105'-'106').
+model/Model.java:105:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:105:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:106:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'row' (lines '106'-'107').
+model/Model.java:106:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'row' (lines '106'-'107').
+model/Model.java:106:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:106:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:107:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'row' (lines '107'-'108').
+model/Model.java:107:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'row' (lines '107'-'108').
+model/Model.java:107:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:107:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:108:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'row' (lines '108'-'109').
+model/Model.java:108:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'row' (lines '108'-'109').
+model/Model.java:108:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:108:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:109:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'row' (lines '109'-'110').
+model/Model.java:109:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'row' (lines '109'-'110').
+model/Model.java:109:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:109:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:110:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'row' (lines '110'-'111').
+model/Model.java:110:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'row' (lines '110'-'111').
+model/Model.java:110:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:110:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:111:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'row' (lines '111'-'112').
+model/Model.java:111:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'row' (lines '111'-'112').
+model/Model.java:111:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:111:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:112:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'row' (lines '112'-'113').
+model/Model.java:112:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'row' (lines '112'-'113').
+model/Model.java:112:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:112:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:113:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:113:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:116:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'data' (lines '116'-'116').
+model/Model.java:116:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'data' (lines '116'-'116').
+model/Model.java:126:	CommentSize: Comment is too large: Too many lines
+model/Model.java:126:	CommentSize: Comment is too large: Too many lines
+model/Model.java:127:	CommentSize: Comment is too large: Line too long
+model/Model.java:127:	CommentSize: Comment is too large: Line too long
+model/Model.java:155:	ExcessiveParameterList: Avoid long parameter lists.
+model/Model.java:155:	ExcessiveParameterList: Avoid long parameter lists.
+model/Model.java:156:	MethodArgumentCouldBeFinal: Parameter 'table' is not assigned and could be declared final
+model/Model.java:156:	MethodArgumentCouldBeFinal: Parameter 'table' is not assigned and could be declared final
+model/Model.java:157:	MethodArgumentCouldBeFinal: Parameter 'textFieldId' is not assigned and could be declared final
+model/Model.java:157:	MethodArgumentCouldBeFinal: Parameter 'textFieldId' is not assigned and could be declared final
+model/Model.java:158:	MethodArgumentCouldBeFinal: Parameter 'textFieldSection' is not assigned and could be declared final
+model/Model.java:158:	MethodArgumentCouldBeFinal: Parameter 'textFieldSection' is not assigned and could be declared final
+model/Model.java:159:	MethodArgumentCouldBeFinal: Parameter 'textFieldFonction' is not assigned and could be declared final
+model/Model.java:159:	MethodArgumentCouldBeFinal: Parameter 'textFieldFonction' is not assigned and could be declared final
+model/Model.java:160:	MethodArgumentCouldBeFinal: Parameter 'textFieldTotem' is not assigned and could be declared final
+model/Model.java:160:	MethodArgumentCouldBeFinal: Parameter 'textFieldTotem' is not assigned and could be declared final
+model/Model.java:161:	MethodArgumentCouldBeFinal: Parameter 'textFieldNom' is not assigned and could be declared final
+model/Model.java:161:	MethodArgumentCouldBeFinal: Parameter 'textFieldNom' is not assigned and could be declared final
+model/Model.java:162:	MethodArgumentCouldBeFinal: Parameter 'textFieldPrenom' is not assigned and could be declared final
+model/Model.java:162:	MethodArgumentCouldBeFinal: Parameter 'textFieldPrenom' is not assigned and could be declared final
+model/Model.java:163:	LongVariable: Avoid excessively long variable names like textFieldDateNaissance
+model/Model.java:163:	LongVariable: Avoid excessively long variable names like textFieldDateNaissance
+model/Model.java:163:	MethodArgumentCouldBeFinal: Parameter 'textFieldDateNaissance' is not assigned and could be declared final
+model/Model.java:163:	MethodArgumentCouldBeFinal: Parameter 'textFieldDateNaissance' is not assigned and could be declared final
+model/Model.java:164:	MethodArgumentCouldBeFinal: Parameter 'textFieldAdresse' is not assigned and could be declared final
+model/Model.java:164:	MethodArgumentCouldBeFinal: Parameter 'textFieldAdresse' is not assigned and could be declared final
+model/Model.java:165:	MethodArgumentCouldBeFinal: Parameter 'textFieldMail' is not assigned and could be declared final
+model/Model.java:165:	MethodArgumentCouldBeFinal: Parameter 'textFieldMail' is not assigned and could be declared final
+model/Model.java:166:	MethodArgumentCouldBeFinal: Parameter 'textFieldCamp' is not assigned and could be declared final
+model/Model.java:166:	MethodArgumentCouldBeFinal: Parameter 'textFieldCamp' is not assigned and could be declared final
+model/Model.java:167:	LongVariable: Avoid excessively long variable names like textFieldCotisation
+model/Model.java:167:	LongVariable: Avoid excessively long variable names like textFieldCotisation
+model/Model.java:167:	MethodArgumentCouldBeFinal: Parameter 'textFieldCotisation' is not assigned and could be declared final
+model/Model.java:167:	MethodArgumentCouldBeFinal: Parameter 'textFieldCotisation' is not assigned and could be declared final
+model/Model.java:169:	LocalVariableCouldBeFinal: Local variable 'i' could be declared final
+model/Model.java:169:	LocalVariableCouldBeFinal: Local variable 'i' could be declared final
+model/Model.java:169:	ShortVariable: Avoid variables with short names like i
+model/Model.java:169:	ShortVariable: Avoid variables with short names like i
+model/Model.java:170:	LocalVariableCouldBeFinal: Local variable 'model' could be declared final
+model/Model.java:170:	LocalVariableCouldBeFinal: Local variable 'model' could be declared final
+model/Model.java:171:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:171:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:171:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/Model.java:171:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/Model.java:172:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:172:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:172:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/Model.java:172:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/Model.java:173:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:173:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:173:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/Model.java:173:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/Model.java:174:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:174:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:174:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/Model.java:174:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/Model.java:175:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:175:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:175:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/Model.java:175:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/Model.java:176:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:176:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:176:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/Model.java:176:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/Model.java:177:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:177:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:177:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/Model.java:177:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/Model.java:178:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:178:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:178:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/Model.java:178:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/Model.java:179:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:179:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:179:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/Model.java:179:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/Model.java:180:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:180:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:180:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/Model.java:180:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/Model.java:181:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:181:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Model.java:181:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/Model.java:181:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/Model.java:186:	CommentRequired: Public method and constructor comments are required
+model/Model.java:186:	CommentRequired: Public method and constructor comments are required
+model/Model.java:186:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+model/Model.java:186:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+model/Model.java:186:	MethodArgumentCouldBeFinal: Parameter 'query' is not assigned and could be declared final
+model/Model.java:186:	MethodArgumentCouldBeFinal: Parameter 'query' is not assigned and could be declared final
+model/Model.java:186:	MethodArgumentCouldBeFinal: Parameter 'table' is not assigned and could be declared final
+model/Model.java:186:	MethodArgumentCouldBeFinal: Parameter 'table' is not assigned and could be declared final
+model/Model.java:188:	LocalVariableCouldBeFinal: Local variable 'tr' could be declared final
+model/Model.java:188:	LocalVariableCouldBeFinal: Local variable 'tr' could be declared final
+model/Model.java:188:	ShortVariable: Avoid variables with short names like tr
+model/Model.java:188:	ShortVariable: Avoid variables with short names like tr
+model/Model.java:188:	UseDiamondOperator: Explicit type arguments can be replaced by Diamond Operator
+model/Model.java:188:	UseDiamondOperator: Explicit type arguments can be replaced by Diamond Operator
+model/Scout.java:6:	CommentRequired: Class comments are required
+model/Scout.java:6:	CommentRequired: Class comments are required
+model/Scout.java:6:	DataClass: The class 'Scout' is suspected to be a Data Class (WOC=0.000%, NOPA=1, NOAM=22, WMC=23)
+model/Scout.java:6:	DataClass: The class 'Scout' is suspected to be a Data Class (WOC=0.000%, NOPA=1, NOAM=22, WMC=23)
+model/Scout.java:8:	CommentRequired: Field comments are required
+model/Scout.java:8:	CommentRequired: Field comments are required
+model/Scout.java:8:	ShortVariable: Avoid variables with short names like id
+model/Scout.java:8:	ShortVariable: Avoid variables with short names like id
+model/Scout.java:9:	CommentRequired: Field comments are required
+model/Scout.java:9:	CommentRequired: Field comments are required
+model/Scout.java:10:	CommentRequired: Field comments are required
+model/Scout.java:10:	CommentRequired: Field comments are required
+model/Scout.java:11:	CommentRequired: Field comments are required
+model/Scout.java:11:	CommentRequired: Field comments are required
+model/Scout.java:12:	CommentRequired: Field comments are required
+model/Scout.java:12:	CommentRequired: Field comments are required
+model/Scout.java:13:	CommentRequired: Field comments are required
+model/Scout.java:13:	CommentRequired: Field comments are required
+model/Scout.java:14:	CommentRequired: Field comments are required
+model/Scout.java:14:	CommentRequired: Field comments are required
+model/Scout.java:15:	CommentRequired: Field comments are required
+model/Scout.java:15:	CommentRequired: Field comments are required
+model/Scout.java:16:	CommentRequired: Field comments are required
+model/Scout.java:16:	CommentRequired: Field comments are required
+model/Scout.java:17:	CommentRequired: Field comments are required
+model/Scout.java:17:	CommentRequired: Field comments are required
+model/Scout.java:18:	CommentRequired: Field comments are required
+model/Scout.java:18:	CommentRequired: Field comments are required
+model/Scout.java:21:	CommentRequired: Public method and constructor comments are required
+model/Scout.java:21:	CommentRequired: Public method and constructor comments are required
+model/Scout.java:21:	ExcessiveParameterList: Avoid long parameter lists.
+model/Scout.java:21:	ExcessiveParameterList: Avoid long parameter lists.
+model/Scout.java:21:	MethodArgumentCouldBeFinal: Parameter 'adresse' is not assigned and could be declared final
+model/Scout.java:21:	MethodArgumentCouldBeFinal: Parameter 'adresse' is not assigned and could be declared final
+model/Scout.java:21:	MethodArgumentCouldBeFinal: Parameter 'camp' is not assigned and could be declared final
+model/Scout.java:21:	MethodArgumentCouldBeFinal: Parameter 'camp' is not assigned and could be declared final
+model/Scout.java:21:	MethodArgumentCouldBeFinal: Parameter 'cotisation' is not assigned and could be declared final
+model/Scout.java:21:	MethodArgumentCouldBeFinal: Parameter 'cotisation' is not assigned and could be declared final
+model/Scout.java:21:	MethodArgumentCouldBeFinal: Parameter 'dateNaissance' is not assigned and could be declared final
+model/Scout.java:21:	MethodArgumentCouldBeFinal: Parameter 'dateNaissance' is not assigned and could be declared final
+model/Scout.java:21:	MethodArgumentCouldBeFinal: Parameter 'fonction' is not assigned and could be declared final
+model/Scout.java:21:	MethodArgumentCouldBeFinal: Parameter 'fonction' is not assigned and could be declared final
+model/Scout.java:21:	MethodArgumentCouldBeFinal: Parameter 'iD' is not assigned and could be declared final
+model/Scout.java:21:	MethodArgumentCouldBeFinal: Parameter 'iD' is not assigned and could be declared final
+model/Scout.java:21:	MethodArgumentCouldBeFinal: Parameter 'mail' is not assigned and could be declared final
+model/Scout.java:21:	MethodArgumentCouldBeFinal: Parameter 'mail' is not assigned and could be declared final
+model/Scout.java:21:	MethodArgumentCouldBeFinal: Parameter 'nom' is not assigned and could be declared final
+model/Scout.java:21:	MethodArgumentCouldBeFinal: Parameter 'nom' is not assigned and could be declared final
+model/Scout.java:21:	MethodArgumentCouldBeFinal: Parameter 'prenom' is not assigned and could be declared final
+model/Scout.java:21:	MethodArgumentCouldBeFinal: Parameter 'prenom' is not assigned and could be declared final
+model/Scout.java:21:	MethodArgumentCouldBeFinal: Parameter 'section' is not assigned and could be declared final
+model/Scout.java:21:	MethodArgumentCouldBeFinal: Parameter 'section' is not assigned and could be declared final
+model/Scout.java:21:	MethodArgumentCouldBeFinal: Parameter 'totem' is not assigned and could be declared final
+model/Scout.java:21:	MethodArgumentCouldBeFinal: Parameter 'totem' is not assigned and could be declared final
+model/Scout.java:21:	ShortVariable: Avoid variables with short names like iD
+model/Scout.java:21:	ShortVariable: Avoid variables with short names like iD
+model/Scout.java:39:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+model/Scout.java:39:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+model/Scout.java:39:	ShortVariable: Avoid variables with short names like id
+model/Scout.java:39:	ShortVariable: Avoid variables with short names like id
+model/Scout.java:45:	MethodArgumentCouldBeFinal: Parameter 'section' is not assigned and could be declared final
+model/Scout.java:45:	MethodArgumentCouldBeFinal: Parameter 'section' is not assigned and could be declared final
+model/Scout.java:51:	MethodArgumentCouldBeFinal: Parameter 'fonction' is not assigned and could be declared final
+model/Scout.java:51:	MethodArgumentCouldBeFinal: Parameter 'fonction' is not assigned and could be declared final
+model/Scout.java:57:	MethodArgumentCouldBeFinal: Parameter 'totem' is not assigned and could be declared final
+model/Scout.java:57:	MethodArgumentCouldBeFinal: Parameter 'totem' is not assigned and could be declared final
+model/Scout.java:63:	MethodArgumentCouldBeFinal: Parameter 'nom' is not assigned and could be declared final
+model/Scout.java:63:	MethodArgumentCouldBeFinal: Parameter 'nom' is not assigned and could be declared final
+model/Scout.java:69:	MethodArgumentCouldBeFinal: Parameter 'prenom' is not assigned and could be declared final
+model/Scout.java:69:	MethodArgumentCouldBeFinal: Parameter 'prenom' is not assigned and could be declared final
+model/Scout.java:75:	MethodArgumentCouldBeFinal: Parameter 'dateNaissance' is not assigned and could be declared final
+model/Scout.java:75:	MethodArgumentCouldBeFinal: Parameter 'dateNaissance' is not assigned and could be declared final
+model/Scout.java:81:	MethodArgumentCouldBeFinal: Parameter 'adresse' is not assigned and could be declared final
+model/Scout.java:81:	MethodArgumentCouldBeFinal: Parameter 'adresse' is not assigned and could be declared final
+model/Scout.java:87:	MethodArgumentCouldBeFinal: Parameter 'mail' is not assigned and could be declared final
+model/Scout.java:87:	MethodArgumentCouldBeFinal: Parameter 'mail' is not assigned and could be declared final
+model/Scout.java:93:	MethodArgumentCouldBeFinal: Parameter 'camp' is not assigned and could be declared final
+model/Scout.java:93:	MethodArgumentCouldBeFinal: Parameter 'camp' is not assigned and could be declared final
+model/Scout.java:99:	MethodArgumentCouldBeFinal: Parameter 'cotisation' is not assigned and could be declared final
+model/Scout.java:99:	MethodArgumentCouldBeFinal: Parameter 'cotisation' is not assigned and could be declared final
+model/Scout.java:108:	CommentRequired: Public method and constructor comments are required
+model/Scout.java:108:	CommentRequired: Public method and constructor comments are required
+model/Scout.java:108:	MethodArgumentCouldBeFinal: Parameter 's1' is not assigned and could be declared final
+model/Scout.java:108:	MethodArgumentCouldBeFinal: Parameter 's1' is not assigned and could be declared final
+model/Scout.java:108:	MethodArgumentCouldBeFinal: Parameter 's2' is not assigned and could be declared final
+model/Scout.java:108:	MethodArgumentCouldBeFinal: Parameter 's2' is not assigned and could be declared final
+model/Scout.java:108:	MissingOverride: The method 'compare(Scout, Scout)' is missing an @Override annotation.
+model/Scout.java:108:	MissingOverride: The method 'compare(Scout, Scout)' is missing an @Override annotation.
+model/Scout.java:108:	ShortVariable: Avoid variables with short names like s1
+model/Scout.java:108:	ShortVariable: Avoid variables with short names like s1
+model/Scout.java:108:	ShortVariable: Avoid variables with short names like s2
+model/Scout.java:108:	ShortVariable: Avoid variables with short names like s2
+model/Scout.java:109:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Scout.java:109:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Scout.java:109:	LocalVariableCouldBeFinal: Local variable 'studentName1' could be declared final
+model/Scout.java:109:	LocalVariableCouldBeFinal: Local variable 'studentName1' could be declared final
+model/Scout.java:109:	UseLocaleWithCaseConversions: When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+model/Scout.java:109:	UseLocaleWithCaseConversions: When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+model/Scout.java:110:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Scout.java:110:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+model/Scout.java:110:	LocalVariableCouldBeFinal: Local variable 'studentName2' could be declared final
+model/Scout.java:110:	LocalVariableCouldBeFinal: Local variable 'studentName2' could be declared final
+model/Scout.java:110:	UseLocaleWithCaseConversions: When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+model/Scout.java:110:	UseLocaleWithCaseConversions: When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+model/Scout.java:113:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+model/Scout.java:113:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+view/MainView.java:1:	ExcessiveImports: A high number of imports can indicate a high degree of coupling within an object.
+view/MainView.java:1:	ExcessiveImports: A high number of imports can indicate a high degree of coupling within an object.
+view/MainView.java:44:	CommentSize: Comment is too large: Too many lines
+view/MainView.java:44:	CommentSize: Comment is too large: Too many lines
+view/MainView.java:60:	TooManyFields: Too many fields
+view/MainView.java:60:	TooManyFields: Too many fields
+view/MainView.java:71:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:71:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:71:	ImmutableField: Private field 'textFieldId' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:71:	ImmutableField: Private field 'textFieldId' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:71:	SingularField: Perhaps 'textFieldId' could be replaced by a local variable.
+view/MainView.java:71:	SingularField: Perhaps 'textFieldId' could be replaced by a local variable.
+view/MainView.java:76:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:76:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:76:	ImmutableField: Private field 'lblId' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:76:	ImmutableField: Private field 'lblId' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:76:	SingularField: Perhaps 'lblId' could be replaced by a local variable.
+view/MainView.java:76:	SingularField: Perhaps 'lblId' could be replaced by a local variable.
+view/MainView.java:81:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:81:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:81:	ImmutableField: Private field 'textFieldSection' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:81:	ImmutableField: Private field 'textFieldSection' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:81:	SingularField: Perhaps 'textFieldSection' could be replaced by a local variable.
+view/MainView.java:81:	SingularField: Perhaps 'textFieldSection' could be replaced by a local variable.
+view/MainView.java:86:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:86:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:86:	ImmutableField: Private field 'lblSection' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:86:	ImmutableField: Private field 'lblSection' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:86:	SingularField: Perhaps 'lblSection' could be replaced by a local variable.
+view/MainView.java:86:	SingularField: Perhaps 'lblSection' could be replaced by a local variable.
+view/MainView.java:91:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:91:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:91:	ImmutableField: Private field 'textFieldFonction' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:91:	ImmutableField: Private field 'textFieldFonction' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:91:	SingularField: Perhaps 'textFieldFonction' could be replaced by a local variable.
+view/MainView.java:91:	SingularField: Perhaps 'textFieldFonction' could be replaced by a local variable.
+view/MainView.java:96:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:96:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:96:	ImmutableField: Private field 'lblFonction' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:96:	ImmutableField: Private field 'lblFonction' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:96:	SingularField: Perhaps 'lblFonction' could be replaced by a local variable.
+view/MainView.java:96:	SingularField: Perhaps 'lblFonction' could be replaced by a local variable.
+view/MainView.java:101:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:101:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:101:	ImmutableField: Private field 'textFieldTotem' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:101:	ImmutableField: Private field 'textFieldTotem' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:101:	SingularField: Perhaps 'textFieldTotem' could be replaced by a local variable.
+view/MainView.java:101:	SingularField: Perhaps 'textFieldTotem' could be replaced by a local variable.
+view/MainView.java:106:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:106:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:106:	ImmutableField: Private field 'lblTotem' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:106:	ImmutableField: Private field 'lblTotem' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:106:	SingularField: Perhaps 'lblTotem' could be replaced by a local variable.
+view/MainView.java:106:	SingularField: Perhaps 'lblTotem' could be replaced by a local variable.
+view/MainView.java:111:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:111:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:111:	ImmutableField: Private field 'textFieldNom' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:111:	ImmutableField: Private field 'textFieldNom' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:111:	SingularField: Perhaps 'textFieldNom' could be replaced by a local variable.
+view/MainView.java:111:	SingularField: Perhaps 'textFieldNom' could be replaced by a local variable.
+view/MainView.java:116:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:116:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:116:	ImmutableField: Private field 'lblNom' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:116:	ImmutableField: Private field 'lblNom' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:116:	SingularField: Perhaps 'lblNom' could be replaced by a local variable.
+view/MainView.java:116:	SingularField: Perhaps 'lblNom' could be replaced by a local variable.
+view/MainView.java:121:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:121:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:121:	ImmutableField: Private field 'textFieldPrenom' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:121:	ImmutableField: Private field 'textFieldPrenom' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:121:	SingularField: Perhaps 'textFieldPrenom' could be replaced by a local variable.
+view/MainView.java:121:	SingularField: Perhaps 'textFieldPrenom' could be replaced by a local variable.
+view/MainView.java:126:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:126:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:126:	ImmutableField: Private field 'lblPrenom' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:126:	ImmutableField: Private field 'lblPrenom' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:126:	SingularField: Perhaps 'lblPrenom' could be replaced by a local variable.
+view/MainView.java:126:	SingularField: Perhaps 'lblPrenom' could be replaced by a local variable.
+view/MainView.java:131:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:131:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:131:	ImmutableField: Private field 'textFieldDateNaissance' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:131:	ImmutableField: Private field 'textFieldDateNaissance' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:131:	LongVariable: Avoid excessively long variable names like textFieldDateNaissance
+view/MainView.java:131:	LongVariable: Avoid excessively long variable names like textFieldDateNaissance
+view/MainView.java:131:	SingularField: Perhaps 'textFieldDateNaissance' could be replaced by a local variable.
+view/MainView.java:131:	SingularField: Perhaps 'textFieldDateNaissance' could be replaced by a local variable.
+view/MainView.java:136:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:136:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:136:	ImmutableField: Private field 'lblDateNaissance' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:136:	ImmutableField: Private field 'lblDateNaissance' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:136:	SingularField: Perhaps 'lblDateNaissance' could be replaced by a local variable.
+view/MainView.java:136:	SingularField: Perhaps 'lblDateNaissance' could be replaced by a local variable.
+view/MainView.java:141:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:141:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:141:	ImmutableField: Private field 'textFieldAdresse' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:141:	ImmutableField: Private field 'textFieldAdresse' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:141:	SingularField: Perhaps 'textFieldAdresse' could be replaced by a local variable.
+view/MainView.java:141:	SingularField: Perhaps 'textFieldAdresse' could be replaced by a local variable.
+view/MainView.java:146:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:146:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:146:	ImmutableField: Private field 'lblAdresse' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:146:	ImmutableField: Private field 'lblAdresse' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:146:	SingularField: Perhaps 'lblAdresse' could be replaced by a local variable.
+view/MainView.java:146:	SingularField: Perhaps 'lblAdresse' could be replaced by a local variable.
+view/MainView.java:151:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:151:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:151:	ImmutableField: Private field 'textFieldMail' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:151:	ImmutableField: Private field 'textFieldMail' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:151:	SingularField: Perhaps 'textFieldMail' could be replaced by a local variable.
+view/MainView.java:151:	SingularField: Perhaps 'textFieldMail' could be replaced by a local variable.
+view/MainView.java:156:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:156:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:156:	ImmutableField: Private field 'lblMail' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:156:	ImmutableField: Private field 'lblMail' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:156:	SingularField: Perhaps 'lblMail' could be replaced by a local variable.
+view/MainView.java:156:	SingularField: Perhaps 'lblMail' could be replaced by a local variable.
+view/MainView.java:161:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:161:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:161:	ImmutableField: Private field 'textFieldCamp' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:161:	ImmutableField: Private field 'textFieldCamp' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:161:	SingularField: Perhaps 'textFieldCamp' could be replaced by a local variable.
+view/MainView.java:161:	SingularField: Perhaps 'textFieldCamp' could be replaced by a local variable.
+view/MainView.java:166:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:166:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:166:	ImmutableField: Private field 'lblCamp' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:166:	ImmutableField: Private field 'lblCamp' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:166:	SingularField: Perhaps 'lblCamp' could be replaced by a local variable.
+view/MainView.java:166:	SingularField: Perhaps 'lblCamp' could be replaced by a local variable.
+view/MainView.java:171:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:171:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:171:	ImmutableField: Private field 'textFieldCotisation' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:171:	ImmutableField: Private field 'textFieldCotisation' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:171:	LongVariable: Avoid excessively long variable names like textFieldCotisation
+view/MainView.java:171:	LongVariable: Avoid excessively long variable names like textFieldCotisation
+view/MainView.java:171:	SingularField: Perhaps 'textFieldCotisation' could be replaced by a local variable.
+view/MainView.java:171:	SingularField: Perhaps 'textFieldCotisation' could be replaced by a local variable.
+view/MainView.java:176:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:176:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:176:	ImmutableField: Private field 'lblCotisation' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:176:	ImmutableField: Private field 'lblCotisation' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:176:	SingularField: Perhaps 'lblCotisation' could be replaced by a local variable.
+view/MainView.java:176:	SingularField: Perhaps 'lblCotisation' could be replaced by a local variable.
+view/MainView.java:181:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:181:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:181:	ImmutableField: Private field 'menuBar' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:181:	ImmutableField: Private field 'menuBar' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:181:	SingularField: Perhaps 'menuBar' could be replaced by a local variable.
+view/MainView.java:181:	SingularField: Perhaps 'menuBar' could be replaced by a local variable.
+view/MainView.java:186:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:186:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:186:	ImmutableField: Private field 'param' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:186:	ImmutableField: Private field 'param' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:186:	SingularField: Perhaps 'param' could be replaced by a local variable.
+view/MainView.java:186:	SingularField: Perhaps 'param' could be replaced by a local variable.
+view/MainView.java:194:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:194:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:194:	ImmutableField: Private field 'updateParam' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:194:	ImmutableField: Private field 'updateParam' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:194:	SingularField: Perhaps 'updateParam' could be replaced by a local variable.
+view/MainView.java:194:	SingularField: Perhaps 'updateParam' could be replaced by a local variable.
+view/MainView.java:204:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:204:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:204:	ImmutableField: Private field 'cellRenderer' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:204:	ImmutableField: Private field 'cellRenderer' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:204:	SingularField: Perhaps 'cellRenderer' could be replaced by a local variable.
+view/MainView.java:204:	SingularField: Perhaps 'cellRenderer' could be replaced by a local variable.
+view/MainView.java:209:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:209:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:209:	ImmutableField: Private field 'addButton' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:209:	ImmutableField: Private field 'addButton' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:209:	SingularField: Perhaps 'addButton' could be replaced by a local variable.
+view/MainView.java:209:	SingularField: Perhaps 'addButton' could be replaced by a local variable.
+view/MainView.java:214:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:214:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:214:	ImmutableField: Private field 'updateButton' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:214:	ImmutableField: Private field 'updateButton' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:214:	SingularField: Perhaps 'updateButton' could be replaced by a local variable.
+view/MainView.java:214:	SingularField: Perhaps 'updateButton' could be replaced by a local variable.
+view/MainView.java:219:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:219:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:219:	ImmutableField: Private field 'deleteButton' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:219:	ImmutableField: Private field 'deleteButton' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:219:	SingularField: Perhaps 'deleteButton' could be replaced by a local variable.
+view/MainView.java:219:	SingularField: Perhaps 'deleteButton' could be replaced by a local variable.
+view/MainView.java:224:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:224:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:224:	ImmutableField: Private field 'clearButton' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:224:	ImmutableField: Private field 'clearButton' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:224:	SingularField: Perhaps 'clearButton' could be replaced by a local variable.
+view/MainView.java:224:	SingularField: Perhaps 'clearButton' could be replaced by a local variable.
+view/MainView.java:229:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:229:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:229:	ImmutableField: Private field 'scrollPane' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:229:	ImmutableField: Private field 'scrollPane' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:229:	SingularField: Perhaps 'scrollPane' could be replaced by a local variable.
+view/MainView.java:229:	SingularField: Perhaps 'scrollPane' could be replaced by a local variable.
+view/MainView.java:234:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:234:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:234:	ImmutableField: Private field 'format' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:234:	ImmutableField: Private field 'format' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:234:	SingularField: Perhaps 'format' could be replaced by a local variable.
+view/MainView.java:234:	SingularField: Perhaps 'format' could be replaced by a local variable.
+view/MainView.java:239:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:239:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:239:	ImmutableField: Private field 'df' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:239:	ImmutableField: Private field 'df' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:239:	ShortVariable: Avoid variables with short names like df
+view/MainView.java:239:	ShortVariable: Avoid variables with short names like df
+view/MainView.java:239:	SingularField: Perhaps 'df' could be replaced by a local variable.
+view/MainView.java:239:	SingularField: Perhaps 'df' could be replaced by a local variable.
+view/MainView.java:243:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:243:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:243:	ImmutableField: Private field 'mouseClicked' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:243:	ImmutableField: Private field 'mouseClicked' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:243:	SingularField: Perhaps 'mouseClicked' could be replaced by a local variable.
+view/MainView.java:243:	SingularField: Perhaps 'mouseClicked' could be replaced by a local variable.
+view/MainView.java:247:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:247:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:247:	ImmutableField: Private field 'buttonAddClicked' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:247:	ImmutableField: Private field 'buttonAddClicked' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:247:	SingularField: Perhaps 'buttonAddClicked' could be replaced by a local variable.
+view/MainView.java:247:	SingularField: Perhaps 'buttonAddClicked' could be replaced by a local variable.
+view/MainView.java:251:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:251:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:251:	ImmutableField: Private field 'buttonUpdateClicked' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:251:	ImmutableField: Private field 'buttonUpdateClicked' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:251:	LongVariable: Avoid excessively long variable names like buttonUpdateClicked
+view/MainView.java:251:	LongVariable: Avoid excessively long variable names like buttonUpdateClicked
+view/MainView.java:251:	SingularField: Perhaps 'buttonUpdateClicked' could be replaced by a local variable.
+view/MainView.java:251:	SingularField: Perhaps 'buttonUpdateClicked' could be replaced by a local variable.
+view/MainView.java:255:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:255:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:255:	ImmutableField: Private field 'buttonDeleteClicked' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:255:	ImmutableField: Private field 'buttonDeleteClicked' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:255:	LongVariable: Avoid excessively long variable names like buttonDeleteClicked
+view/MainView.java:255:	LongVariable: Avoid excessively long variable names like buttonDeleteClicked
+view/MainView.java:255:	SingularField: Perhaps 'buttonDeleteClicked' could be replaced by a local variable.
+view/MainView.java:255:	SingularField: Perhaps 'buttonDeleteClicked' could be replaced by a local variable.
+view/MainView.java:259:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:259:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:259:	ImmutableField: Private field 'buttonClearClicked' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:259:	ImmutableField: Private field 'buttonClearClicked' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:259:	LongVariable: Avoid excessively long variable names like buttonClearClicked
+view/MainView.java:259:	LongVariable: Avoid excessively long variable names like buttonClearClicked
+view/MainView.java:259:	SingularField: Perhaps 'buttonClearClicked' could be replaced by a local variable.
+view/MainView.java:259:	SingularField: Perhaps 'buttonClearClicked' could be replaced by a local variable.
+view/MainView.java:263:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:263:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/MainView.java:263:	ImmutableField: Private field 'menuItemParamClicked' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:263:	ImmutableField: Private field 'menuItemParamClicked' could be made final; it is only initialized in the declaration or constructor.
+view/MainView.java:263:	LongVariable: Avoid excessively long variable names like menuItemParamClicked
+view/MainView.java:263:	LongVariable: Avoid excessively long variable names like menuItemParamClicked
+view/MainView.java:263:	SingularField: Perhaps 'menuItemParamClicked' could be replaced by a local variable.
+view/MainView.java:263:	SingularField: Perhaps 'menuItemParamClicked' could be replaced by a local variable.
+view/MainView.java:266:	CommentSize: Comment is too large: Too many lines
+view/MainView.java:266:	CommentSize: Comment is too large: Too many lines
+view/MainView.java:277:	MethodArgumentCouldBeFinal: Parameter 'button' is not assigned and could be declared final
+view/MainView.java:277:	MethodArgumentCouldBeFinal: Parameter 'button' is not assigned and could be declared final
+view/MainView.java:277:	MethodArgumentCouldBeFinal: Parameter 'link' is not assigned and could be declared final
+view/MainView.java:277:	MethodArgumentCouldBeFinal: Parameter 'link' is not assigned and could be declared final
+view/MainView.java:279:	LocalVariableCouldBeFinal: Local variable 'myImage' could be declared final
+view/MainView.java:279:	LocalVariableCouldBeFinal: Local variable 'myImage' could be declared final
+view/MainView.java:280:	LocalVariableCouldBeFinal: Local variable 'img' could be declared final
+view/MainView.java:280:	LocalVariableCouldBeFinal: Local variable 'img' could be declared final
+view/MainView.java:281:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+view/MainView.java:281:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+view/MainView.java:281:	LocalVariableCouldBeFinal: Local variable 'newImg' could be declared final
+view/MainView.java:281:	LocalVariableCouldBeFinal: Local variable 'newImg' could be declared final
+view/MainView.java:281:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'java.awt.Image.SCALE_SMOOTH' due to existing import 'java.awt.Image'
+view/MainView.java:281:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'java.awt.Image.SCALE_SMOOTH' due to existing import 'java.awt.Image'
+view/MainView.java:282:	LocalVariableCouldBeFinal: Local variable 'image' could be declared final
+view/MainView.java:282:	LocalVariableCouldBeFinal: Local variable 'image' could be declared final
+view/MainView.java:284:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'image'
+view/MainView.java:284:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'image'
+view/MainView.java:286:	CommentSize: Comment is too large: Too many lines
+view/MainView.java:286:	CommentSize: Comment is too large: Too many lines
+view/MainView.java:297:	MethodArgumentCouldBeFinal: Parameter 'link' is not assigned and could be declared final
+view/MainView.java:297:	MethodArgumentCouldBeFinal: Parameter 'link' is not assigned and could be declared final
+view/MainView.java:297:	MethodArgumentCouldBeFinal: Parameter 'menu' is not assigned and could be declared final
+view/MainView.java:297:	MethodArgumentCouldBeFinal: Parameter 'menu' is not assigned and could be declared final
+view/MainView.java:299:	LocalVariableCouldBeFinal: Local variable 'myImage' could be declared final
+view/MainView.java:299:	LocalVariableCouldBeFinal: Local variable 'myImage' could be declared final
+view/MainView.java:300:	LocalVariableCouldBeFinal: Local variable 'img' could be declared final
+view/MainView.java:300:	LocalVariableCouldBeFinal: Local variable 'img' could be declared final
+view/MainView.java:301:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+view/MainView.java:301:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+view/MainView.java:301:	LocalVariableCouldBeFinal: Local variable 'newImg' could be declared final
+view/MainView.java:301:	LocalVariableCouldBeFinal: Local variable 'newImg' could be declared final
+view/MainView.java:301:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'java.awt.Image.SCALE_SMOOTH' due to existing import 'java.awt.Image'
+view/MainView.java:301:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'java.awt.Image.SCALE_SMOOTH' due to existing import 'java.awt.Image'
+view/MainView.java:302:	LocalVariableCouldBeFinal: Local variable 'image' could be declared final
+view/MainView.java:302:	LocalVariableCouldBeFinal: Local variable 'image' could be declared final
+view/MainView.java:304:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'image'
+view/MainView.java:304:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'image'
+view/MainView.java:308:	CommentSize: Comment is too large: Too many lines
+view/MainView.java:308:	CommentSize: Comment is too large: Too many lines
+view/MainView.java:323:	CallSuperInConstructor: It is a good practice to call super() in a constructor
+view/MainView.java:323:	CallSuperInConstructor: It is a good practice to call super() in a constructor
+view/MainView.java:323:	ExcessiveMethodLength: Avoid really long methods.
+view/MainView.java:323:	ExcessiveMethodLength: Avoid really long methods.
+view/MainView.java:323:	NcssConstructorCount: The constructor with 0 parameters has an NCSS line count of 206
+view/MainView.java:323:	NcssConstructorCount: The constructor with 0 parameters has an NCSS line count of 206
+view/MainView.java:323:	NcssCount: The constructor 'MainView()' has a NCSS line count of 206.
+view/MainView.java:323:	NcssCount: The constructor 'MainView()' has a NCSS line count of 206.
+view/MainView.java:338:	AvoidDuplicateLiterals: The String literal "HousePaint" appears 15 times in this file; the first occurrence is on line 338
+view/MainView.java:338:	AvoidDuplicateLiterals: The String literal "HousePaint" appears 15 times in this file; the first occurrence is on line 338
+view/MainView.java:341:	AvoidDuplicateLiterals: The String literal "Cocon-Regular" appears 14 times in this file; the first occurrence is on line 341
+view/MainView.java:341:	AvoidDuplicateLiterals: The String literal "Cocon-Regular" appears 14 times in this file; the first occurrence is on line 341
+view/MainView.java:441:	SimpleDateFormatNeedsLocale: When instantiating a SimpleDateFormat object, specify a Locale
+view/MainView.java:441:	SimpleDateFormatNeedsLocale: When instantiating a SimpleDateFormat object, specify a Locale
+view/MainView.java:474:	CommentSize: Comment is too large: Too many lines
+view/MainView.java:474:	CommentSize: Comment is too large: Too many lines
+view/MainView.java:497:	AssignmentToNonFinalStatic: Possible unsafe assignment to a non-final static field in a constructor.
+view/MainView.java:497:	AssignmentToNonFinalStatic: Possible unsafe assignment to a non-final static field in a constructor.
+view/MainView.java:505:	MethodArgumentCouldBeFinal: Parameter 'col' is not assigned and could be declared final
+view/MainView.java:505:	MethodArgumentCouldBeFinal: Parameter 'col' is not assigned and could be declared final
+view/MainView.java:505:	MethodArgumentCouldBeFinal: Parameter 'renderer' is not assigned and could be declared final
+view/MainView.java:505:	MethodArgumentCouldBeFinal: Parameter 'renderer' is not assigned and could be declared final
+view/MainView.java:505:	MethodArgumentCouldBeFinal: Parameter 'row' is not assigned and could be declared final
+view/MainView.java:505:	MethodArgumentCouldBeFinal: Parameter 'row' is not assigned and could be declared final
+view/MainView.java:506:	LocalVariableCouldBeFinal: Local variable 'comp' could be declared final
+view/MainView.java:506:	LocalVariableCouldBeFinal: Local variable 'comp' could be declared final
+view/MainView.java:507:	ConfusingTernary: Avoid if (x != y) ..; else ..;
+view/MainView.java:507:	ConfusingTernary: Avoid if (x != y) ..; else ..;
+view/MainView.java:509:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+view/MainView.java:509:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+view/MainView.java:510:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+view/MainView.java:510:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+view/MainView.java:510:	LocalVariableCouldBeFinal: Local variable 'value' could be declared final
+view/MainView.java:510:	LocalVariableCouldBeFinal: Local variable 'value' could be declared final
+view/MainView.java:512:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+view/MainView.java:512:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+view/MainView.java:514:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+view/MainView.java:514:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+view/MainView.java:531:	LocalVariableCouldBeFinal: Local variable 'tableHeader' could be declared final
+view/MainView.java:531:	LocalVariableCouldBeFinal: Local variable 'tableHeader' could be declared final
+view/MainView.java:534:	LocalVariableCouldBeFinal: Local variable 'rendererFromHeader' could be declared final
+view/MainView.java:534:	LocalVariableCouldBeFinal: Local variable 'rendererFromHeader' could be declared final
+view/MainView.java:534:	LongVariable: Avoid excessively long variable names like rendererFromHeader
+view/MainView.java:534:	LongVariable: Avoid excessively long variable names like rendererFromHeader
+view/MainView.java:535:	LocalVariableCouldBeFinal: Local variable 'headerLabel' could be declared final
+view/MainView.java:535:	LocalVariableCouldBeFinal: Local variable 'headerLabel' could be declared final
+view/MainView.java:586:	LocalVariableCouldBeFinal: Local variable 'model' could be declared final
+view/MainView.java:586:	LocalVariableCouldBeFinal: Local variable 'model' could be declared final
+view/ParamView.java:21:	CommentSize: Comment is too large: Too many lines
+view/ParamView.java:21:	CommentSize: Comment is too large: Too many lines
+view/ParamView.java:22:	CommentSize: Comment is too large: Line too long
+view/ParamView.java:22:	CommentSize: Comment is too large: Line too long
+view/ParamView.java:38:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/ParamView.java:38:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/ParamView.java:38:	ImmutableField: Private field 'textFieldServerN' could be made final; it is only initialized in the declaration or constructor.
+view/ParamView.java:38:	ImmutableField: Private field 'textFieldServerN' could be made final; it is only initialized in the declaration or constructor.
+view/ParamView.java:38:	SingularField: Perhaps 'textFieldServerN' could be replaced by a local variable.
+view/ParamView.java:38:	SingularField: Perhaps 'textFieldServerN' could be replaced by a local variable.
+view/ParamView.java:42:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/ParamView.java:42:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/ParamView.java:42:	ImmutableField: Private field 'textFieldUser' could be made final; it is only initialized in the declaration or constructor.
+view/ParamView.java:42:	ImmutableField: Private field 'textFieldUser' could be made final; it is only initialized in the declaration or constructor.
+view/ParamView.java:42:	SingularField: Perhaps 'textFieldUser' could be replaced by a local variable.
+view/ParamView.java:42:	SingularField: Perhaps 'textFieldUser' could be replaced by a local variable.
+view/ParamView.java:46:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/ParamView.java:46:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/ParamView.java:46:	ImmutableField: Private field 'passwordField' could be made final; it is only initialized in the declaration or constructor.
+view/ParamView.java:46:	ImmutableField: Private field 'passwordField' could be made final; it is only initialized in the declaration or constructor.
+view/ParamView.java:46:	SingularField: Perhaps 'passwordField' could be replaced by a local variable.
+view/ParamView.java:46:	SingularField: Perhaps 'passwordField' could be replaced by a local variable.
+view/ParamView.java:50:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/ParamView.java:50:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/ParamView.java:50:	ImmutableField: Private field 'backrounPanel' could be made final; it is only initialized in the declaration or constructor.
+view/ParamView.java:50:	ImmutableField: Private field 'backrounPanel' could be made final; it is only initialized in the declaration or constructor.
+view/ParamView.java:50:	SingularField: Perhaps 'backrounPanel' could be replaced by a local variable.
+view/ParamView.java:50:	SingularField: Perhaps 'backrounPanel' could be replaced by a local variable.
+view/ParamView.java:54:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/ParamView.java:54:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/ParamView.java:54:	ImmutableField: Private field 'lblServer' could be made final; it is only initialized in the declaration or constructor.
+view/ParamView.java:54:	ImmutableField: Private field 'lblServer' could be made final; it is only initialized in the declaration or constructor.
+view/ParamView.java:54:	SingularField: Perhaps 'lblServer' could be replaced by a local variable.
+view/ParamView.java:54:	SingularField: Perhaps 'lblServer' could be replaced by a local variable.
+view/ParamView.java:58:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/ParamView.java:58:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/ParamView.java:58:	ImmutableField: Private field 'lblUser' could be made final; it is only initialized in the declaration or constructor.
+view/ParamView.java:58:	ImmutableField: Private field 'lblUser' could be made final; it is only initialized in the declaration or constructor.
+view/ParamView.java:58:	SingularField: Perhaps 'lblUser' could be replaced by a local variable.
+view/ParamView.java:58:	SingularField: Perhaps 'lblUser' could be replaced by a local variable.
+view/ParamView.java:62:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/ParamView.java:62:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/ParamView.java:62:	ImmutableField: Private field 'lblPassword' could be made final; it is only initialized in the declaration or constructor.
+view/ParamView.java:62:	ImmutableField: Private field 'lblPassword' could be made final; it is only initialized in the declaration or constructor.
+view/ParamView.java:62:	SingularField: Perhaps 'lblPassword' could be replaced by a local variable.
+view/ParamView.java:62:	SingularField: Perhaps 'lblPassword' could be replaced by a local variable.
+view/ParamView.java:66:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/ParamView.java:66:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/ParamView.java:66:	ImmutableField: Private field 'conButton' could be made final; it is only initialized in the declaration or constructor.
+view/ParamView.java:66:	ImmutableField: Private field 'conButton' could be made final; it is only initialized in the declaration or constructor.
+view/ParamView.java:66:	SingularField: Perhaps 'conButton' could be replaced by a local variable.
+view/ParamView.java:66:	SingularField: Perhaps 'conButton' could be replaced by a local variable.
+view/ParamView.java:70:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/ParamView.java:70:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/ParamView.java:70:	ImmutableField: Private field 'getBackgroundImage' could be made final; it is only initialized in the declaration or constructor.
+view/ParamView.java:70:	ImmutableField: Private field 'getBackgroundImage' could be made final; it is only initialized in the declaration or constructor.
+view/ParamView.java:70:	LongVariable: Avoid excessively long variable names like getBackgroundImage
+view/ParamView.java:70:	LongVariable: Avoid excessively long variable names like getBackgroundImage
+view/ParamView.java:70:	SingularField: Perhaps 'getBackgroundImage' could be replaced by a local variable.
+view/ParamView.java:70:	SingularField: Perhaps 'getBackgroundImage' could be replaced by a local variable.
+view/ParamView.java:74:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/ParamView.java:74:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/ParamView.java:74:	ImmutableField: Private field 'backgroundImage' could be made final; it is only initialized in the declaration or constructor.
+view/ParamView.java:74:	ImmutableField: Private field 'backgroundImage' could be made final; it is only initialized in the declaration or constructor.
+view/ParamView.java:74:	SingularField: Perhaps 'backgroundImage' could be replaced by a local variable.
+view/ParamView.java:74:	SingularField: Perhaps 'backgroundImage' could be replaced by a local variable.
+view/ParamView.java:78:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/ParamView.java:78:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+view/ParamView.java:78:	ImmutableField: Private field 'buttonParametreClicked' could be made final; it is only initialized in the declaration or constructor.
+view/ParamView.java:78:	ImmutableField: Private field 'buttonParametreClicked' could be made final; it is only initialized in the declaration or constructor.
+view/ParamView.java:78:	LongVariable: Avoid excessively long variable names like buttonParametreClicked
+view/ParamView.java:78:	LongVariable: Avoid excessively long variable names like buttonParametreClicked
+view/ParamView.java:78:	SingularField: Perhaps 'buttonParametreClicked' could be replaced by a local variable.
+view/ParamView.java:78:	SingularField: Perhaps 'buttonParametreClicked' could be replaced by a local variable.
+view/ParamView.java:81:	CommentSize: Comment is too large: Too many lines
+view/ParamView.java:81:	CommentSize: Comment is too large: Too many lines
+view/ParamView.java:90:	MethodArgumentCouldBeFinal: Parameter 'label' is not assigned and could be declared final
+view/ParamView.java:90:	MethodArgumentCouldBeFinal: Parameter 'label' is not assigned and could be declared final
+view/ParamView.java:90:	MethodArgumentCouldBeFinal: Parameter 'link' is not assigned and could be declared final
+view/ParamView.java:90:	MethodArgumentCouldBeFinal: Parameter 'link' is not assigned and could be declared final
+view/ParamView.java:92:	LocalVariableCouldBeFinal: Local variable 'myImage' could be declared final
+view/ParamView.java:92:	LocalVariableCouldBeFinal: Local variable 'myImage' could be declared final
+view/ParamView.java:93:	LocalVariableCouldBeFinal: Local variable 'img' could be declared final
+view/ParamView.java:93:	LocalVariableCouldBeFinal: Local variable 'img' could be declared final
+view/ParamView.java:94:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+view/ParamView.java:94:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+view/ParamView.java:94:	LocalVariableCouldBeFinal: Local variable 'newImg' could be declared final
+view/ParamView.java:94:	LocalVariableCouldBeFinal: Local variable 'newImg' could be declared final
+view/ParamView.java:94:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'java.awt.Image.SCALE_SMOOTH' due to existing import 'java.awt.Image'
+view/ParamView.java:94:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'java.awt.Image.SCALE_SMOOTH' due to existing import 'java.awt.Image'
+view/ParamView.java:95:	LocalVariableCouldBeFinal: Local variable 'image' could be declared final
+view/ParamView.java:95:	LocalVariableCouldBeFinal: Local variable 'image' could be declared final
+view/ParamView.java:97:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'image'
+view/ParamView.java:97:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'image'
+view/ParamView.java:101:	CommentSize: Comment is too large: Too many lines
+view/ParamView.java:101:	CommentSize: Comment is too large: Too many lines
+view/ParamView.java:113:	CallSuperInConstructor: It is a good practice to call super() in a constructor
+view/ParamView.java:113:	CallSuperInConstructor: It is a good practice to call super() in a constructor
+view/ParamView.java:113:	NcssCount: The constructor 'ParamView()' has a NCSS line count of 60.
+view/ParamView.java:113:	NcssCount: The constructor 'ParamView()' has a NCSS line count of 60.
+view/ParamView.java:135:	AvoidDuplicateLiterals: The String literal "HousePaint" appears 4 times in this file; the first occurrence is on line 135
+view/ParamView.java:135:	AvoidDuplicateLiterals: The String literal "HousePaint" appears 4 times in this file; the first occurrence is on line 135

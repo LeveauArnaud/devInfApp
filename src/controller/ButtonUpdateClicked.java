@@ -2,8 +2,10 @@ package controller;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
+import javax.swing.JFormattedTextField;
 import javax.swing.JTextField;
-import model.DB_Action;
+import model.DbAction;
 
 /**
  * <b>Class permetant de modifier un scout dans la DB</b>
@@ -17,124 +19,124 @@ public class ButtonUpdateClicked implements ActionListener{
 	/**
 	 * ID du scout
 	 */
-	private JTextField textField_id;
+	private JTextField textFieldId;
 	/**
 	 * Section du scout
 	 */
-	private JTextField textField_section;
+	private JTextField textFieldSection;
 	/**
 	 * Fonction du scout
 	 */
-	private JTextField textField_fonction;
+	private JTextField textFieldFonction;
 	/**
 	 * Totem du scout
 	 */
-	private JTextField textField_totem;
+	private JTextField textFieldTotem;
 	/**
 	 * Nom du scout
 	 */
-	private JTextField textField_nom;
+	private JTextField textFieldNom;
 	/**
 	 * Prenom du scout
 	 */
-	private JTextField textField_prenom;
+	private JTextField textFieldPrenom;
 	/**
 	 * Date de Naissance du scout
 	 */
-	private JTextField textField_dateNaissance;
+	private JFormattedTextField textFieldDateNaissance;
 	/**
 	 * Adresse du scout
 	 */
-	private JTextField textField_adresse;
+	private JTextField textFieldAdresse;
 	/**
 	 * mail  du scout
 	 */
-	private JTextField textField_mail;
+	private JTextField textFieldMail;
 	/**
 	 * Nbr de camp du scout
 	 */
-	private JTextField textField_camp;
+	private JTextField textFieldCamp;
 	/**
 	 * Cotisation du scout
 	 */
-	private JTextField textField_cotisation;
+	private JTextField textFieldCotisation;
 	
 	
 
 	/**
 	 * <b>Permet de récupérer les données du scout dans les différents champs</b>
 	 * 
-	 * @param textField_id
+	 * @param textFieldId
 	 * 		L'ID du scout
-	 * @param textField_section
+	 * @param textFieldSection
 	 * 		La section du scout
-	 * @param textField_fonction
+	 * @param textFieldFonction
 	 * 		La fonction du scout
-	 * @param textField_totem
+	 * @param textFieldTotem
 	 * 		Le totem du scout
-	 * @param textField_nom
+	 * @param textFieldNom
 	 * 		Le nom du scout
-	 * @param textField_prenom
+	 * @param textFieldPrenom
 	 * 		Le prenom du scout
-	 * @param textField_dateNaissance
+	 * @param textFieldDateNaissance
 	 * 		La date de naissance du scout
-	 * @param textField_adresse
+	 * @param textFieldAdresse
 	 * 		L'adresse du scout
-	 * @param textField_mail
+	 * @param textFieldMail
 	 * 		Le mail du scout
-	 * @param textField_camp
+	 * @param textFieldCamp
 	 * 		Le nbr de camp du scout
-	 * @param textField_cotisation
+	 * @param textFieldCotisation
 	 * 		La cotisation du scout
 	 */
 	public ButtonUpdateClicked(
-		JTextField textField_id, 
-		JTextField textField_section, 
-		JTextField textField_fonction,
-		JTextField textField_totem,
-		JTextField textField_nom,
-		JTextField textField_prenom,
-		JTextField textField_dateNaissance,
-		JTextField textField_adresse,
-		JTextField textField_mail,
-		JTextField textField_camp,
-		JTextField textField_cotisation) 
+		JTextField textFieldId, 
+		JTextField textFieldSection, 
+		JTextField textFieldFonction,
+		JTextField textFieldTotem,
+		JTextField textFieldNom,
+		JTextField textFieldPrenom,
+		JFormattedTextField textFieldDateNaissance,
+		JTextField textFieldAdresse,
+		JTextField textFieldMail,
+		JTextField textFieldCamp,
+		JTextField textFieldCotisation) 
 	{
 		
 		super();
-		this.textField_id = textField_id;
-        this.textField_section = textField_section;
-        this.textField_fonction = textField_fonction;
-        this.textField_totem = textField_totem;
-        this.textField_nom = textField_nom;
-        this.textField_prenom = textField_prenom;
-        this.textField_dateNaissance = textField_dateNaissance;
-        this.textField_adresse = textField_adresse;
-        this.textField_mail = textField_mail;
-        this.textField_camp = textField_camp;
-        this.textField_cotisation = textField_cotisation;
+		this.textFieldId = textFieldId;
+        this.textFieldSection = textFieldSection;
+        this.textFieldFonction = textFieldFonction;
+        this.textFieldTotem = textFieldTotem;
+        this.textFieldNom = textFieldNom;
+        this.textFieldPrenom = textFieldPrenom;
+        this.textFieldDateNaissance = textFieldDateNaissance;
+        this.textFieldAdresse = textFieldAdresse;
+        this.textFieldMail = textFieldMail;
+        this.textFieldCamp = textFieldCamp;
+        this.textFieldCotisation = textFieldCotisation;
 	}
 
 	/**
 	 * <b>Action effectuée lors du click sur le bouton update</b>
 	 * <p>Modifie les infos du scout dans la DB</p>
 	 * 
-	 * @see DB_Action#update(JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField)
+	 * @see DbAction#update(JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField)
 	 */
 	public void actionPerformed(ActionEvent e) {
 		
-		DB_Action.update(
-				textField_id,
-				textField_section, 
-				textField_fonction,
-				textField_totem,
-				textField_nom,
-				textField_prenom,
-				textField_dateNaissance,
-				textField_adresse,
-				textField_mail,
-				textField_camp,
-				textField_cotisation);
+		DbAction.update(
+				textFieldId,
+				textFieldSection, 
+				textFieldFonction,
+				textFieldTotem,
+				textFieldNom,
+				textFieldPrenom,
+				textFieldDateNaissance,
+				textFieldAdresse,
+				textFieldMail,
+				textFieldCamp,
+				textFieldCotisation);
 	}
 	
 }

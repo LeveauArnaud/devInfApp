@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 import model.Constants;
-import model.DB_Con;
+import model.DbCon;
 import model.Model;
 import view.MainView;
 
@@ -22,15 +22,15 @@ public class ButtonParametreClicked implements ActionListener{
 	/**
 	 * Adresse du server
 	 */
-	private JTextField textField_serverN;
+	private JTextField textFieldServerN;
 	/**
 	 * User
 	 */
-	private JTextField textField_user;
+	private JTextField textFieldUser;
 	/**
 	 * Password
 	 */
-	private JTextField textField_password;
+	private JTextField textFieldPassword;
 	/**
 	 * La fentetre des paramètres
 	 */
@@ -41,42 +41,42 @@ public class ButtonParametreClicked implements ActionListener{
 	 * 
 	 * @param frame
 	 * 		La fentetre des paramètre
-	 * @param textField_serverN
+	 * @param textFieldServerN
 	 * 		L'adresse du server
-	 * @param textField_user
+	 * @param textFieldUser
 	 * 		Le User de la DB
-	 * @param textField_password
+	 * @param textFieldPassword
 	 * 		Le Password du user
 	 */
 	public ButtonParametreClicked(
 			JFrame frame,
-		JTextField textField_serverN, 
-		JTextField textField_user,
-		JTextField textField_password)				 
+		JTextField textFieldServerN, 
+		JTextField textFieldUser,
+		JTextField textFieldPassword)				 
 	{				
 		
 		super();
 		this.frame = frame;
-        this.textField_serverN = textField_serverN;
-        this.textField_user = textField_user;
-        this.textField_password = textField_password;
+        this.textFieldServerN = textFieldServerN;
+        this.textFieldUser = textFieldUser;
+        this.textFieldPassword = textFieldPassword;
 	}
 
 	/**
 	 * <b>Action effectuée lors du click sur le bouton "Connexion"</b>
 	 * <p>Ajoute le scout dans la DB</p>
 	 * 
-	 * @see DB_Con#executeSQLQuery(String, String)
+	 * @see DbCon#executeSQLQuery(String, String)
 	 */
 	public void actionPerformed(ActionEvent e) {
 		
-		Constants.serverN = textField_serverN.getText();
-		Constants.user = textField_user.getText();
-		Constants.password = textField_password.getText();
+		Constants.serverN = textFieldServerN.getText();
+		Constants.user = textFieldUser.getText();
+		Constants.password = textFieldPassword.getText();
 		
 		
 		
-			if(DB_Con.getConnection()!=null) {
+			if(DbCon.getConnection()!=null) {
 				JOptionPane.showMessageDialog(null,
                 "Connexion effective !","Infos connexion",JOptionPane.INFORMATION_MESSAGE);
 				DefaultTableModel model = (DefaultTableModel) MainView.table.getModel();

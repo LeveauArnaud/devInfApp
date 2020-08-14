@@ -68,7 +68,7 @@ public class MainView extends JFrame {
      * Le champ du formulaire pour l'id
      * 
      */
-	private JTextField textField_id;
+	private JTextField textFieldId;
 	/**
      * Le label pour le champ id
      * 
@@ -276,8 +276,8 @@ public class MainView extends JFrame {
      */
 	public ImageIcon scaleImageButton(JButton button, String link) {
 		
-		ImageIcon Myimage = new ImageIcon(MainView.class.getResource(link));//ajout image à myImage via le link
-		Image img = Myimage.getImage() ;  // convertion ImageIcon en Image
+		ImageIcon myImage = new ImageIcon(MainView.class.getResource(link));//ajout image à myImage via le link
+		Image img = myImage.getImage() ;  // convertion ImageIcon en Image
 		Image newImg = img.getScaledInstance( button.getWidth(), button.getHeight(),  java.awt.Image.SCALE_SMOOTH ) ;  //Mise à l'échelle du JButton
 		ImageIcon image = new ImageIcon( newImg );
 		
@@ -296,8 +296,8 @@ public class MainView extends JFrame {
      */
 	public ImageIcon scaleImageMenu(JMenu menu, String link) {
 		
-		ImageIcon Myimage = new ImageIcon(MainView.class.getResource(link));//ajout image à myImage via le link
-		Image img = Myimage.getImage() ;  // convertion ImageIcon en Image
+		ImageIcon myImage = new ImageIcon(MainView.class.getResource(link));//ajout image à myImage via le link
+		Image img = myImage.getImage() ;  // convertion ImageIcon en Image
 		Image newImg = img.getScaledInstance( 22, 22,  java.awt.Image.SCALE_SMOOTH ) ;  //Mise à l'échelle du JButton
 		ImageIcon image = new ImageIcon( newImg );
 		
@@ -400,13 +400,13 @@ public class MainView extends JFrame {
 		getContentPane().add(lblCamp);
 		lblCamp.setFont(new Font("HousePaint", Font.PLAIN, 15));
 		
-		textField_id = new JTextField();
-		textField_id.setBackground(SystemColor.window);
-		textField_id.setBounds(1303, 100, 148, 25);
-		textField_id.setEditable(false);
-		getContentPane().add(textField_id);
-		textField_id.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
-		textField_id.setColumns(10);
+		textFieldId = new JTextField();
+		textFieldId.setBackground(SystemColor.window);
+		textFieldId.setBounds(1303, 100, 148, 25);
+		textFieldId.setEditable(false);
+		getContentPane().add(textFieldId);
+		textFieldId.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
+		textFieldId.setColumns(10);
 		
 		textFieldSection = new JTextField();
 		textFieldSection.setBounds(1221, 157, 148, 25);
@@ -604,7 +604,7 @@ public class MainView extends JFrame {
         
         mouseClicked =  new MouseClicked(
         	table,
-        	textField_id,
+        	textFieldId,
         	textFieldSection,
         	textFieldFonction, 
         	textFieldTotem,
@@ -629,7 +629,7 @@ public class MainView extends JFrame {
 			textFieldCotisation);
         
         buttonUpdateClicked = new ButtonUpdateClicked(
-        	textField_id,
+        	textFieldId,
         	textFieldSection,
 			textFieldFonction, 
 			textFieldTotem,
@@ -644,10 +644,10 @@ public class MainView extends JFrame {
         
         
         buttonDeleteClicked = new ButtonDeleteClicked(
-        												textField_id);
+        												textFieldId);
         
         buttonClearClicked = new ButtonClearClicked(
-        		textField_id,
+        		textFieldId,
             	textFieldSection,
     			textFieldFonction, 
     			textFieldTotem,

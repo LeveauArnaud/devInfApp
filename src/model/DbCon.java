@@ -19,7 +19,7 @@ import view.MainView;
  *
  */
 
-public class DB_Con {
+public abstract class DbCon {
 	
 	/**
 	 * Effectue la connection avec la DB via le driver JBDC
@@ -68,7 +68,7 @@ public class DB_Con {
 	 */
 	public static void executeSQLQuery(String query, String message) {
     	//on récupère la connexion
-		Connection connection = DB_Con.getConnection();
+		Connection connection = DbCon.getConnection();
     	
     	Statement st = null;
 		

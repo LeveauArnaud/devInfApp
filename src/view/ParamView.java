@@ -89,8 +89,8 @@ public class ParamView extends JFrame{
      */
 	public ImageIcon scaleImage(JLabel label, String link) {
 		
-		ImageIcon Myimage = new ImageIcon(MainView.class.getResource(link));//ajout image à myImage via le link
-		Image img = Myimage.getImage() ;  // convertion ImageIcon en Image
+		ImageIcon myImage = new ImageIcon(MainView.class.getResource(link));//ajout image à myImage via le link
+		Image img = myImage.getImage() ;  // convertion ImageIcon en Image
 		Image newImg = img.getScaledInstance( label.getWidth(), label.getHeight(),  java.awt.Image.SCALE_SMOOTH ) ;  //Mise à l'échelle du JButton
 		ImageIcon image = new ImageIcon( newImg );//Ajout de l'image au JButton
 		
