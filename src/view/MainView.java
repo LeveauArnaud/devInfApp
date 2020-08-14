@@ -453,7 +453,9 @@ public class MainView extends JFrame {
 		//bouton ajouter
 		addButton = new JButton();//init du JButton
 		addButton.setBounds(1270, 594, 50, 50);//taille 50X50
-		addButton.setBackground(new Color(255, 204, 51));
+		addButton.setOpaque(false);
+		addButton.setContentAreaFilled(false);
+		addButton.setBorderPainted(false);
 		addButton.setIcon(scaleImageButton(addButton,"/img/add.png"));
 		addButton.setFocusPainted(false);
 		addButton.setContentAreaFilled(false);
@@ -463,7 +465,9 @@ public class MainView extends JFrame {
 		//bouton update
 		 updateButton = new JButton();
 		 updateButton.setBounds(1447, 594, 50, 50);
-		 updateButton.setBackground(new Color(0,0,0,0));
+		 updateButton.setOpaque(false);
+		 updateButton.setContentAreaFilled(false);
+		 updateButton.setBorderPainted(false);
 		 updateButton.setIcon(scaleImageButton(updateButton,"/img/update.png"));
 		 updateButton.setFocusPainted(false);
 		 updateButton.setContentAreaFilled(false);
@@ -472,6 +476,9 @@ public class MainView extends JFrame {
 		//bouton delete
 		 deleteButton = new JButton();
 		 deleteButton.setBounds(1270, 679, 50, 50);
+		 deleteButton.setOpaque(false);
+		 deleteButton.setContentAreaFilled(false);
+		 deleteButton.setBorderPainted(false);
 		 deleteButton.setIcon(scaleImageButton(deleteButton,"/img/delete.png"));
 		 deleteButton.setFocusPainted(false);
 		 deleteButton.setContentAreaFilled(false);
@@ -480,6 +487,9 @@ public class MainView extends JFrame {
 		//bouton clear
 		 clearButton = new JButton();
 		 clearButton.setBounds(1447, 679, 50, 50);
+		 clearButton.setOpaque(false);
+		 clearButton.setContentAreaFilled(false);
+		 clearButton.setBorderPainted(false);
 		 clearButton.setIcon(scaleImageButton(deleteButton,"/img/clear.png"));
 		 clearButton.setFocusPainted(false);
 		 clearButton.setContentAreaFilled(false);
