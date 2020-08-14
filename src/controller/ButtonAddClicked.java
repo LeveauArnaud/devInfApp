@@ -3,9 +3,8 @@ package controller;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.JOptionPane;
 import javax.swing.JTextField;
-import model.DB_Con;
+import model.DB_Action;
 
 
 /**
@@ -114,17 +113,21 @@ public  class ButtonAddClicked implements ActionListener{
 	 * <b>Action effectuée lors du click sur le bouton add</b>
 	 * <p>Ajoute le scout dans la DB</p>
 	 * 
-	 * @see DB_Con#executeSQLQuery(String, String)
+	 * @see DB_Action#add(JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField)
 	 */
 	public void actionPerformed(ActionEvent e) {
 		
-		JOptionPane.showMessageDialog(null,
-                "clicked button" ,
-                null, JOptionPane.ERROR_MESSAGE);
-		
-		String query = "INSERT INTO `scouts`(`totem`, `nom`, `prenom`, `dateNaissance`, `adresse`, `mail`, `section`, `fonction`, `camp`, `cotisation`) "
-							+ "VALUES ('"+textField_totem.getText()+"','"+textField_nom.getText()+"','"+textField_prenom.getText()+"','"+textField_dateNaissance.getText()+"','"+textField_adresse.getText()+"','"+textField_mail.getText()+"','"+textField_section.getText()+"','"+textField_fonction.getText()+"','"+textField_camp.getText()+"','"+textField_cotisation.getText()+"')";
-		DB_Con.executeSQLQuery(query, "Ajoutées");
+		DB_Action.add(
+				textField_section, 
+				textField_fonction,
+				textField_totem,
+				textField_nom,
+				textField_prenom,
+				textField_dateNaissance,
+				textField_adresse,
+				textField_mail,
+				textField_camp,
+				textField_cotisation);
 	}
 
 }

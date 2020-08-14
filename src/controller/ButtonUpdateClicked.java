@@ -2,11 +2,8 @@ package controller;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-import javax.swing.JOptionPane;
 import javax.swing.JTextField;
-
-import model.DB_Con;
+import model.DB_Action;
 
 /**
  * <b>Class permetant de modifier un scout dans la DB</b>
@@ -122,17 +119,22 @@ public class ButtonUpdateClicked implements ActionListener{
 	 * <b>Action effectuée lors du click sur le bouton update</b>
 	 * <p>Modifie les infos du scout dans la DB</p>
 	 * 
-	 * @see DB_Con#executeSQLQuery(String, String)
+	 * @see DB_Action#update(JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField)
 	 */
 	public void actionPerformed(ActionEvent e) {
 		
-		JOptionPane.showMessageDialog(null,
-                "clicked button" ,
-                null, JOptionPane.ERROR_MESSAGE);
-		
-	
-		String query = "UPDATE `scouts` SET `totem`='"+textField_totem.getText()+"',`nom`='"+textField_nom.getText()+"',`prenom`='"+textField_prenom.getText()+"',`dateNaissance`='"+textField_dateNaissance.getText()+"',`adresse`='"+textField_adresse.getText()+"',`mail`='"+textField_mail.getText()+"',`section`='"+textField_section.getText()+"',`fonction`='"+textField_fonction.getText()+"',`camp`='"+textField_camp.getText()+"',`cotisation`='"+textField_cotisation.getText()+"' WHERE `id`='"+textField_id.getText()+"'";
-		DB_Con.executeSQLQuery(query, "Mises à jour");
+		DB_Action.update(
+				textField_id,
+				textField_section, 
+				textField_fonction,
+				textField_totem,
+				textField_nom,
+				textField_prenom,
+				textField_dateNaissance,
+				textField_adresse,
+				textField_mail,
+				textField_camp,
+				textField_cotisation);
 	}
 	
 }

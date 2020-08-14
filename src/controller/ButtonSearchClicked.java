@@ -40,9 +40,9 @@ public class ButtonSearchClicked implements ActionListener {
      * 
      */
     public void chercher(String searchTerm) {
-    	Object[][] newData = new Object[Model.show_Scouts().length][];
+    	Object[][] newData = new Object[Model.showScouts().length][];
         int idx = 0;
-        Object[][] scoutsList = Model.show_Scouts();
+        Object[][] scoutsList = Model.showScouts();
         for (Object[] o: scoutsList) {
             if ("*".equals(searchTerm.trim())) {
                 newData[idx++] = o;

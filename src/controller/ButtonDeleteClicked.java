@@ -2,11 +2,8 @@ package controller;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-import javax.swing.JOptionPane;
 import javax.swing.JTextField;
-
-import model.DB_Con;
+import model.DB_Action;
 /**
  * <b>Class permetant de Supprimer un scout dans la DB</b>
  * 
@@ -36,16 +33,11 @@ public class ButtonDeleteClicked implements ActionListener{
 	 * <b>Action effectuée lors du click sur le bouton delete</b>
 	 * <p>Supprime le scout dans la DB</p>
 	 * 
-	 * @see DB_Con#executeSQLQuery(String, String)
+	 * @see DB_Action#delete(JTextField)
 	 */
 	public void actionPerformed(ActionEvent e) {
 		
-		JOptionPane.showMessageDialog(null,
-                "clicked button" ,
-                null, JOptionPane.ERROR_MESSAGE);
-		
-		String query = "DELETE FROM `scouts` WHERE `id`='"+textField_id.getText()+"'";
-		DB_Con.executeSQLQuery(query, "Supprimées");
+		DB_Action.delete(textField_id );
 	}
 
 }
