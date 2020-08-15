@@ -396,7 +396,7 @@ public class MainView extends JFrame {
 		lblCotisation.setFont(new Font("HousePaint", Font.PLAIN, 15));
 		
 		lblCamp = new JLabel("Camp(s) :");
-		lblCamp.setBounds(1214, 487, 49, 22);
+		lblCamp.setBounds(1214, 487, 69, 22);
 		getContentPane().add(lblCamp);
 		lblCamp.setFont(new Font("HousePaint", Font.PLAIN, 15));
 		
