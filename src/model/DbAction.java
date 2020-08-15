@@ -107,6 +107,7 @@ public abstract class DbAction {
 		DbCon.executeSQLQuery(query, "Mises à jour");
 	}
 	
+	
 	/**
 	 * <b>Permet de supprimer un scout dans la DB</b>
 	 * 
