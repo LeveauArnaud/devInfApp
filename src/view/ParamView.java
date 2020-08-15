@@ -10,7 +10,7 @@ import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import model.Constants;
+import model.AppConstants;
 import javax.swing.JTextField;
 import controller.ButtonParametreClicked;
 import javax.swing.JLabel;
@@ -114,7 +114,7 @@ public class ParamView extends JFrame{
 		
 		
 		
-		setTitle(Constants.appTitle);
+		setTitle(AppConstants.appTitle);
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		setPreferredSize(new Dimension(800, 500));
 		setLocationRelativeTo(null);
@@ -149,7 +149,7 @@ public class ParamView extends JFrame{
 		backrounPanel.add(textFieldServerN);
 		textFieldServerN.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
 		textFieldServerN.setColumns(10);
-		textFieldServerN.setText(Constants.serverN);
+		textFieldServerN.setText(AppConstants.serverN);
 		
 		
 		textFieldUser = new JTextField();
@@ -157,7 +157,7 @@ public class ParamView extends JFrame{
 		backrounPanel.add(textFieldUser);
 		textFieldUser.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
 		textFieldUser.setColumns(10);
-		textFieldUser.setText(Constants.user);
+		textFieldUser.setText(AppConstants.user);
 		
 	
 		passwordField = new JPasswordField();
@@ -165,7 +165,7 @@ public class ParamView extends JFrame{
 		backrounPanel.add(passwordField);
 		passwordField.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
 		passwordField.setColumns(10);
-		passwordField.setText(Constants.password);
+		passwordField.setText(AppConstants.password);
 		
 		
 		conButton = new JButton("Connexion");
@@ -178,7 +178,7 @@ public class ParamView extends JFrame{
 		conButton.setBorderPainted(false);
 		getContentPane().add(conButton);//ajout du JButton au content pane
 		
-		getBackgroundImage = ImageIO.read(this.getClass().getResource("/img/logoUnitee.png"));
+		getBackgroundImage = ImageIO.read(this.getClass().getResource("/model/img/logoUnitee.png"));
 		backgroundImage = new JLabel(new ImageIcon(getBackgroundImage));
 		backgroundImage.setBounds(0, 0, 807, 478);
 		getContentPane().add(backgroundImage);
