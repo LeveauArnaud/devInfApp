@@ -17,11 +17,11 @@ import model.DbCon;
 import model.Model;
 import model.Scout;
 
-class TestCrud {
+class TestCrud extends DbAction {
 	
 	@SuppressWarnings("null")
 	@Test
-	public void testCrud() throws SQLException {
+	public void testCrud()  throws SQLException {
 		
 		/**
 		 * Section du scout
@@ -67,7 +67,7 @@ class TestCrud {
 		ArrayList<Scout> scoutsList = Model.getScoutsList();
 		
         
-		DbAction.add(
+		add(
 				textFieldSection, 
 				textFieldFonction,
 				textFieldTotem,
@@ -90,7 +90,7 @@ class TestCrud {
 		JTextField textFieldId = new JTextField(lastScout.getId());
 		textFieldCotisation.setText("0");
 		
-		DbAction.update(
+		update(
 				textFieldId,
 				textFieldSection, 
 				textFieldFonction,
@@ -105,7 +105,7 @@ class TestCrud {
 		
 		assertEquals(textFieldCotisation, lastScout.getCotisation());
 		
-		DbAction.delete(
+		delete(
 				textFieldId);
 		
 		assertNull(textFieldId);

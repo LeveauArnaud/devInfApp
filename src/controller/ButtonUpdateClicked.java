@@ -14,7 +14,7 @@ import model.DbAction;
  * @version 1.0
  *
  */
-public class ButtonUpdateClicked implements ActionListener{
+public class ButtonUpdateClicked extends DbAction implements ActionListener{
 	
 	/**
 	 * ID du scout
@@ -123,9 +123,10 @@ public class ButtonUpdateClicked implements ActionListener{
 	 * 
 	 * @see DbAction#update(JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField)
 	 */
+	@Override
 	public void actionPerformed(ActionEvent e) {
 		
-		DbAction.update(
+		update(
 				textFieldId,
 				textFieldSection, 
 				textFieldFonction,

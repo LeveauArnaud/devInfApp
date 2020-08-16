@@ -3,13 +3,13 @@ package model;
 import javax.swing.JTextField;
 
 /**
- * <b>Class rassemblant les action sur la DB</b>
+ * <b>Class abstraite rassemblant les action sur la DB</b>
  * 
  * @author arnaud_leveau
  * @version 1.0
  *
  */
-public abstract class DbAction {
+public abstract class DbAction extends DbCon {
 	
 	/**
 	 * String contenant le query à executer
@@ -18,7 +18,7 @@ public abstract class DbAction {
 	 * @see DbAction#update(JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField, JTextField)
 	 * @see DbAction#delete(JTextField)
 	 */
-	private static String query;
+	 protected static String query;
 	
 	/**
 	 * <b>Permet d'ajouter un scout dans la DB</b>
@@ -45,7 +45,7 @@ public abstract class DbAction {
 	 * 		La cotisation du scout
 	 * 
 	 */
-	public static void add(
+	 protected static void add(
 			JTextField textFieldSection, 
 			JTextField textFieldFonction,
 			JTextField textFieldTotem,
@@ -60,7 +60,7 @@ public abstract class DbAction {
 		query = "INSERT INTO `scouts`(`totem`, `nom`, `prenom`, `dateNaissance`, `adresse`, `mail`, `section`, `fonction`, `camp`, `cotisation`) "
 				+ "VALUES ('"+textFieldTotem.getText()+"','"+textFieldNom.getText()+"','"+textFieldPrenom.getText()+"','"+textFieldDateNaissance.getText()+"','"+textFieldAdresse.getText()+"','"+textFieldMail.getText()+"','"+textFieldSection.getText()+"','"+textFieldFonction.getText()+"','"+textFieldCamp.getText()+"','"+textFieldCotisation.getText()+"')";
 		
-		DbCon.executeSQLQuery(query, "Ajoutées");
+		executeSQLQuery(query, "Ajoutées");
 	}
 	
 	/**
@@ -90,7 +90,7 @@ public abstract class DbAction {
 	 * 		La cotisation du scout
 	 * 
 	 */
-	public static void update(
+	 protected static void update(
 			JTextField textFieldId,
 			JTextField textFieldSection, 
 			JTextField textFieldFonction,
@@ -104,7 +104,7 @@ public abstract class DbAction {
 			JTextField textFieldCotisation) {
 		
 		query = "UPDATE `scouts` SET `totem`='"+textFieldTotem.getText()+"',`nom`='"+textFieldNom.getText()+"',`prenom`='"+textFieldPrenom.getText()+"',`dateNaissance`='"+textFieldDateNaissance.getText()+"',`adresse`='"+textFieldAdresse.getText()+"',`mail`='"+textFieldMail.getText()+"',`section`='"+textFieldSection.getText()+"',`fonction`='"+textFieldFonction.getText()+"',`camp`='"+textFieldCamp.getText()+"',`cotisation`='"+textFieldCotisation.getText()+"' WHERE `id`='"+textFieldId.getText()+"'";
-		DbCon.executeSQLQuery(query, "Mises à jour");
+		executeSQLQuery(query, "Mises à jour");
 	}
 	
 	
@@ -115,11 +115,11 @@ public abstract class DbAction {
 	 * 		L'ID du scout
 	 * 
 	 */
-	public static void delete(
+	 protected static void delete(
 			JTextField textFieldId) {
 		
 		query = "DELETE FROM `scouts` WHERE `id`='"+textFieldId.getText()+"'";
-		DbCon.executeSQLQuery(query, "Supprimées");
+		executeSQLQuery(query, "Supprimées");
 	}
 	
 

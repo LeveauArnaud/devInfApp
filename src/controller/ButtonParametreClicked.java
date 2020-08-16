@@ -18,7 +18,7 @@ import view.MainView;
  * @version 1.0
  *
  */
-public class ButtonParametreClicked implements ActionListener{
+public class ButtonParametreClicked extends DbCon implements ActionListener{
 	/**
 	 * Adresse du server
 	 */
@@ -76,7 +76,7 @@ public class ButtonParametreClicked implements ActionListener{
 		
 		
 		
-			if(DbCon.getConnection()!=null) {
+			if(getConnection()!=null) {
 				JOptionPane.showMessageDialog(null,
                 "Connexion effective !","Infos connexion",JOptionPane.INFORMATION_MESSAGE);
 				DefaultTableModel model = (DefaultTableModel) MainView.table.getModel();
