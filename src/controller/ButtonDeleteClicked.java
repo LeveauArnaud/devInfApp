@@ -13,7 +13,7 @@ import model.DbAction;
  * @version 1.0
  *
  */
-public class ButtonDeleteClicked implements ActionListener{
+public class ButtonDeleteClicked extends DbAction implements ActionListener{
 	
 	private JTextField textFieldId;
 	
@@ -42,7 +42,7 @@ public class ButtonDeleteClicked implements ActionListener{
 		int input = JOptionPane.showConfirmDialog(null, "Êtes vous certain de vouloir supprimer le scout ?");
 		
 		if(input == 0){
-		DbAction.delete(textFieldId );
+		delete(textFieldId );
 		}
 	}
 

@@ -12,7 +12,7 @@ import view.MainView;
 
 
 /**
- * <b>Classe permmeant de faire le lien avec la DB</b>
+ * <b>Classe abstraite permmeant de faire le lien avec la DB</b>
  * 
  * @author arnaud_leveau
  * @version 1.0
@@ -27,7 +27,7 @@ public abstract class DbCon {
 	 * @return connexion avec la DB
 	 *
 	 */
-	public static Connection getConnection() {
+	 protected static Connection getConnection() {
 		
 		
 		 Connection con ;
@@ -66,7 +66,7 @@ public abstract class DbCon {
 	 * @param message
 	 * 			Le message à afficher
 	 */
-	public static void executeSQLQuery(String query, String message) {
+	 protected static void executeSQLQuery(String query, String message) {
     	//on récupère la connexion
 		Connection connection = DbCon.getConnection();
     	

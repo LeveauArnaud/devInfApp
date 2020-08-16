@@ -14,7 +14,7 @@ import model.DbAction;
  * @version 1.0
  *
  */
-public  class ButtonAddClicked implements ActionListener{
+public  class ButtonAddClicked extends DbAction implements ActionListener {
 	
 	
 	/**
@@ -117,7 +117,7 @@ public  class ButtonAddClicked implements ActionListener{
 	 */
 	public void actionPerformed(ActionEvent e) {
 		
-		DbAction.add(
+		add(
 				textFieldSection, 
 				textFieldFonction,
 				textFieldTotem,
