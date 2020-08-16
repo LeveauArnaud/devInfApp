@@ -38,9 +38,9 @@ public abstract class DbCon {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
 			con = DriverManager.getConnection(
-					AppConstants.server,
-					AppConstants.user,
-					AppConstants.password
+					AppConstants.getServer(),
+					AppConstants.getUser(),
+					AppConstants.getPassword()
             );
 			System.out.println("Connexion effective !");
 			return con;

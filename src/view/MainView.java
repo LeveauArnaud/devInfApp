@@ -323,7 +323,7 @@ public class MainView extends JFrame {
 	public MainView() {
 		
 		
-		setTitle(AppConstants.appTitle);
+		setTitle(AppConstants.getAppTitle());
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setPreferredSize(new Dimension(1600, 800));
 		getContentPane().setBackground(new Color(255, 204, 51));

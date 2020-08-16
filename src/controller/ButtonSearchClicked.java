@@ -52,7 +52,7 @@ public class ButtonSearchClicked implements ActionListener {
                 }   
             }   
         }
-        model.setDataVector(newData, AppConstants.TABLE_HEADER);
+        model.setDataVector(newData, AppConstants.getTableHeader());
         
     }
     

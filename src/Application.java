@@ -16,7 +16,7 @@ public abstract class Application {
 	/**
 	 * Méthode main
 	 * 
-	 * @param args
+	 * @param args arguments passés en ligne de commande lors de l'execution de l'application.
 	 * */
  
     public static void main(String[] args) {
@@ -35,7 +35,7 @@ public abstract class Application {
     /**
 	 * Méthode createAndShowGUI, crée une nouvelle MainView
 	 * 
-	 * @throws Exception
+	 * @throws Exception exception qui pourraient apparaitre de la création de la MainView 
 	 * */
  
     public static void createAndShowGUI() throws Exception {
