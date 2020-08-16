@@ -106,11 +106,11 @@ public class Scout {
     public static Comparator<Scout> scoutNomC = new Comparator<Scout>() {
 
     	public int compare(Scout s1, Scout s2) {
-    		String studentName1 = s1.getNom().toUpperCase();
-    		String studentName2 = s2.getNom().toUpperCase();
+    		String scoutName1 = s1.getNom().toUpperCase();
+    		String scoutName2 = s2.getNom().toUpperCase();
 
     		//ordre croissant
-    		return studentName1.compareTo(studentName2);
+    		return scoutName1.compareTo(scoutName2);
 
 	 
     	}

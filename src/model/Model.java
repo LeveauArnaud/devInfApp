@@ -183,14 +183,6 @@ public class Model extends DefaultTableModel {
 	}
 	
 	
-	public void filter(String query, DefaultTableModel model, JTable table) {
-		
-		TableRowSorter<DefaultTableModel> tr = new TableRowSorter<DefaultTableModel>(model);
-		table.setRowSorter(tr);
-		
-		tr.setRowFilter(RowFilter.regexFilter(query));
-	}
-	
 	/**
 	 * Renvoie le tableau données + nom des colonnes
 	 * 
