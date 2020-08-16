@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
-import model.Constants;
+import model.AppConstants;
 import model.Model;
 
  
@@ -52,7 +52,7 @@ public class ButtonSearchClicked implements ActionListener {
                 }   
             }   
         }
-        model.setDataVector(newData, Constants.TABLE_HEADER);
+        model.setDataVector(newData, AppConstants.TABLE_HEADER);
         
     }
     

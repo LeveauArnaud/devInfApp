@@ -197,7 +197,7 @@ public class Model extends DefaultTableModel {
 	 */
     public Model() {
     	
-        super(showScouts(), Constants.TABLE_HEADER);
+        super(showScouts(), AppConstants.TABLE_HEADER);
     }
     
 

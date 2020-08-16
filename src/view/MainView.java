@@ -37,7 +37,7 @@ import controller.ButtonSearchClicked;
 import controller.ButtonUpdateClicked;
 import controller.MenuItemParamClicked;
 import controller.MouseClicked;
-import model.Constants;
+import model.AppConstants;
 import model.Model;
 import javax.swing.JFormattedTextField;
 
@@ -323,7 +323,7 @@ public class MainView extends JFrame {
 	public MainView() {
 		
 		
-		setTitle(Constants.appTitle);
+		setTitle(AppConstants.appTitle);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setPreferredSize(new Dimension(1600, 800));
 		getContentPane().setBackground(new Color(255, 204, 51));
@@ -337,7 +337,7 @@ public class MainView extends JFrame {
         menuBar.setBackground(new Color(255, 230, 153));
         menuBar.setFont(new Font("HousePaint", Font.PLAIN, 15));
         param = new JMenu();
-        param.setIcon(scaleImageMenu(param,"/img/settings.png"));
+        param.setIcon(scaleImageMenu(param,"/model/img/settings.png"));
         param.setFont(new Font("Cocon-Regular", Font.PLAIN, 15));
         updateParam = new JMenuItem("Modifier paramètres");
         updateParam.setFont(new Font("Cocon-Regular", Font.PLAIN, 15));
@@ -542,7 +542,7 @@ public class MainView extends JFrame {
 		addButton.setOpaque(false);
 		addButton.setContentAreaFilled(false);
 		addButton.setBorderPainted(false);
-		addButton.setIcon(scaleImageButton(addButton,"/img/add.png"));
+		addButton.setIcon(scaleImageButton(addButton,"/model/img/add.png"));
 		addButton.setFocusPainted(false);
 		addButton.setContentAreaFilled(false);
 		addButton.setOpaque(false);
@@ -554,7 +554,7 @@ public class MainView extends JFrame {
 		 updateButton.setOpaque(false);
 		 updateButton.setContentAreaFilled(false);
 		 updateButton.setBorderPainted(false);
-		 updateButton.setIcon(scaleImageButton(updateButton,"/img/update.png"));
+		 updateButton.setIcon(scaleImageButton(updateButton,"/model/img/update.png"));
 		 updateButton.setFocusPainted(false);
 		 updateButton.setContentAreaFilled(false);
 		 getContentPane().add(updateButton);
@@ -565,7 +565,7 @@ public class MainView extends JFrame {
 		 deleteButton.setOpaque(false);
 		 deleteButton.setContentAreaFilled(false);
 		 deleteButton.setBorderPainted(false);
-		 deleteButton.setIcon(scaleImageButton(deleteButton,"/img/delete.png"));
+		 deleteButton.setIcon(scaleImageButton(deleteButton,"/model/img/delete.png"));
 		 deleteButton.setFocusPainted(false);
 		 deleteButton.setContentAreaFilled(false);
 		 getContentPane().add(deleteButton);
@@ -576,7 +576,7 @@ public class MainView extends JFrame {
 		 clearButton.setOpaque(false);
 		 clearButton.setContentAreaFilled(false);
 		 clearButton.setBorderPainted(false);
-		 clearButton.setIcon(scaleImageButton(deleteButton,"/img/clear.png"));
+		 clearButton.setIcon(scaleImageButton(deleteButton,"/model/img/clear.png"));
 		 clearButton.setFocusPainted(false);
 		 clearButton.setContentAreaFilled(false);
 		 getContentPane().add(clearButton);
