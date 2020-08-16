@@ -70,9 +70,9 @@ public class ButtonParametreClicked implements ActionListener{
 	 */
 	public void actionPerformed(ActionEvent e) {
 		
-		AppConstants.serverN = textFieldServerN.getText();
-		AppConstants.user = textFieldUser.getText();
-		AppConstants.password = textFieldPassword.getText();
+		AppConstants.setServerN(textFieldServerN.getText());
+		AppConstants.setUser(textFieldUser.getText());
+		AppConstants.setPassword(textFieldPassword.getText());
 		
 		
 		

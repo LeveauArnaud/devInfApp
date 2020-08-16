@@ -189,7 +189,7 @@ public class Model extends DefaultTableModel {
 	 */
     public Model() {
     	
-        super(showScouts(), AppConstants.TABLE_HEADER);
+        super(showScouts(), AppConstants.getTableHeader());
     }
     
 

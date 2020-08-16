@@ -105,7 +105,7 @@ public class ParamView extends JFrame{
      * Une fenètre composée d'un formulaire pour les modifier les infos de la DB
      * </p>
      * 
-     * @throws IOException
+     * @throws IOException exception utilisé lors de la lecture de l'image de fond de la fenêtre.
      * @see ButtonParametreClicked
      * 
      */
@@ -114,7 +114,7 @@ public class ParamView extends JFrame{
 		
 		
 		
-		setTitle(AppConstants.appTitle);
+		setTitle(AppConstants.getAppTitle());
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		setPreferredSize(new Dimension(800, 500));
 		setLocationRelativeTo(null);
@@ -149,7 +149,7 @@ public class ParamView extends JFrame{
 		backrounPanel.add(textFieldServerN);
 		textFieldServerN.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
 		textFieldServerN.setColumns(10);
-		textFieldServerN.setText(AppConstants.serverN);
+		textFieldServerN.setText(AppConstants.getServerN());
 		
 		
 		textFieldUser = new JTextField();
@@ -157,7 +157,7 @@ public class ParamView extends JFrame{
 		backrounPanel.add(textFieldUser);
 		textFieldUser.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
 		textFieldUser.setColumns(10);
-		textFieldUser.setText(AppConstants.user);
+		textFieldUser.setText(AppConstants.getUser());
 		
 	
 		passwordField = new JPasswordField();
@@ -165,7 +165,7 @@ public class ParamView extends JFrame{
 		backrounPanel.add(passwordField);
 		passwordField.setFont(new Font("Cocon-Regular", Font.PLAIN, 13));
 		passwordField.setColumns(10);
-		passwordField.setText(AppConstants.password);
+		passwordField.setText(AppConstants.getPassword());
 		
 		
 		conButton = new JButton("Connexion");
