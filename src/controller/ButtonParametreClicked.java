@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
-import model.Constants;
+import model.AppConstants;
 import model.DbCon;
 import model.Model;
 import view.MainView;
@@ -70,9 +70,9 @@ public class ButtonParametreClicked implements ActionListener{
 	 */
 	public void actionPerformed(ActionEvent e) {
 		
-		Constants.serverN = textFieldServerN.getText();
-		Constants.user = textFieldUser.getText();
-		Constants.password = textFieldPassword.getText();
+		AppConstants.serverN = textFieldServerN.getText();
+		AppConstants.user = textFieldUser.getText();
+		AppConstants.password = textFieldPassword.getText();
 		
 		
 		
