@@ -18,7 +18,7 @@ Application utilitaire permettant la gestion des membres d’une unité scoute.
 Un utilisateur aura la possibilité d’ajouter un nouveau membre dans l’unité avec sa fonction ( animateur d’unité, animateur, animé, parents ). 
 Si le membre est un animateur ou un animé, il faudra également y indiquer la section dans laquelle il anime.
 
-L’utilisateur aura également la possibilité d’indiqué si le membre est en ordre de cotisation, fiche médicale,…
+L’utilisateur aura également la possibilité d’indiqué si le membre est en ordre de cotisation, ...
 
 L’utilisateur aura la possibilité de modifier les données d’un membre.
 
