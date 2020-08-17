@@ -39,7 +39,7 @@ public class Scout {
 	/**
 	 * dateNaissance du scout
 	 */
-	private Date dateNaissance;
+	private  Date dateNaissance;
 	/**
 	 * adresse du scout
 	 */
@@ -295,4 +295,5 @@ public class Scout {
 	 
     	}
     };
+    
 }
